@@ -5,7 +5,7 @@
 
 #header {
   display: flex;
-  background-color: #49796B;
+  background-color: #002244;
   padding: 30px;
   justify-content: start;
   text-align: center;
@@ -40,7 +40,8 @@ div nav a {
 } 
 
 div nav a:hover {
-  color: #49796B;
+  /* color: #49796B; */
+  color: #002244;
   background-color: white;
 
 }
