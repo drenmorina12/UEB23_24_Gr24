@@ -18,4 +18,19 @@ const solutions = {
 
 const finalResult = "Zgjidhja Perfundimtare";
 
-function createTable() {}
+function createTable() {
+  for (let i = 0; i < 4; i++) {
+    const row = document.createElement("div");
+    row.className = "row";
+
+    columns.forEach((column) => {
+      const cell = document.createElement("div");
+      cell.className = "cell";
+      cell.textContent = words[column][i];
+      row.appendChild(cell);
+    });
+    asosacioni.appendChild(row);
+  }
+}
+
+createTable();
