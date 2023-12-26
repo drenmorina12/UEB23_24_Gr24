@@ -1,4 +1,33 @@
 #asosacioni {
-  width: 400px;
-  height: 400px;
+  margin-left: 300px;
+  margin-top: 70px;
+  width: 900px;
+  height: 600px;
+}
+
+.row {
+  display: flex;
+}
+
+.cell,
+.final-cell {
+  border: 1px solid white;
+  width: 300px;
+  height: 70px;
+  background-color: #002244;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.final-cell {
+  width: 100%;
+}
+
+.cell:hover,
+.final-cell:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
