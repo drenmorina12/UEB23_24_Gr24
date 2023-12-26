@@ -71,5 +71,14 @@ div nav a:hover {
   font-weight: 900;
 }
 
+.footer {
+  background-color: #002244;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  bottom: 0;
+  width: 100%;
+}
+
 
 
