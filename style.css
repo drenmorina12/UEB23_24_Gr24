@@ -48,7 +48,7 @@ div nav a:hover {
 
 #fiek-photo{
   width: 100%; 
-  height: 600px; 
+  height: 870px; 
   background: url('images/FIEK-FOTO.JPG') center/cover no-repeat; 
   display: flex;
   align-items: center;
@@ -59,7 +59,7 @@ div nav a:hover {
 
 #text-inside-fiek-photo{
   position: absolute;
-  top: 55%; 
+  top: 45%; 
   left: 70%; 
   transform: translate(-50%, -50%); 
   color:  #fff; 
@@ -87,6 +87,85 @@ footer a img{
 }
 footer a img:hover {
   opacity: 0.8; 
+}
+
+.about{
+  margin: 0px;
+  background-color: #002244;
+  position: relative;
+  bottom: 100px;
+  width: 100%;
+  height: 870px;
+}
+.why{
+  font-family: 'Playfair Display', sans-serif;
+  color: white;
+  font-size: 51px;
+  text-align: center;
+  position: relative;
+  top: 15px;
+}
+.about-text{
+color: white;
+font-family: 'Playfair Display', sans-serif;
+font-size: 21px;
+width: 25%;
+position: relative;
+left: 870px;
+bottom: 350px;
+}
+span{
+ font-weight: 600;
+ font-size: 21px;
+}
+.place-like-home-photo{
+   width: 330px;
+   height: 390px;
+   position: relative;
+   left: 200px;
+   top: 15px;
+   z-index: 2;
+}
+.college-students-photo{
+  width: 240px;
+  height: 300px;
+  position: relative;
+  left: 170px;
+  top: 60px;
+  z-index: 1;
+}
+
+.three-icons{
+ background-color: #fff;
+ width: 100%;
+ margin: 0px;
+ height: 370px;
+ position: relative;bottom: 100px;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+}
+.small-box{
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+}
+.icon{
+width: 85px;
+height: 85px;
+}
+.big-text{
+ font-family: 'Playfair Display', sans-serif;
+ color: black;
+ font-weight: 600;
+ font-size: 25px;
+}
+.small-text{
+font-family: 'Montserrat', sans-serif;
+color: black;
+font-size: 18px;
+width: 350px;
+position: relative; left: 70px;
 }
 
 
