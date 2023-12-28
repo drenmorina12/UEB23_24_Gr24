@@ -57,16 +57,18 @@ function createTable() {
 
 const cells = createTable();
 
+function upadteCellContent(e, wordList) {
+  const column = e.currentTarget.getAttribute("data-column");
+
+  const row = Array.from(
+    e.currentTarget.parentElement.parentElement.children
+  ).indexOf(e.currentTarget.parentElement);
+
+  e.currentTarget.textContent = wordList[column][row];
+  e.currentTarget.style.cssText =
+    "background-color: white; color: #002244; border: 2px solid #002244";
+}
+
 cells.forEach((cell) => {
-  cell.addEventListener("click", (e) => {
-    const column = e.currentTarget.getAttribute("data-column");
-
-    const row = Array.from(
-      e.currentTarget.parentElement.parentElement.children
-    ).indexOf(e.currentTarget.parentElement);
-
-    cell.textContent = words[column][row];
-    cell.style.cssText =
-      "background-color: white; color: #002244; border: 2px solid #002244";
-  });
+  cell.addEventListener("click", (e) => upadteCellContent(e, words));
 });
