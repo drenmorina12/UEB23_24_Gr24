@@ -80,5 +80,14 @@ div nav a:hover {
   width: 100%;
 }
 
+footer a img{
+  width: 30px; 
+  height: auto; 
+  margin-right: 10px; 
+}
+footer a img:hover {
+  opacity: 0.8; 
+}
+
 
 
