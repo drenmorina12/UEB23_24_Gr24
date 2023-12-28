@@ -1,5 +1,4 @@
 const asosacioni = document.querySelector("#asosacioni");
-const cells = document.querySelectorAll(".cell");
 
 const columns = ["A", "B", "C", "D"];
 
@@ -33,6 +32,8 @@ function createTable() {
 
     asosacioni.appendChild(row);
   }
+  const cells = document.querySelectorAll(".cell");
+
   const row = document.createElement("div");
   row.className = "row";
 
@@ -41,8 +42,14 @@ function createTable() {
   cell.textContent = finalResult.toLocaleUpperCase();
   row.appendChild(cell);
   asosacioni.appendChild(row);
+
+  return cells;
 }
 
-createTable();
+const cells = createTable();
 
-
+cells.forEach((cell) => {
+  cell.addEventListener("click", (e) => {
+    console.log(e);
+  });
+});
