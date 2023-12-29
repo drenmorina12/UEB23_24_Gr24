@@ -24,6 +24,7 @@
 }
 
 .nav-bar {
+  font-family: 'Playfair Display', sans-serif;
   display: flex;
   align-items: center;
   gap: 50px;
