@@ -22,12 +22,24 @@
   font-size: 20px;
 }
 
-.final-cell {
+#final-cell {
   width: 100%;
 }
 
 .cell:hover,
 .final-cell:hover {
   opacity: 0.8;
+  cursor: pointer;
+}
+
+.asosacioni-button {
+  background-color: #002244;
+  color: white;
+  padding: 10px 30px;
+  margin: 30px;
+}
+
+.asosacioni-button:hover {
+  opacity: 0.7;
   cursor: pointer;
 }

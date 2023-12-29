@@ -1,32 +1,57 @@
 const asosacioni = document.querySelector("#asosacioni");
 const asosacioniButton = document.querySelector(".asosacioni-button");
 
+// Templates -----------------------------
 const columns = ["A", "B", "C", "D"];
 
-const solutions = {
+const template = {
+  A: ["A1", "A2", "A3", "A4", "Zgjidhja A", "TEST ZGJIDHJA"],
+  B: ["B1", "B2", "B3", "B4", "Zgjidhja B"],
+  C: ["C1", "C2", "C3", "C4", "Zgjidhja C"],
+  D: ["D1", "D2", "D3", "D4", "Zgjidhja D"],
+};
+
+const finalResulTemplate = "Zgjidhja Perfundimtare";
+// ---------------------------------------
+
+const fizikaSolutions = {
   A: "Zgjidhja A TEST",
   B: "Zgjidhja B TEST",
   C: "Zgjidhja C TEST",
   D: "Zgjidhja D TEST",
 };
 
-const template = {
-  A: ["A1", "A2", "A3", "A4", "Zgjidhja A"],
-  B: ["B1", "B2", "B3", "B4", "Zgjidhja B"],
-  C: ["C1", "C2", "C3", "C4", "Zgjidhja C"],
-  D: ["D1", "D2", "D3", "D4", "Zgjidhja D"],
+const finalResultFizika = "Atomi";
+
+const fizika = {
+  A: ["A1-test", "A2-test", "A3-test", "A4-test", fizikaSolutions.A, "TESTTT"],
+  B: ["B1-test", "B2-test", "B3-test", "B4-test", fizikaSolutions.B],
+  C: ["C1-test", "C2-test", "C3-test", "C4-test", fizikaSolutions.C],
+  D: ["D1-test", "D2-test", "D3-test", "D4-test", fizikaSolutions.D],
 };
 
-const words = {
-  A: ["A1-test", "A2-test", "A3-test", "A4-test", solutions.A],
-  B: ["B1-test", "B2-test", "B3-test", "B4-test", solutions.B],
-  C: ["C1-test", "C2-test", "C3-test", "C4-test", solutions.C],
-  D: ["D1-test", "D2-test", "D3-test", "D4-test", solutions.D],
+const matematikaSolution = {
+  A: "Zgjidhja 1",
+  B: "Zgjidhja 2",
+  C: "Zgjidhja 3",
+  D: "Zgjidhja 4",
 };
 
-const finalResulTemplate = "Zgjidhja Perfundimtare";
+const finalResultMatematika = "integrali";
 
-const finalResult = "SUI";
+const matematika = {
+  A: [
+    "Math",
+    "test",
+    "modulo",
+    "vija",
+    matematikaSolution.A,
+    finalResultMatematika,
+  ],
+  B: ["plus", "numer", ",", "romb", matematikaSolution.B],
+  C: ["minus", "/", ".", "rreth", matematikaSolution.C],
+  D: ["derivat", "*", "i", "katror", matematikaSolution.D],
+};
 
 function createTable() {
   for (let i = 0; i < 5; i++) {
@@ -49,8 +74,10 @@ function createTable() {
   row.className = "row";
 
   const cell = document.createElement("div");
-  cell.className = "final-cell";
-  cell.textContent = finalResulTemplate.toLocaleUpperCase();
+  cell.className = "cell";
+  cell.setAttribute("id", "final-cell");
+  cell.setAttribute("data-column", "A");
+  cell.textContent = template["A"][5].toLocaleUpperCase();
   row.appendChild(cell);
   asosacioni.appendChild(row);
 }
@@ -70,21 +97,11 @@ function upadteCellContent(e, wordList) {
 function addCellEventListeners() {
   const cells = document.querySelectorAll(".cell");
   cells.forEach((cell) => {
-    cell.addEventListener("click", (e) => upadteCellContent(e, words));
-  });
-}
-
-function addZgjidhjaEventListener() {
-  const finalCell = document.querySelector(".final-cell");
-  finalCell.addEventListener("click", () => {
-    finalCell.textContent = finalResult;
-    finalCell.style.cssText =
-      "background-color: white; color: #002244; border: 2px solid #002244";
+    cell.addEventListener("click", (e) => upadteCellContent(e, fizika));
   });
 }
 
 asosacioniButton.addEventListener("click", () => {
   createTable();
   addCellEventListeners();
-  addZgjidhjaEventListener();
 });
