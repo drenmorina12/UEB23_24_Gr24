@@ -24,7 +24,9 @@ const words = {
   D: ["D1-test", "D2-test", "D3-test", "D4-test", solutions.D],
 };
 
-const finalResult = "Zgjidhja Perfundimtare";
+const finalResulTemplate = "Zgjidhja Perfundimtare";
+
+const finalResult = "SUI";
 
 function createTable() {
   for (let i = 0; i < 5; i++) {
@@ -48,7 +50,7 @@ function createTable() {
 
   const cell = document.createElement("div");
   cell.className = "final-cell";
-  cell.textContent = finalResult.toLocaleUpperCase();
+  cell.textContent = finalResulTemplate.toLocaleUpperCase();
   row.appendChild(cell);
   asosacioni.appendChild(row);
 }
@@ -65,10 +67,24 @@ function upadteCellContent(e, wordList) {
     "background-color: white; color: #002244; border: 2px solid #002244";
 }
 
-asosacioniButton.addEventListener("click", () => {
-  createTable();
+function addCellEventListeners() {
   const cells = document.querySelectorAll(".cell");
   cells.forEach((cell) => {
     cell.addEventListener("click", (e) => upadteCellContent(e, words));
   });
+}
+
+function addZgjidhjaEventListener() {
+  const finalCell = document.querySelector(".final-cell");
+  finalCell.addEventListener("click", () => {
+    finalCell.textContent = finalResult;
+    finalCell.style.cssText =
+      "background-color: white; color: #002244; border: 2px solid #002244";
+  });
+}
+
+asosacioniButton.addEventListener("click", () => {
+  createTable();
+  addCellEventListeners();
+  addZgjidhjaEventListener();
 });
