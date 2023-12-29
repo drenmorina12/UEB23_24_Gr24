@@ -1,5 +1,5 @@
 const asosacioni = document.querySelector("#asosacioni");
-const asosacioniButton = document.querySelector(".asosacioni-button");
+const asosacioniButtons = document.querySelectorAll(".asosacioni-buttons");
 
 // Templates -----------------------------
 const columns = ["A", "B", "C", "D"];
@@ -94,14 +94,31 @@ function upadteCellContent(e, wordList) {
     "background-color: white; color: #002244; border: 2px solid #002244";
 }
 
-function addCellEventListeners() {
+function addCellEventListeners(subject) {
   const cells = document.querySelectorAll(".cell");
   cells.forEach((cell) => {
-    cell.addEventListener("click", (e) => upadteCellContent(e, fizika));
+    cell.addEventListener("click", (e) => upadteCellContent(e, subject));
   });
 }
 
-asosacioniButton.addEventListener("click", () => {
-  createTable();
-  addCellEventListeners();
+asosacioniButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    createTable();
+    const subject = button.getAttribute("data-name");
+
+    switch (subject) {
+      case "matematika":
+        addCellEventListeners(matematika);
+        break;
+      case "fizika":
+        addCellEventListeners(fizika);
+        break;
+      case "pergjithshem":
+        addCellEventListeners(pergjithshem);
+        break;
+      default:
+        alert("Ky asosacion nuk ekziston! ");
+        break;
+    }
+  });
 });
