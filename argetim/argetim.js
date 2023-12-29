@@ -1,4 +1,5 @@
 const asosacioni = document.querySelector("#asosacioni");
+const asosacioniButton = document.querySelector(".asosacioni-button");
 
 const columns = ["A", "B", "C", "D"];
 
@@ -41,7 +42,6 @@ function createTable() {
 
     asosacioni.appendChild(row);
   }
-  const cells = document.querySelectorAll(".cell");
 
   const row = document.createElement("div");
   row.className = "row";
@@ -51,11 +51,7 @@ function createTable() {
   cell.textContent = finalResult.toLocaleUpperCase();
   row.appendChild(cell);
   asosacioni.appendChild(row);
-
-  return cells;
 }
-
-const cells = createTable();
 
 function upadteCellContent(e, wordList) {
   const column = e.currentTarget.getAttribute("data-column");
@@ -69,6 +65,10 @@ function upadteCellContent(e, wordList) {
     "background-color: white; color: #002244; border: 2px solid #002244";
 }
 
-cells.forEach((cell) => {
-  cell.addEventListener("click", (e) => upadteCellContent(e, words));
+asosacioniButton.addEventListener("click", () => {
+  createTable();
+  const cells = document.querySelectorAll(".cell");
+  cells.forEach((cell) => {
+    cell.addEventListener("click", (e) => upadteCellContent(e, words));
+  });
 });
