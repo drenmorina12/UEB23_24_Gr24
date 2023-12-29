@@ -38,7 +38,7 @@
 
 div nav a {
   text-decoration: none;
-  color: white;
+  color: #fff;
   white-space: nowrap;
   padding: 10px 20px;
 }
@@ -46,7 +46,7 @@ div nav a {
 div nav a:hover {
   /* color: #49796B; */
   color: #002244;
-  background-color: white;
+  background-color: #fff;
 }
 
 #body{
@@ -78,11 +78,6 @@ div nav a:hover {
   font-weight: 900;
 }
 
-
-
-
-
-
 /* The side navigation menu */
 .sidebar {
   margin: 27px;
@@ -97,7 +92,7 @@ div nav a:hover {
 /* Sidebar links */
 .sidebar a {
   display: block;
-  color: white;
+  color: #fff;
   padding: 16px;
     text-decoration: none;
 }
@@ -105,13 +100,13 @@ div nav a:hover {
 /* Active/current link */
 .sidebar a.active {
   background-color: #02103b;
-  color: white;
+  color: #fff;
 }
 
 /* Links on mouse-over */
 .sidebar a:hover {
   background-color: #A5D7E8;
-  color: white;
+  color: #fff;
 }
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
@@ -140,14 +135,9 @@ div.content {
   }
 }
 
-
-
-
-
-
 .footer {
   background-color: #002244;
-  color: white;
+  color: #fff;
   text-align: center;
   padding: 20px;
   bottom: 0;
@@ -175,14 +165,14 @@ footer a img:hover {
 .why{
   /* font-family: 'Playfair Display', sans-serif; */
   font-family: sans-serif;
-  color: white;
+  color: #fff;
   font-size: 51px;
   text-align: center;
   position: relative;
   top: 15px;
 }
 .about-text{
-color: white;
+color: #fff;
 font-family: 'Playfair Display', sans-serif;
 font-size: 21px;
 width: 25%;
