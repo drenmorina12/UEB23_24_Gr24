@@ -8,7 +8,7 @@
 #header {
   display: flex;
   /*background-color: #002244;*/
-  background-color: #0B2447;
+  background-color: #0b2447;
   padding: 30px;
   justify-content: start;
   text-align: center;
@@ -49,14 +49,14 @@ div nav a:hover {
   background-color: white;
 }
 
-#body{
+#body {
   display: flex;
 }
 
-#fiek-photo{
-  width: 100%; 
-  height: 870px; 
-  background: url('images/FIEK-FOTO.JPG') center/cover no-repeat; 
+#fiek-photo {
+  width: 100%;
+  height: 870px;
+  background: url("images/FIEK-FOTO.JPG") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,32 +64,27 @@ div nav a:hover {
   filter: brightness(0.7) contrast(0.8);
 }
 
-#text-inside-fiek-photo{
+#text-inside-fiek-photo {
   position: absolute;
-  top: 45%; 
-  left: 70%; 
-  transform: translate(-50%, -50%); 
-  color:  #fff; 
-  padding: 10px 20px; 
-  font-size: 20px; 
+  top: 45%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
   text-align: center;
   width: 600px;
   font-size: 30px;
   font-weight: 900;
 }
 
-
-
-
-
-
 /* The side navigation menu */
 .sidebar {
   margin: 27px;
   padding: 10px;
   width: 200px;
-  background-color: #19376D;
-  position: absolute;
+  background-color: #19376d;
+  position: relative;
   height: 50%;
   overflow: auto;
 }
@@ -99,7 +94,7 @@ div nav a:hover {
   display: block;
   color: white;
   padding: 16px;
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Active/current link */
@@ -110,7 +105,7 @@ div nav a:hover {
 
 /* Links on mouse-over */
 .sidebar a:hover {
-  background-color: #A5D7E8;
+  background-color: #a5d7e8;
   color: white;
 }
 
@@ -128,8 +123,12 @@ div.content {
     height: auto;
     position: relative;
   }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
@@ -139,11 +138,6 @@ div.content {
     float: none;
   }
 }
-
-
-
-
-
 
 .footer {
   background-color: #002244;
@@ -155,16 +149,16 @@ div.content {
   margin-top: 100%;
 }
 
-footer a img{
-  width: 30px; 
-  height: auto; 
-  margin-right: 10px; 
+footer a img {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
 }
 footer a img:hover {
-  opacity: 0.6; 
+  opacity: 0.6;
 }
 
-.about{
+.about {
   margin: 0px;
   background-color: #002244;
   position: relative;
@@ -172,7 +166,7 @@ footer a img:hover {
   width: 100%;
   height: 870px;
 }
-.why{
+.why {
   /* font-family: 'Playfair Display', sans-serif; */
   font-family: sans-serif;
   color: white;
@@ -181,28 +175,28 @@ footer a img:hover {
   position: relative;
   top: 15px;
 }
-.about-text{
-color: white;
-font-family: 'Playfair Display', sans-serif;
-font-size: 21px;
-width: 25%;
-position: relative;
-left: 870px;
-bottom: 350px;
+.about-text {
+  color: white;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 21px;
+  width: 25%;
+  position: relative;
+  left: 870px;
+  bottom: 350px;
 }
-span{
- font-weight: 600;
- font-size: 21px;
+span {
+  font-weight: 600;
+  font-size: 21px;
 }
-.place-like-home-photo{
-   width: 330px;
-   height: 390px;
-   position: relative;
-   left: 200px;
-   top: 15px;
-   z-index: 2;
+.place-like-home-photo {
+  width: 330px;
+  height: 390px;
+  position: relative;
+  left: 200px;
+  top: 15px;
+  z-index: 2;
 }
-.college-students-photo{
+.college-students-photo {
   width: 240px;
   height: 300px;
   position: relative;
@@ -211,38 +205,37 @@ span{
   z-index: 1;
 }
 
-.three-icons{
- background-color: #fff;
- width: 100%;
- margin: 0px;
- height: 370px;
- position: relative;bottom: 100px;
- display: flex;
- align-items: center;
- justify-content: space-around;
+.three-icons {
+  background-color: #fff;
+  width: 100%;
+  margin: 0px;
+  height: 370px;
+  position: relative;
+  bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.small-box{
+.small-box {
   width: 33%;
   display: inline-block;
   text-align: center;
 }
-.icon{
-width: 85px;
-height: 85px;
+.icon {
+  width: 85px;
+  height: 85px;
 }
-.big-text{
- font-family: 'Playfair Display', sans-serif;
- color: black;
- font-weight: 600;
- font-size: 25px;
+.big-text {
+  font-family: "Playfair Display", sans-serif;
+  color: black;
+  font-weight: 600;
+  font-size: 25px;
 }
-.small-text{
-font-family: 'Montserrat', sans-serif;
-color: black;
-font-size: 18px;
-width: 350px;
-position: relative; left: 70px;
+.small-text {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: 18px;
+  width: 350px;
+  position: relative;
+  left: 70px;
 }
-
-
-

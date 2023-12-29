@@ -29,14 +29,77 @@
       <div class="sidebar">
         <a class="active" href="#">Kalkulatori</a>
         <a href="konvertori.html">Konvertori</a>
+        <button class="testi">TESTTT</button>
       </div>
 
       <!-- Page content -->
-      <div class="pershkrimi2">
-        <h2>Kalkulatori</h2>
-        <p>Kjo faqe përmban një program që gjenë zgjidhjet e sistemeve të ekuacioneve lineare me dy të panjohura !</p>
+      <div id="permbajtjaKalkulatori">
+        <div class="pershkrimi2">
+          <h2>Kalkulatori</h2>
+          <p>
+            Kjo faqe përmban një program që gjenë zgjidhjet e sistemeve të
+            ekuacioneve lineare me dy të panjohura !
+          </p>
+        </div>
+        <div class="permbajtja3">
+          <div class="vlerat">
+            <p>Vlerat</p>
+            <div class="rreshti">
+              <div class="kolona-1">
+                <input type="text" id="x1" name="x1" />
+                <p id="pV">x +</p>
+              </div>
+              <div class="kolona-2">
+                <input type="text" id="y1" name="y1" />
+                <p id="pV">y =</p>
+              </div>
+              <div class="kolona-3">
+                <input type="text" id="l1" name="r1" />
+              </div>
+            </div>
+            <div class="rreshti">
+              <div class="kolona-1">
+                <input type="text" id="x2" name="x2" />
+                <p id="pV">x +</p>
+              </div>
+              <div class="kolona-2">
+                <input type="text" id="y2" name="y2" />
+                <p id="pV">y =</p>
+              </div>
+              <div class="kolona-3">
+                <input type="text" id="l2" name="r2" />
+              </div>
+            </div>
+            <div class="rreshti">
+              <div class="kolona-1">
+                <input type="button" value="Zgjidh" onclick="zgjedhja()" />
+              </div>
+            </div>
+          </div>
+          <div class="zgjidhjet">
+            <p>Zgjidhjet</p>
+            <div class="rreshti">
+              <div class="kolona-4">
+                <p id="pVZ">x =</p>
+                <input type="text" id="xR" name="x" disabled />
+              </div>
+            </div>
+            <div class="rreshti">
+              <div class="kolona-4">
+                <p id="pVZ">y =</p>
+                <input type="text" id="yR" name="y" disabled />
+                <input
+                  type="button"
+                  value="Pastro"
+                  id="pastro"
+                  onclick="pastrimi()"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
     <footer>
       <div class="footer">
         <p>Github Accounts :</p>
