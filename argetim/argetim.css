@@ -32,14 +32,16 @@
   cursor: pointer;
 }
 
-.asosacioni-buttons {
+.asosacioni-buttons,
+.clear-button {
   background-color: #002244;
   color: white;
   padding: 10px 30px;
   margin: 30px;
 }
 
-.asosacioni-buttons:hover {
+.asosacioni-buttons:hover,
+.clear-button:hover {
   opacity: 0.7;
   cursor: pointer;
 }

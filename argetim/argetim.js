@@ -1,5 +1,6 @@
 const asosacioni = document.querySelector("#asosacioni");
 const asosacioniButtons = document.querySelectorAll(".asosacioni-buttons");
+const clearBtn = document.querySelector(".clear-button");
 
 // Templates -----------------------------
 const columns = ["A", "B", "C", "D"];
@@ -53,6 +54,8 @@ const matematika = {
   D: ["derivat", "*", "i", "katror", matematikaSolution.D],
 };
 
+//--------------------------------------------------
+
 function createTable() {
   for (let i = 0; i < 5; i++) {
     const row = document.createElement("div");
@@ -101,8 +104,15 @@ function addCellEventListeners(subject) {
   });
 }
 
+function clearAsosacioni() {
+  asosacioni.innerHTML = "";
+}
+
+clearBtn.addEventListener("click", clearAsosacioni);
+
 asosacioniButtons.forEach((button) => {
   button.addEventListener("click", () => {
+    clearAsosacioni();
     createTable();
     const subject = button.getAttribute("data-name");
 
