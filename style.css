@@ -188,7 +188,7 @@ span {
   font-weight: 600;
   font-size: 21px;
 }
-.place-like-home-photo {
+.first-photo {
   width: 330px;
   height: 390px;
   position: relative;
@@ -196,7 +196,7 @@ span {
   top: 15px;
   z-index: 2;
 }
-.college-students-photo {
+.second-photo {
   width: 240px;
   height: 300px;
   position: relative;
