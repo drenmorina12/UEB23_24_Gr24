@@ -61,7 +61,8 @@ div nav a:hover {
   align-items: center;
   justify-content: center;
   opacity: 0.8;
-  filter: brightness(0.7) contrast(0.8);
+  /* filter: brightness(0.7) contrast(0.8); */
+  filter: grayscale(60%);
 }
 
 #text-inside-fiek-photo {
@@ -69,13 +70,16 @@ div nav a:hover {
   top: 45%;
   left: 70%;
   transform: translate(-50%, -50%);
-  color: #fff;
+  color: white !important;
   padding: 10px 20px;
   font-size: 20px;
   text-align: center;
   width: 600px;
   font-size: 30px;
   font-weight: 900;
+}
+#text-inside-fiek-photo #intro-main-text {
+  color: white;
 }
 
 /* The side navigation menu */
@@ -105,7 +109,7 @@ div nav a:hover {
 
 /* Links on mouse-over */
 .sidebar a:hover {
-  background-color: #A5D7E8;
+  background-color: #a5d7e8;
   color: #fff;
 }
 
@@ -175,14 +179,14 @@ footer a img:hover {
   position: relative;
   top: 15px;
 }
-.about-text{
-color: #fff;
-font-family: 'Playfair Display', sans-serif;
-font-size: 21px;
-width: 25%;
-position: relative;
-left: 870px;
-bottom: 350px;
+.about-text {
+  color: #fff;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 21px;
+  width: 25%;
+  position: relative;
+  left: 870px;
+  bottom: 350px;
 }
 span {
   font-weight: 600;
