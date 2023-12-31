@@ -5,8 +5,10 @@
   line-height: 1.5;
 }
 
-#body {
+body {
   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Header Section */
@@ -22,7 +24,8 @@
   align-items: center;
   position: relative;
   width: 100%;
-  height: 100px;
+  height: 110px;
+  min-height: 110px;
 }
 
 .logo {
@@ -56,6 +59,12 @@ div nav a:hover {
 }
 
 /* Body Section */
+
+#main {
+  /* height: 100vh; */
+  /* flex: 1; */
+  flex: 1;
+}
 
 #fiek-photo {
   width: 100%;
@@ -230,6 +239,7 @@ div.content {
   padding: 20px;
   bottom: 0;
   width: 100%;
+  min-height: 130px;
 }
 
 footer a img {
