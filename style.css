@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin: 0px;
 }
 
 /* Header Section */
@@ -239,7 +240,7 @@ div.content {
   padding: 20px;
   bottom: 0;
   width: 100%;
-  min-height: 130px;
+  height: 130px;
 }
 
 footer a img {
