@@ -1,19 +1,18 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-.s1{
+.s1 {
   border: 1px solid black;
-
 }
-.s1 .inner-section{
+.s1 .inner-section {
   border: 2px solid #0b2447;
   width: 50%;
   display: inline-block;
 }
-.fotoja{
+.fotoja {
   border: 2px solid rebeccapurple;
   width: 50%;
   margin-left: auto;
