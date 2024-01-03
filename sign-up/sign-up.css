@@ -19,7 +19,7 @@
     box-sizing: border-box;
     font-family: var(--body-font);
     min-height: 100vh;
-    background-image: url("images/main-background.png");
+    background-image: url("../images/main-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--blue);
