@@ -118,7 +118,7 @@ div nav a:hover {
   left: 870px;
   bottom: 350px;
 }
-.place-like-home-photo {
+.first-photo {
   width: 330px;
   height: 390px;
   position: relative;
@@ -126,7 +126,7 @@ div nav a:hover {
   top: 15px;
   z-index: 2;
 }
-.college-students-photo {
+.second-photo {
   width: 240px;
   height: 300px;
   position: relative;
