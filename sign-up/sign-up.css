@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --blue: hsl(210, 100%, 13%);
+  --green: hsl(154, 59%, 51%);
+  --gray-blue: hsl(246, 25%, 77%);
+  --white: white;
+  --body-font: "Poppins", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    overflow-y: scroll;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+    min-height: 100vh;
+    background-image: url("images/main-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--blue);
+    background-position: center;
+  }
+  body::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  .main-container {
+    margin: 0 auto;
+    max-width: 1105px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 7.5rem;
+    grid-gap: 1.4rem;
+  }
+
+  /* Info Section - TEKSTI NE ANE TE MAJTE*/
+.info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: var(--white);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .info-section h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  
+  .info-section p {
+    font-weight: 500;
+  }
+  /* Form */
+  .main-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 2.5rem 2.7rem;
+    box-shadow: 0px 9px 5px -1px rgba(0, 0, 0, 0.27);
+    -webkit-box-shadow: 0px 9px 5px -1px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 0px 9px 5px -1px rgba(0, 0, 0, 0.27);
+  }
+  
+  .main-form .input-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  /* VIJAT E EMRI,MBIEMRI ETJ... */
+  input {
+    padding: 1.2rem;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--green);
+    opacity: 0.8;
+    font-family: var(--body-font);
+    padding-left: 1rem;
+  }
+  
+  input::placeholder {
+    font-weight: 700;
+    font-size: 0.9rem;
+    font-family: var(--body-font);
+  }
+  input:focus-visible {
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: var(--blue);
+  }
+
+  /* BUTTONI KYQU */
+  .submit-info {
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: transparent;
+    border-style: solid;
+    cursor: pointer;
+    background-color: var(--green);
+    color: var(--white); 
+    text-transform: uppercase;
+    padding: 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all ease-in-out 0.3s;
+  }
+  .submit-info:hover {
+    opacity: 0.7;
+    transition: all ease-in-out 0.2s;
+  }
+  .tnc {
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: var(--gray-blue);
+    text-align: center;
+  }
+  .tnc a {
+    text-decoration: none;
+    color: var(--green);
+    font-weight: 600;
+  }
