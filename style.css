@@ -35,8 +35,7 @@ body {
 }
 
 .nav-bar {
-  /* font-family: 'Playfair Display', sans-serif; */
-  font-family: sans-serif;
+  font-family: "Playfair Display", sans-serif;
   display: flex;
   align-items: center;
   gap: 50px;
@@ -88,9 +87,10 @@ div nav a:hover {
   padding: 10px 20px;
   font-size: 20px;
   text-align: center;
-  width: 600px;
+  width: 650px;
   font-size: 30px;
   font-weight: 900;
+  font-family: "Playfair Display", sans-serif;
 }
 
 .about {
@@ -102,8 +102,7 @@ div nav a:hover {
   height: 870px;
 }
 .why {
-  /* font-family: 'Playfair Display', sans-serif; */
-  font-family: sans-serif;
+  font-family: "Playfair Display", sans-serif;
   color: #fff;
   font-size: 51px;
   text-align: center;
