@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista e lendeve</title>
+    <link rel="icon" href="download.jpg" type="image/x-icon">
+    
+  
+</head>
+<body>
+        
+     <table bgcolor="black">
+            <thead>
+                <tr bgcolor="red" align="center">
+                    
+                    <th width="50">Nr.</th>
+                    <th width="200">Kodi i lëndës</th>
+                    <th width="250">Lëndët</th>
+                    <th width="150">Profesori</th>
+                    <th width="150">Asistent</th>
+                    <th>Kreditë</th>
+                    <th width="200">Orari i klasave</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                    <tr bgcolor="white" align="center">
+                       <td>1</td>
+                       <td>07B00S01006</td>
+                       <td>Shkathtësi komunikuese</td>
+                       <td>Blerim Rexha </td>
+                       <td>--------</td>
+                       <td>5</td>
+                       <td>16:30-18:00 Amfiteatri 411</td>
+                    </tr>
+
+                    <tr bgcolor="red" align="center">
+                        <td>2</td>
+                        <td>B00S1003</td>
+                        <td>Bazat e inxhinierisë 1</td>
+                        <td>Luan Ahma</td>
+                        <td>Jeta Dobruna</td>
+                        <td>7</td>
+                        <td>10:30-12:00 Amfiteatri 411</td>
+                    </tr>
+
+                    <tr bgcolor="white" align="center">
+                        <td>3</td>
+                        <td>B00S1004</td>
+                        <td>Bazat e programimit</td>
+                        <td>Avni Rexhepi</td>
+                        <td>Adrian Ymeri</td>
+                        <td>5</td>
+                        <td>09:30-11:00 Amfiteatri 411</td>
+                    </tr>
+
+                    <tr bgcolor="red" align="center">
+                        <td>4</td>
+                        <td>B00S1001</td>
+                        <td>Algjebra Lineare dhe Kalkulus 1</td>
+                        <td>Shqipe Lohaj</td>
+                        <td>Blerta Selimaj-Haziri</td>
+                        <td>7</td>
+                        <td>08:00-10:30 Amfiteatri 408</td>
+                    </tr>
+
+                    <tr bgcolor="white" align="center">
+                        <td>5</td>
+                        <td>07B00S02010</td>
+                        <td>Algoritmet dhe Strukturat e te Dhenave</td>
+                        <td>Avni Rexhepi</td>
+                        <td>Adrian Ymeri</td>
+                        <td>5</td>
+                        <td>08:00-09:30 Amfiteatri 411</td>
+                    </tr>
+
+                    <tr bgcolor="red" align="center">
+                        <td>6</td>
+                        <td>07B00S01002</td>
+                        <td>Fizika 1</td>
+                        <td>Valon Veliu</td>
+                        <td>Valon Veliu</td>
+                        <td>6</td>
+                        <td>16:30-18:00 Amfiteatri 408</td>
+                    </tr>
+
+                    <tr bgcolor="white" align="center">
+                        <td>7</td>
+                        <td>07B00S02008</td>
+                        <td>Fizika 2</td>
+                        <td>Valon Veliu</td>
+                        <td>Valon Veliu</td>
+                        <td>6</td>
+                        <td>14:45-16:15 Amfiteatri 408</td>
+                    </tr>
+
+                    <tr bgcolor="red" align="center">
+                        <td>8</td>
+                        <td>07B00S02011</td>
+                        <td>Qarqet Digjitale</td>
+                        <td>Sabrije Osmanaj</td>
+                        <td>Arben Mashkulli</td>
+                        <td>5</td>
+                        <td>13:30-15:00 Salla 621</td>
+                    </tr>
+
+                    <tr bgcolor="white" align="center">
+                        <td>9</td>
+                        <td>B00S1011</td>
+                        <td>Bazat e inxhinierisë 2</td>
+                        <td>Enver Hamiti</td>
+                        <td>Jeta Dobruna</td>
+                        <td>7</td>
+                        <td>10:30-12:45 Amfiteatri 411</td>
+                    </tr>
+
+                    <tr bgcolor="red" align="center">
+                        <td>10</td>
+                        <td>B001S1009</td>
+                        <td>Kalkulus 2</td>
+                        <td>Shqipe Lohaj</td>
+                        <td>Blerta Selimaj-Haziri</td>
+                        <td>7</td>
+                        <td>09:40-11:15 Amfiteatri 408</td>
+                    </tr>
+
+                    <tr bgcolor="white" align="center">
+                        <td>11</td>
+                        <td>07B00S0316</td>
+                        <td>Elektronika</td>
+                        <td>Qamil Kabashi</td>
+                        <td>Ramadan Plakolli</td>
+                        <td>5</td>
+                        <td>14:45-16:15 Salla 621</td>
+                    </tr>
+
+                    <tr bgcolor="red" align="center">
+                        <td>12</td>
+                        <td>07B04S0303</td>
+                        <td>Programimi i Orientuar ne Objekte</td>
+                        <td>Isak Shabani</td>
+                        <td>Blend Arifaj</td>
+                        <td>5</td>
+                        <td>09:00-10:30 Salla 621</td>
+                    </tr>
+
+                    <tr bgcolor="white" align="center">
+                        <td>13</td>
+                        <td>07B04S0302</td>
+                        <td>Baza e të dhënave</td>
+                        <td>Lule Ahmedi</td>
+                        <td>Dalinë Vranovci</td>
+                        <td>5</td>
+                        <td>08:00-09:30 Salla 626</td>
+                    </tr>
+
+                    <tr bgcolor="red" align="center">
+                        <td>14</td>
+                        <td>B00S3001</td>
+                        <td>Matematika diskrete dhe probabiliteti</td>
+                        <td>Qefsere Gjonbalaj</td>
+                        <td>Fatmire Hyseni</td>
+                        <td>5</td>
+                        <td>08:00-09:30 Amfiteatri 411</td>
+                    </tr>
+
+                    <tr bgcolor="white" align="center">
+                        <td>15</td>
+                        <td>07B04S0405</td>
+                        <td>Arkitektura e kompjuterëve</td>
+                        <td>Valon Raça</td>
+                        <td>Synim Selimi</td>
+                        <td>5</td>
+                        <td>11:00-12:30 Salla 621</td>
+                    </tr>
+
+                    <tr bgcolor="red" align="center">
+                        <td>16</td>
+                        <td>B00S3006</td>
+                        <td>Programimi në Web 1</td>
+                        <td>Dhuratë Hyseni</td>
+                        <td>Dalinë Vranovci</td>
+                        <td>5</td>
+                        <td>13:15-14:30 Salla 621</td>
+                    </tr>
+                    
+               
+            </tbody>
+           
+     </table>
+    
+
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizimi i ushtrimeve</title>
+    <link rel="icon" href="download.jpg" type="image/x-icon">
+</head>
+<body>
+    <table bgcolor="black">
+        <thead>
+             <tr bgcolor="red" align="center">
+                <th width="150">Asistent</th>
+                <th width="200">Ushtrimet numerike</th>
+                <th width="200">Ushtrimet laboratorike</th>
+                <th width="200">Salla e ushtrimeve</th>
+             </tr>
+        </thead>
+
+        <tbody>
+
+            <tr bgcolor="white" align="center">
+                <td>--------</td>
+                <td>--------</td>
+                <td>--------</td>
+                <td>--------</td>
+            </tr>
+
+            <tr bgcolor="red" align="center">
+                <td>Jeta Dobruna</td>
+                <td> E merkure 12:45-14:30</td>
+                <td> E enjte 11:00-12:30 </td>
+                <td>Kabineti i elektros (59)</td>
+            </tr>
+
+            <tr bgcolor="white" align="center">
+                <td>Adrian Ymeri</td>
+                <td>E enjte 08:00-09:30</td>
+                <td>-----------</td>
+                <td>615</td>
+            </tr>
+
+            <tr bgcolor="red" align="center">
+                <td>Blerta Selimaj-Haziri</td>
+                <td>E merkure 08:00-11:00</td>
+                <td>----------</td>
+                <td>Salla A3</td>
+            </tr>
+
+            <tr bgcolor="white" align="center">
+                <td>Adrian Ymeri</td>
+                <td>E marte 08:00-09:30</td>
+                <td>----------</td>
+                <td>Salla 616</td>
+            </tr>
+
+            <tr bgcolor="red" align="center">
+                <td>Valon Veliu</td>
+                <td>E enjte 13:30-15:00</td>
+                <td>E premte 10:30-12:00</td>
+                <td>Kabineti i fizikes (102)</td>
+            </tr>
+
+            <tr bgcolor="white" align="center">
+                <td>Valon Veliu</td>
+                <td>E enjte 10:30-12:00</td>
+                <td>E premte 13:30-15:00</td>
+                <td>Kabineti i fizikes (102)</td>
+            </tr>
+
+            <tr bgcolor="red" align="center">
+                <td>Arben Mashkulli</td>
+                <td>E hënë 09:30-11:00</td>
+                <td>-----------</td>
+                <td>Salla 611</td>
+            </tr>
+
+            <tr bgcolor="white" align="center">
+                <td>Jeta Dobruna</td>
+                <td>E marte 09:30-12:15</td>
+                <td>E enjte 08:30-11:00</td>
+                <td>Kabineti i elektros (59)</td>
+            </tr>
+
+            <tr bgcolor="red" align="center">
+                <td>Blerta Selimaj-Haziri</td>
+                <td>E marte 08:00-11:00</td>
+                <td>-----------</td>
+                <td>Salla A3</td>
+            </tr>
+
+            <tr bgcolor="white" align="center">
+                <td>Ramadan Plakolli</td>
+                <td>E hënë 16:30-18:00</td>
+                <td>----------</td>
+                <td>Salla 621</td>
+            </tr>
+
+            <tr bgcolor="red" align="center">
+                <td>Blend Arifaj</td>
+                <td>E premte 09:30-11:00</td>
+                <td>---------</td>
+                <td>Salla 615</td>
+            </tr>
+
+            <tr bgcolor="white" align="center">
+                <td>Dalinë Vranovci</td>
+                <td>E merkure 09:30-11:00</td>
+                <td>----------</td>
+                <td>Salla 615</td>
+            </tr>
+
+            <tr bgcolor="red" align="center" >
+                <td>Fatmire Hyseni</td>
+                <td>E premte 18:00-19:30</td>
+                <td>---------</td>
+                <td>Salla 611</td>
+            </tr>
+
+            <tr bgcolor="white" align="center">
+                <td>Synim Selimi</td>
+                <td>E enjte 17:45-19:15</td>
+                <td>-----------</td>
+                <td>Salla 621</td>
+            </tr>
+
+            <tr bgcolor="red" align="center">
+                <td>Dalinë Vranovci</td>
+                <td>E hënë 09:30-11:00</td>
+                <td>-----------</td>
+                <td>Salla 615</td>
+            </tr>
+
+            
+
+
+        </tbody>
+
+    </table>
+    
+</body>
+</html>
