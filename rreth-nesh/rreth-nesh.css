@@ -8,15 +8,58 @@
   border: 1px solid black;
 }
 .s1 .inner-section {
-  border: 2px solid #0b2447;
+  border: 0px solid #0b2447;
   width: 50%;
   display: inline-block;
 }
-.fotoja {
-  border: 2px solid rebeccapurple;
+.s2 .inner-section {
   width: 50%;
+  margin-left: 50%;
+}
+.s3 .inner-section {
+  width: 50%;
+  margin-right: 50%;
+}
+.s4 .inner-section {
+  width: 50%;
+  margin-right: 50%;
+}
+.s5 .inner-section {
+  width: 50%;
+  margin-right: 50%;
+}
+.fotoja {
+  border: 2px solid black;
   margin-left: auto;
-  height: 200px;
-  width: 450px;
+  height: 403px;
+  width: 302px;
   display: inline-block;
+}
+.fotoja img {
+  height: 100%;
+  width: 100%;
+}
+
+.text {
+  border-width: 2px solid #0b2447;
+  padding: 18px;
+  border-radius: 10px;
+}
+
+h3 {
+  color: #0b2447;
+  border: 2px solid #0b2447;
+  border-radius: 10px;
+}
+
+.inner-section {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.text {
+  background-color: #0b2447;
+  color: white;
+  text-align: left;
 }
