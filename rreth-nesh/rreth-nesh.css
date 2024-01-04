@@ -4,42 +4,53 @@
   box-sizing: border-box;
   font-family: "Playfair Display", sans-serif;
 }
-.s1 {
-  border: 1px solid black;
+.s1,
+.s2,
+.s3,
+.s4 {
+  border: 0px solid black;
+  display: flex;
+  align-items: center;
 }
-.s1 .inner-section {
-  border: 0px solid #0b2447;
+.s1 .inner-section,
+.s2 .inner-section,
+.s3 .inner-section,
+.s4.inner-section {
   width: 50%;
-  display: inline-block;
 }
-.s2 .inner-section {
-  width: 50%;
-  margin-left: 50%;
-}
-.s3 .inner-section {
-  width: 50%;
-  margin-right: 50%;
-}
-.s4 .inner-section {
-  width: 50%;
-  margin-right: 50%;
-}
-.s5 .inner-section {
-  width: 50%;
-  margin-right: 50%;
-}
-.fotoja {
-  border: 2px solid black;
+.fotoja1 {
+  border: 0px solid black;
   margin-left: auto;
+  margin-right: auto;
   height: 403px;
   width: 302px;
-  display: inline-block;
 }
-.fotoja img {
+.fotoja1 img {
   height: 100%;
   width: 100%;
 }
-
+.fotoja2 {
+  border: 0px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+  width: 650px;
+}
+.fotoja2 img {
+  height: 100%;
+  width: 100%;
+}
+.fotoja3 {
+  border: 0px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  height: 403px;
+  width: 302px;
+}
+.fotoja3 img {
+  height: 100%;
+  width: 100%;
+}
 .text {
   border-width: 2px solid #0b2447;
   padding: 18px;
