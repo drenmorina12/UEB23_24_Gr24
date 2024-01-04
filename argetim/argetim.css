@@ -1,5 +1,21 @@
-* {
-  font-family: "Playfair Display", sans-serif;
+#main {
+  display: flex;
+  justify-content: center;
+}
+
+.side-bar {
+  width: 200px;
+  height: auto;
+  border: 1px solid black;
+  margin: 20px;
+  flex: 1;
+}
+
+.main-content {
+  height: auto;
+  width: 400px;
+  border: 3px solid red;
+  flex: 5.5;
 }
 
 #asosacioni {
