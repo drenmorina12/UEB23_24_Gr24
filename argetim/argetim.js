@@ -1,4 +1,4 @@
-const asosacioni = document.querySelector("#asosacioni");
+const asosacioni = document.querySelector("#asosacioni-table");
 const asosacioniButtons = document.querySelectorAll(".asosacioni-buttons");
 const clearBtn = document.querySelector(".clear-button");
 
