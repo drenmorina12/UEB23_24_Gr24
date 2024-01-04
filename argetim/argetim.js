@@ -1,6 +1,9 @@
 const asosacioni = document.querySelector("#asosacioni-table");
-const asosacioniButtons = document.querySelectorAll(".asosacioni-buttons");
+const asosacioniButtons = document.querySelectorAll(".asosacioni-button");
 const clearBtn = document.querySelector(".clear-button");
+const asosacioniHeaderText = document.querySelector(".asosacioni-text h3");
+
+asosacioniHeaderText.textContent = "SSUUUIII";
 
 // Templates -----------------------------
 const columns = ["A", "B", "C", "D"];
