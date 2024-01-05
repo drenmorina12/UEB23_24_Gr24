@@ -1,4 +1,9 @@
-
+body {
+  background-image: url(../foto3.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
 
 h2 {
   text-align: center;
@@ -17,7 +22,7 @@ p {
 #main {
   display: flex;
   justify-content: center;
-  margin: 20px 0px 50px 0px;
+  margin: 0px 0px 0px 0px;
   font-family: "Playfair Display", sans-serif;
 }
 
@@ -205,7 +210,8 @@ select {
 }
 
 .permbajtja3 {
-  background-color: rgba(1, 20, 71, 0.93);
+  /* background-color: rgba(1, 20, 71, 0.93); */
+  background-color: rgba(0, 0, 0, 0.5);
   width: 800px;
   font-size: 18px;
   border-radius: 10px;
