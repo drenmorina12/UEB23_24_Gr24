@@ -82,18 +82,6 @@ function pastrimi() {
   x11.focus();
 }
 
-let testtti = document.querySelector(".testi");
-function myFunction() {
-  var x = document.getElementById("permbajtjaKalkulatori");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-
-testtti.addEventListener("click", myFunction);
-
 
 
 ///////////////////////////////////////////////////////////////////////
