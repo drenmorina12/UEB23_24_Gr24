@@ -176,13 +176,12 @@ div nav a:hover {
 
 /* The side navigation menu */
 .sidebar {
-  margin: 27px;
-  padding: 10px;
   width: 200px;
+  margin: 20px;
   background-color: #19376d;
-  position: relative;
-  height: 50%;
+  height: auto;
   overflow: auto;
+  flex:1;
 }
 
 /* Sidebar links */
