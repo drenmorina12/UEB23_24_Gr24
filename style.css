@@ -1,7 +1,6 @@
-html{
+html {
   scroll-behavior: smooth;
 }
-
 
 * {
   margin: 0px;
@@ -72,9 +71,6 @@ body {
   /* Make up for position fixed */
   position: relative;
   top: 110px;
-  display: flex;
-  justify-content: center;
-  align-items: start;
 }
 
 #fiek-photo {
@@ -222,6 +218,10 @@ body {
 ul li:hover a {
   padding-left: 50px;
 }
+ul li a {
+  padding-left: 50px;
+}
+
 /* End of sidebar */
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
