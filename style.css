@@ -63,9 +63,11 @@ div nav a:hover {
 /* Body Section */
 
 #main {
-  /* height: 100vh; */
-  /* flex: 1; */
   flex: 1;
+  /* Make up for position fixed */
+
+  position: relative;
+  top: 110px;
 }
 
 #fiek-photo {
@@ -243,6 +245,9 @@ div.content {
   bottom: 0;
   width: 100%;
   height: 130px;
+  /* Make up for position fixed */
+  position: relative;
+  top: 110px;
 }
 
 footer a img {
