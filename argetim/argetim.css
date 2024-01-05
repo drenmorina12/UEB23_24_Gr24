@@ -57,7 +57,17 @@
 
 .asosacioni-button,
 .reset-button {
+  /* background-color: #002244; */
+  background-color: #19376d;
+  color: white;
+  padding: 10px 30px;
+  margin: 30px;
+  min-width: 150px;
+}
+
+.active {
   background-color: #002244;
+  /* opacity: 0.5; */
   color: white;
   padding: 10px 30px;
   margin: 30px;

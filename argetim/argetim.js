@@ -59,23 +59,16 @@ const matematika = {
 };
 
 const pergjithshemSolution = {
-  A: "Zgjidhja 1",
-  B: "Zgjidhja 2",
-  C: "Zgjidhja 3",
-  D: "Zgjidhja 4",
+  A: "A!",
+  B: "B!",
+  C: "C!",
+  D: "D!",
 };
 
 const finalResultPergjithshem = "integrali";
 
 const pergjithshem = {
-  A: [
-    "Math",
-    "test",
-    "modulo",
-    "vija",
-    pergjithshemSolution.A,
-    finalResultPergjithshem,
-  ],
+  A: ["!", "!", "!", "!", pergjithshemSolution.A, finalResultPergjithshem],
   B: ["!", "!", "!", "!", pergjithshemSolution.B],
   C: ["!", "!", "!", "!", pergjithshemSolution.C],
   D: ["!", "!", "!", "!", pergjithshemSolution.D],
@@ -136,6 +129,11 @@ function resetAsosacioni() {
   asosacioni.innerHTML = "";
 }
 
+function setActiveButton(button) {
+  asosacioniButtons.forEach((btn) => btn.classList.remove("active"));
+  button.classList.add("active");
+}
+
 resetBtn.addEventListener("click", () => {
   resetAsosacioni();
   createTable();
@@ -144,6 +142,7 @@ resetBtn.addEventListener("click", () => {
 
 asosacioniButtons.forEach((button) => {
   button.addEventListener("click", () => {
+    setActiveButton(button);
     resetAsosacioni();
     createTable();
     const subject = button.getAttribute("data-name");
