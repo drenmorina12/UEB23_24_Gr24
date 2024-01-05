@@ -1,14 +1,11 @@
-html{
-    scroll-behavior: smooth;
-  }
-  
+
   * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: none;
     text-decoration: none;
-    color: #424551;
+    color: #424551; 
     /* font-family: "Playfair Display", sans-serif; */
   }
   body {
@@ -128,10 +125,74 @@ html{
   .vija-horizontale{
     border: none;
     height: 3px;
-    background-color: #000; 
+    background-color: #424551; 
     width: 100%;
   }
   
   .adresaFIEK{
     color: #787a80;
   }
+
+  /* PERSONELI AKADEMIK CSS : */
+  *{
+    /* margin: 0 auto; */
+    padding: 0;
+    box-sizing: border-box;
+    color: #424551;
+}
+.main-personeli-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    width: 1440px;
+}
+
+.headeri {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    text-align: center;
+}
+.personel-headeri {
+    width: 40%;
+    align-items: center;
+}
+
+.personeli-photos {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.img {
+    width: 300px;
+}
+
+.imgdown {
+    margin-top: 10rem;
+    width: 300px;
+
+}
+.personeli-photos img{
+    border-radius: 5px;
+    box-shadow: 0px 0px 9px #002244;
+}
+
+
+.stafi{
+    width: 100%; 
+    position: relative;
+}
+
+.orari-headeri {
+    width: 40%;
+    align-items: center;
+}
+

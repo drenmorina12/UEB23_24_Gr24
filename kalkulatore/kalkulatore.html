@@ -29,13 +29,12 @@
         <a href="../rreth-nesh/rreth-nesh.html">Rreth nesh</a>
       </nav>
     </div>
-    <main id="main">
+    <main style="background-color: rgba(1, 30, 110, 0.5);" id="main">
       <div class="sidebar">
         <a class="active" href="#">Kalkulatori</a>
-        <a href="konvertori.html">Konvertori</a>
-        <button class="testi">TESTTT</button>
+        <a href="#permbajtjaKonvertori">Konvertori</a>
       </div>
-
+    <div class="main-contentveglat">
       <!-- Page content -->
       <div id="permbajtjaKalkulatori">
         <div class="pershkrimi2">
@@ -50,33 +49,33 @@
             <p>Vlerat</p>
             <div class="rreshti">
               <div class="kolona-1">
-                <input type="text" id="x1" name="x1" />
+                <input class="text3" type="text" id="x1" name="x1" />
                 <p id="pV">x +</p>
               </div>
               <div class="kolona-2">
-                <input type="text" id="y1" name="y1" />
+                <input class="text3" type="text" id="y1" name="y1" />
                 <p id="pV">y =</p>
               </div>
               <div class="kolona-3">
-                <input type="text" id="l1" name="r1" />
+                <input class="text3" type="text" id="l1" name="r1" />
               </div>
             </div>
             <div class="rreshti">
               <div class="kolona-1">
-                <input type="text" id="x2" name="x2" />
+                <input class="text3" type="text" id="x2" name="x2" />
                 <p id="pV">x +</p>
               </div>
               <div class="kolona-2">
-                <input type="text" id="y2" name="y2" />
+                <input  class="text3" type="text" id="y2" name="y2" />
                 <p id="pV">y =</p>
               </div>
               <div class="kolona-3">
-                <input type="text" id="l2" name="r2" />
+                <input class="text3" type="text" id="l2" name="r2" />
               </div>
             </div>
             <div class="rreshti">
               <div class="kolona-1">
-                <input type="button" value="Zgjidh" onclick="zgjedhja()" />
+                <input class="butoniZgjidh" type="button" value="Zgjidh" onclick="zgjedhja()" />
               </div>
             </div>
           </div>
@@ -85,14 +84,15 @@
             <div class="rreshti">
               <div class="kolona-4">
                 <p id="pVZ">x =</p>
-                <input type="text" id="xR" name="x" disabled />
+                <input class="text3" type="text" id="xR" name="x" disabled />
               </div>
             </div>
             <div class="rreshti">
               <div class="kolona-4">
                 <p id="pVZ">y =</p>
-                <input type="text" id="yR" name="y" disabled />
+                <input class="text3" type="text" id="yR" name="y" disabled />
                 <input
+                class="butoniZgjidh"
                   type="button"
                   value="Pastro"
                   id="pastro"
@@ -103,6 +103,178 @@
           </div>
         </div>
       </div>
+      <div id="permbajtjaKonvertori">
+        <div class="pershkrimi2">
+          <h2>Konvertuesi i njsëive</h2>
+          <p>Kjo faqe përmban një konvertues të njësive të gjatësisë dhe peshës</p>
+      </div>
+      <div class="permbajtja2">
+          <div class="vlera2t">
+              <div class="rreshti">
+                  <p id="njesiaeKonvertorit">Konvertimi i njësive të gjatësis</p>
+                  <div class="kolona-12">
+                      <input class="text2" type="text" id="vleraGj" placeholder="Shkruani vlerën..." name="vlera">
+                  </div>
+                  <div class="kolona-22">
+                      <select id="njesiaVleraGj" name="vleraeYgjedhur">
+                          <option value="zgjedhe nje opsion">Zgjedhe një opsion</option>
+                          <option value="meterV">Meter (m)</option>
+                          <option value="milimeterV">Milimeter (mm)</option>
+                          <option value="centimeterV">Centimeter (cm)</option>
+                          <option value="decimeterV">Decimeter (dm)</option>
+                          <option value="dekameterV">Dekameter (Dm)</option>
+                          <option value="hektameterV">Hektameter (hm)</option>
+                          <option value="kilometerV">Klilometer (km)</option>
+                      </select>
+                      <p id="barabart" style="display: inline-block;
+                      margin-top: 0px;
+                      margin-left: 18px;
+                      font-size: 30px;
+                      font-weight: bold;">=</p>
+                  </div>
+  
+                  <div class="kolona-32">
+                      <input class="text2" type="text" id="rezultatiGj" placeholder="Rezultati" name="rezultati" disabled>
+                  </div>
+                  <div class="kolona-42">
+                      <select id="njesiaRezultatiGj" name="vleraeYgjedhur">
+                          <option value="zgjedhe nje opsion">Zgjedhe nje opsion</option>
+                          <option value="meterR">Meter (m)</option>
+                          <option value="milimeterR">Milimeter (mm)</option>
+                          <option value="centimeterR">Centimeter (cm)</option>
+                          <option value="decimeterR">Decimeter (dm)</option>
+                          <option value="dekameterR">Dekameter (Dm)</option>
+                          <option value="hektameterR">Hektameter (hm)</option>
+                          <option value="kilometerR">Klilometer (km)</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="rreshti">
+                  <input class="butoniKonverto" type="button" value="Konverto" onclick="konvertimGj()">
+              </div>
+          </div>
+          <div class="tabela">
+              <table id="tabela1Gj">
+                  <thead>
+                      <tr>
+                          <th>Meter</th>
+                          <th>Milimeter</th>
+                          <th>Centimeter</th>
+                          <th>Decimeter</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>1 m</td>
+                          <td>1000 mm</td>
+                          <td>100 cm</td>
+                          <td>10 dm</td>
+                      </tr>
+                  </tbody>
+              </table>
+              <table id="tabela2Gj">
+                  <thead>
+                      <tr>
+                          <th>Kilometer</th>
+                          <th>Hektameter</th>
+                          <th>Dekameter</th>
+                          <th>Meter</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>1 km</td>
+                          <td>10 hm</td>
+                          <td>100 Dm</td>
+                          <td>1000 m</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  
+      <div class="permbajtja2">
+          <div class="vlera2t">
+          <div class="rreshti">
+              <p id="njesiaeKonvertorit">Konvertimi i njësive të peshës</p>
+              <div class="kolona-12">
+                  <input class="text2" type="text" id="vleraP" placeholder="Shkruani vlerën..." name="vlera">
+              </div>
+              <div class="kolona-22">
+                  <select id="njesiaVleraP" name="vleraeYgjedhur">
+                      <option value="zgjedhe nje opsion">Zgjedhe nje opsion</option>
+                      <option value="kilogramV">Kilogram (kg)</option>
+                      <option value="miligramV">Miligram (mg)</option>
+                      <option value="gramV">Gram (gr)</option>
+                      <option value="dekagramV">Dekagram (dg)</option>
+                      <option value="tonV">Ton (t)</option>
+                  </select>
+                  <p id="barabart" style="display: inline-block;
+                  margin-top: 0px;
+                  margin-left: 18px;
+                  font-size: 30px;
+                  font-weight: bold;">=</p>
+              </div>
+  
+              <div class="kolona-32">
+                  <input class="text2" type="text" id="rezultatiP" placeholder="Rezultati" name="rezultati" disabled>
+              </div>
+              <div class="kolona-42">
+                  <select id="njesiaRezultatiP" name="vleraeYgjedhur">
+                      <option value="zgjedhe nje opsion">Zgjedhe nje opsion</option>
+                      <option value="kilogramR">Kilogram (kg)</option>
+                      <option value="miligramR">Miligram (mg)</option>
+                      <option value="gramR">Gram (gr)</option>
+                      <option value="dekagramR">Dekagram (dg)</option>
+                      <option value="tonR">Ton (t)</option>
+                  </select>
+              </div>
+          </div>
+          <div class="rreshti">
+              <input class="butoniKonverto" type="button" value="Konverto" onclick="konvertimP()">
+          </div>
+          </div>
+          <div class="tabela">
+              <table id="tabela1Gj">
+                  <thead>
+                      <tr>
+                          <th>Kilogram</th>
+                          <th>Dekagram</th>
+                          <th>Gram</th>
+                          <th>Miligram</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>1 kg</td>
+                          <td>100 dg</td>
+                          <td>1000 gr</td>
+                          <td>1000000 mg</td>
+                      </tr>
+                  </tbody>
+              </table>
+              <table id="tabela2Gj">
+                  <thead>
+                      <tr>
+                          <th>Ton</th>
+                          <th>Kilogram</th>
+                          <th>Dekagram</th>
+                          <th>Gram</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>1 t</td>
+                          <td>1000 kg</td>
+                          <td>100000 dg</td>
+                          <td>1000000 gr</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+      </div>
+    </div>
     </main>
     <footer id="footer">
       <p>Github Accounts :</p>

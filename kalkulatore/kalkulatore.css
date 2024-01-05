@@ -1,7 +1,28 @@
+body {
+  background-image: url(../foto3.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+h2 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 35px;
+  text-shadow: 1px 1px 30px;
+  font-style: italic;
+}
+
+p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 25px;
+}
+
 #main {
   display: flex;
   justify-content: center;
-  margin: 20px 0px 50px 0px;
+  margin: 0px 0px 0px 0px;
   font-family: "Playfair Display", sans-serif;
 }
 
@@ -13,6 +34,18 @@
   align-items: center;
   gap: 40px;
   margin-right: 30px;
+  padding-top: 100px;
+}
+
+#permbajtjaKonvertori {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-right: 30px;
+  padding-top: 200px;
 }
 
 .pershkrimi2 {
@@ -20,11 +53,39 @@
   color: white;
   box-shadow: 2px 2px 15px;
   border-radius: 10px;
-  width: 850px;
+  width: 1350px;
   /* margin-top: 20px;
   margin-left: 25%;
   margin-right: 7%;
   padding: 15px; */
+}
+
+
+/*==-=-=-=-=-=-=-=-=-=-Konvertori=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-
+///////////////////////////////////////////////////////*/
+.vlera2t{
+  box-shadow: 2px 2px 15px;
+  width: 60%;
+  display: inline-block;
+  margin-bottom: 2%;
+  margin-left: 1%;
+}
+
+
+.butoniKonverto {
+  background-color: gray;
+  color: antiquewhite;
+  width: 150px;
+  height: 35px;
+  margin-left: 40%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border-radius: 18px;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  float: left;
 }
 
 .permbajtja2 {
@@ -32,12 +93,107 @@
   width: 1320px;
   font-size: 18px;
   border-radius: 10px;
-  margin-top: 6%;
-  margin-left: 16%;
+  /* margin-top: 6%;
+  margin-left: 16%; */
   color: white;
   box-shadow: 2px 2px 15px;
-  height: 240px;
+  height: 220px;
+  padding-top: 2px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
+
+
+.tabela{
+  width: 36%;
+  display: inline-block;
+  margin-left: 1%;
+  padding-top: 2%;
+  height: 170px;
+}
+table, thead, th, tr, td{
+  border: 5px solid gray;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 5px;
+  background-color:  rgba(0, 0, 0, 0.2);
+}
+th{
+  width: 9%;
+}
+thead{
+  margin-top: 20px;
+}
+#tabela2Gj{
+  margin-top: 13px;
+}
+
+#njesiaeKonvertorit {
+  margin: 10px;
+}
+
+#barabart {
+  display: inline-block;
+  margin-top: 0px;
+  margin-left: 18px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+select {
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 6px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.kolona-12 {
+  float: left;
+  width: 22%;
+  margin-top: 5px;
+  margin-left: 10px;
+  display: inline;
+}
+
+.kolona-22 {
+  float: left;
+  width: 29%;
+  margin-top: -5.5px;
+}
+
+.kolona-32 {
+  float: left;
+  width: 22%;
+  margin-top: 5px;
+  display: inline;
+}
+
+.kolona-42 {
+  float: left;
+  width: 22%;
+  margin-top: 5px;
+  display: inline;
+}
+
+.text2 {
+  width: 160px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#njesiaVleraGj{
+  padding-bottom: 10px;
+}
+/*==-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-
+///////////////////////////////////////////////////////*/
 
 #main h2 {
   text-align: center;
@@ -54,7 +210,8 @@
 }
 
 .permbajtja3 {
-  background-color: rgba(1, 20, 71, 0.93);
+  /* background-color: rgba(1, 20, 71, 0.93); */
+  background-color: rgba(0, 0, 0, 0.5);
   width: 800px;
   font-size: 18px;
   border-radius: 10px;
@@ -137,7 +294,7 @@
   margin-top: 24.5px;
 }
 
-input[type="text"] {
+.text3 {
   width: 100px;
   height: 40px;
   border-radius: 20px;
@@ -149,7 +306,7 @@ input[type="text"] {
   color: blue;
 }
 
-input[type="button"] {
+.butoniZgjidh {
   background-color: gray;
   color: antiquewhite;
   width: 150px;
@@ -164,6 +321,10 @@ input[type="button"] {
   cursor: pointer;
   float: right;
 }
+
+/* .butoniKonverto {
+  align-items: center;
+} */
 
 input[type="button"]:hover {
   background-color: white;
@@ -183,4 +344,12 @@ input[type="button"]:active {
   background-color: #039dfc;
   color: white;
   transition: 0.1s ease;
+}
+
+
+
+.main-contentveglat{
+  flex: 5.5;
+  display: flex;
+  flex-direction: column;
 }
