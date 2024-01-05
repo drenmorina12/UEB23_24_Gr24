@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../images/logo1.png" />
     <title>Up Student Toolkit</title>
+    <!-- bootstrap link: -->
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-rbs5VXZiP0MjLFm8Z1ljWUvH1Cg7pDiiH70toYbbSjk0u3l5q/bT5pX04XETHQuf" crossorigin="anonymous">
+    <!-- other links -->
+    <link rel="icon" href="../images/logo1.png" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="info.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@400;600&display=swap"
     rel="stylesheet"
@@ -89,7 +94,7 @@
                     <p>40-60 ulëse</p> 
                     <p>6-të</p>
                 </div>
-            </div>
+            </div><br><br><br><br><br>
             <p class="adresaFIEK">Adresa:Bregu i Diellit, 10000 Prishtinë, Republika e Kosovës
                 <a href="mailto:fiek@uni-pr.edu"><br>email-fiek</a>
             </p>
@@ -102,48 +107,233 @@
 
     <div class="main-personeli-container">
       <div class="headeri">
-          <div class="left-headeri"><h1>Personeli Akademik - FIEK</h1></div>
+          <div class="personel-headeri"><h1>Personeli Akademik - FIEK</h1></div>
 
           <div class="personeli-photos">
               <div class="img">
-                  <div class="stafi"><p class="dik">PRODEKAN</p></div>
-                  <img src="../images/qamili.jpg" alt="" width="250px">
-                  <div> <p>Qamil Kabashi</p></div>
+                  <img src="../images/qamili.jpg" alt="" width="250px" data-aos="flip-up" data-aos-duration="1000">
+                  <div><p><b>Prodekan </b>- Qamil Kabashi</p></div>
               </div>
 
               <div class="imgdown">
-                  <div class="stafi"><p class="dik"><b>DEKANI</b></p></div>
-                  <img  src="../images/isaku.jpg" alt="" width="250px">
-                  <div><p>Isak Shabani</p></div>
+                  <img  src="../images/isaku.jpg" alt="" width="250px" data-aos="flip-up" data-aos-duration="1000">
+                  <div><p><b>Dekan </b>- Isak Shabani</p></div>
               </div>
               <div class="img">
-                  <div class="stafi"><p class="dik">PRODEKAN</p></div>
-                  <img src="../images/zabeli.jpg" alt="" width="250px">
-                  <div><p>Milaim Zabeli</p></div>
+                  <img src="../images/zabeli.jpg" alt="" width="250px" data-aos="flip-up" data-aos-duration="1000">
+                  <div><p><b>Prodekan </b>- Milaim Zabeli</p></div>
               </div>
               <div class="img media">
-                   <div class="stafi"><p class="dik">PROF - ASS</p></div>
-                   <img class="br" src="../images/dalina.jpg" alt="" width="250px">
-                   <div><p>Dalin&euml Vranovci</p></div>
+                   <img class="br" src="../images/dalina.jpg" alt="" width="250px" data-aos="flip-up" data-aos-duration="1000">
+                   <div><p><b>Prof.Ass </b>- Dalin&euml Vranovci</p></div>
               </div>
               <div class="imgdown grif">
-                  <div class="stafi"><p class="dik">PROF - DR</p></div>
-                  <img src="../images/dhuarata.jpg" alt="" width="250px">
-                  <div><p>Dhuarata Hyseni</p></div>
+                  <img src="../images/dhuarata.jpg" alt="" width="250px" data-aos="flip-up" data-aos-duration="1000">
+                  <div><p><b>Prof.Dr </b>- Dhuarata Hyseni</p></div>
               </div>
               <div class="img media">
-                  <div class="stafi"><p class="dik">PROF - DR</p></div>
-                  <img src="../images/blerimi.jpg" alt="" width="250px">
-                  <div><p>Blerim Rexha</p></div>
+                  <img src="../images/blerimi.jpg" alt="" width="250px" data-aos="flip-up" data-aos-duration="1000">
+                  <div><p><b>Prof.Dr </b>- Blerim Rexha</p></div>
               </div>
           </div>
       </div>
   </div>
-  
-  <p>Lista e plotë e stafit akademik : <a href="https://fiek.uni-pr.edu/page.aspx?id=1,14">KLIKO KËTU</a></p>
+  <p id="start-orari">Lista e plotë e stafit akademik : <a href="https://fiek.uni-pr.edu/page.aspx?id=1,14">KLIKO KËTU</a></p>
+  <hr class="vija-horizontale"><br>
 
-    </main>
+      <!-- ORARI INFO :  -->
 
+      <div class="orari-headeri"><h1>Orari - FIEK</h1></div><br>
+      <!-- TABELA VITI 1 : -->
+<div class="container mt-5">
+  <table class="table table-bordered table-striped">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Lëndët</th>
+        <th scope="col">Profesori</th>
+        <th scope="col">Kreditë</th>
+        <th scope="col">Orari | Klasa</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Shkathtësi komunikuese</td>
+        <td>Blerim Rexha | Sabrije Osmanaj</td>
+        <td>5</td>
+        <td>16:30-18:00 | Amfiteatri 411</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Bazat e Inxhinierisë Elektrike 1</td>
+        <td>Vjosa Shatri | Enver Hamiti | Mimoza Ibrani </td>
+        <td>7</td>
+        <td>10:30-12:00 | Amfiteatri 411</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Bazat e programimit</td>
+        <td>Kadri Sylejmani | Avni Rexhepi</td>
+        <td>5</td>
+        <td>09:30-11:00 | Amfiteatri 411</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Algjebra Lineare dhe Kalkulus 1</td>
+        <td>Shqipe Lohaj | Qefsere Gjonbalaj | Valdete Hamiti</td>
+        <td>7</td>
+        <td>08:00-10:30 | Amfiteatri 408</td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>Fizika 1</td>
+        <td>Valon Veliu</td>
+        <td>6</td>
+        <td>16:30-18:00 | Amfiteatri 408</td>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td>Algoritmet dhe Strukturat e te Dhenave</td>
+        <td>Kadri Sylejmani | Avni Rexhepi</td>
+        <td>5</td>
+        <td>08:00-09:30 | Amfiteatri 411</td>
+      </tr>
+      <tr>
+        <th scope="row">7</th>
+        <td>Fizika 2</td>
+        <td>Valon Veliu</td>
+        <td>6</td>
+        <td>14:45-16:15 | Amfiteatri 408</td>
+      </tr>
+      <tr>
+        <th scope="row">8</th>
+        <td>Algjebra Lineare dhe Kalkulus 2</td>
+        <td>Shqipe Lohaj | Qefsere Gjonbalaj | Valdete Hamiti</td>
+        <td>7</td>
+        <td>09:40-11:15 | Amfiteatri 408</td>
+      </tr>
+      <tr>
+        <th scope="row">9</th>
+        <td>Qarqe Digjitale</td>
+        <td>Sabrije Osmanaj | Artan Mazrekaj</td>
+        <td>5</td>
+        <td>13:30-15:00 | Salla 621</td>
+      </tr>
+      <tr>
+        <th scope="row">10</th>
+        <td>Bazat e Inxhinierisë Elektrike 2</td>
+        <td>Vjosa Shatri | Enver Hamiti | Mimoza Ibrani</td>
+        <td>7</td>
+        <td>10:30-12:45 | Amfiteatri 411</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- TABELA VITI 2 : -->
+<div class="container mt-5">
+  <table class="table table-bordered table-striped">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Lëndët</th>
+        <th scope="col">Profesori</th>
+        <th scope="col">Kreditë</th>
+        <th scope="col">Orari | Klasa</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Elektronika</td>
+        <td>Qamil Kabashi | Milaim Zabeli</td>
+        <td>5</td>
+        <td>16:30-18:00 | Amfiteatri 411</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Web 1</td>
+        <td>Dhurata Hyseni</td>
+        <td>5</td>
+        <td>10:30-12:00 | Amfiteatri 411</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Bazat e të dhënave</td>
+        <td>Lule Ahmedi</td>
+        <td>5</td>
+        <td>09:30-11:00 | Amfiteatri 411</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Programimi I Orientuar në Objekte</td>
+        <td>Isak Shabani</td>
+        <td>5</td>
+        <td>08:00-10:30 | Amfiteatri 408</td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>Arkitekturë</td>
+        <td>Valon Raca</td>
+        <td>5</td>
+        <td>16:30-18:00 | Amfiteatri 408</td>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td>Matematikë Diskrete</td>
+        <td>Qefsere Gjonbalaj</td>
+        <td>5</td>
+        <td>08:00-09:30 | Amfiteatri 411</td>
+      </tr>
+      <tr>
+        <th scope="row">7</th>
+        <td>Fizika 2</td>
+        <td>Valon Veliu</td>
+        <td>5</td>
+        <td>14:45-16:15 | Amfiteatri 408</td>
+      </tr>
+      <tr>
+        <th scope="row">8</th>
+        <td>Algjebra Lineare dhe Kalkulus 2</td>
+        <td>Shqipe Lohaj | Qefsere Gjonbalaj | Valdete Hamiti</td>
+        <td>5</td>
+        <td>09:40-11:15 | Amfiteatri 408</td>
+      </tr>
+      <tr>
+        <th scope="row">9</th>
+        <td>Qarqe Digjitale</td>
+        <td>Sabrije Osmanaj | Artan Mazrekaj</td>
+        <td>5</td>
+        <td>13:30-15:00 | Salla 621</td>
+      </tr>
+      <tr>
+        <th scope="row">10</th>
+        <td>Bazat e Inxhinierisë Elektrike 2</td>
+        <td>Vjosa Shatri | Enver Hamiti | Mimoza Ibrani</td>
+        <td>5</td>
+        <td>10:30-12:45 | Amfiteatri 411</td>
+      </tr>
+      <tr>
+        <th scope="row">11</th>
+        <td>Bazat e Inxhinierisë Elektrike 2</td>
+        <td>Vjosa Shatri | Enver Hamiti | Mimoza Ibrani</td>
+        <td>5</td>
+        <td>10:30-12:45 | Amfiteatri 411</td>
+      </tr>
+      <tr>
+        <th scope="row">12</th>
+        <td>Bazat e Inxhinierisë Elektrike 2</td>
+        <td>Vjosa Shatri | Enver Hamiti | Mimoza Ibrani</td>
+        <td>5</td>
+        <td>10:30-12:45 | Amfiteatri 411</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</main>
+
+    <!-- FOOTER : -->
     <footer id="footer">
       <p>Github Accounts :</p>
       <a href="https://github.com/EndritKastrati" target="_blank">
@@ -162,6 +352,10 @@
     </footer>
 
     <script src="info.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
 
