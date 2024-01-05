@@ -27,6 +27,7 @@ p {
   align-items: center;
   gap: 40px;
   margin-right: 30px;
+  padding-top: 100px;
 }
 
 #permbajtjaKonvertori {
@@ -37,6 +38,7 @@ p {
   align-items: center;
   gap: 40px;
   margin-right: 30px;
+  padding-top: 200px;
 }
 
 .pershkrimi2 {
@@ -44,7 +46,7 @@ p {
   color: white;
   box-shadow: 2px 2px 15px;
   border-radius: 10px;
-  width: 850px;
+  width: 1350px;
   /* margin-top: 20px;
   margin-left: 25%;
   margin-right: 7%;
