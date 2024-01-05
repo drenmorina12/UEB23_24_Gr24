@@ -1,9 +1,10 @@
 const asosacioni = document.querySelector("#asosacioni-table");
 const asosacioniButtons = document.querySelectorAll(".asosacioni-button");
-const clearBtn = document.querySelector(".clear-button");
+const resetBtn = document.querySelector(".reset-button");
 const asosacioniHeaderText = document.querySelector(".asosacioni-text h3");
 
-asosacioniHeaderText.textContent = "SSUUUIII";
+let currentAsosacion;
+let currentAsosacionText = "pergjithshem";
 
 // Templates -----------------------------
 const columns = ["A", "B", "C", "D"];
@@ -57,6 +58,29 @@ const matematika = {
   D: ["derivat", "*", "i", "katror", matematikaSolution.D],
 };
 
+const pergjithshemSolution = {
+  A: "Zgjidhja 1",
+  B: "Zgjidhja 2",
+  C: "Zgjidhja 3",
+  D: "Zgjidhja 4",
+};
+
+const finalResultPergjithshem = "integrali";
+
+const pergjithshem = {
+  A: [
+    "Math",
+    "test",
+    "modulo",
+    "vija",
+    pergjithshemSolution.A,
+    finalResultPergjithshem,
+  ],
+  B: ["!", "!", "!", "!", pergjithshemSolution.B],
+  C: ["!", "!", "!", "!", pergjithshemSolution.C],
+  D: ["!", "!", "!", "!", pergjithshemSolution.D],
+};
+
 //--------------------------------------------------
 
 function createTable() {
@@ -104,30 +128,42 @@ function addCellEventListeners(subject) {
   const cells = document.querySelectorAll(".cell");
   cells.forEach((cell) => {
     cell.addEventListener("click", (e) => upadteCellContent(e, subject));
+    asosacioniHeaderText.textContent = `Jeni duke lujatur asoacionin me temen ${currentAsosacionText} !!`;
   });
 }
 
-function clearAsosacioni() {
+function resetAsosacioni() {
   asosacioni.innerHTML = "";
 }
 
-clearBtn.addEventListener("click", clearAsosacioni);
+resetBtn.addEventListener("click", () => {
+  resetAsosacioni();
+  createTable();
+  addCellEventListeners(currentAsosacion);
+});
 
 asosacioniButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    clearAsosacioni();
+    resetAsosacioni();
     createTable();
     const subject = button.getAttribute("data-name");
 
     switch (subject) {
       case "matematika":
+        currentAsosacionText = "matematika";
         addCellEventListeners(matematika);
+        currentAsosacion = matematika;
+
         break;
       case "fizika":
+        currentAsosacionText = "fizika";
         addCellEventListeners(fizika);
+        currentAsosacion = fizika;
         break;
       case "pergjithshem":
+        currentAsosacionText = "pergjithshem";
         addCellEventListeners(pergjithshem);
+        currentAsosacion = pergjithshem;
         break;
       default:
         alert("Ky asosacion nuk ekziston! ");
@@ -135,3 +171,6 @@ asosacioniButtons.forEach((button) => {
     }
   });
 });
+
+createTable();
+addCellEventListeners(pergjithshem);
