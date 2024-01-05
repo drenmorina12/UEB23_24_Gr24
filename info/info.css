@@ -161,7 +161,7 @@ html{
     align-items: flex-start;
     text-align: center;
 }
-.left-headeri {
+.personel-headeri {
     width: 40%;
     align-items: center;
 }
@@ -188,17 +188,14 @@ html{
     box-shadow: 0px 0px 9px #002244;
 }
 
-.dik{
-    transform: rotate(90deg);
-    position: absolute;
-    right: 1rem;
-    margin-top: 35px;
-    font-size: 80%;
 
-
-}
 .stafi{
     width: 100%; 
     position: relative;
+}
+
+.orari-headeri {
+    width: 40%;
+    align-items: center;
 }
 
