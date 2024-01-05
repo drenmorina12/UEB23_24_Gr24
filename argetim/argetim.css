@@ -1,3 +1,122 @@
-* {
-    font-family: "Playfair Display", sans-serif;
+#main {
+  display: flex;
+  justify-content: center;
+}
+
+.side-bar {
+  width: 200px;
+  height: auto;
+  border: 1px solid black;
+  margin: 20px;
+  flex: 1;
+}
+
+.main-content {
+  min-height: auto;
+  width: 400px;
+  border: 3px solid red;
+  flex: 5.5;
+  display: flex;
+  flex-direction: column;
+}
+
+#asosacioni,
+#kuizi,
+#loja1,
+#loja2 {
+  border: 1px dotted black;
+  flex: 1;
+  padding: 20px;
+  flex-basis: 100vh;
+}
+
+#asosacioni {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.asosacioni-text {
+  /* border: 1px dotted black; */
+  width: 100%;
+  /* flex: 1; */
+  padding: 15px 50px;
+}
+
+.asosacioni-text h3 {
+  text-align: center;
+}
+
+.asosacioni-buttons {
+  /* border: 1px dotted black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.asosacioni-button,
+.reset-button {
+  /* background-color: #002244; */
+  background-color: #19376d;
+  color: white;
+  padding: 10px 30px;
+  margin: 30px;
+  min-width: 150px;
+}
+
+.active {
+  background-color: #002244;
+  /* opacity: 0.5; */
+  color: white;
+  padding: 10px 30px;
+  margin: 30px;
+  min-width: 150px;
+}
+
+.asosacioni-button:hover,
+.reset-button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.asosacioni-content {
+  /* border: 1px dotted black; */
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.asosacioni-table-container {
+  /* border: 5px solid pink; */
+  width: 900px;
+}
+
+.row {
+  display: flex;
+}
+
+.cell,
+.final-cell {
+  border: 1px solid white;
+  width: 300px;
+  height: 70px;
+  background-color: #002244;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+#final-cell {
+  width: 100%;
+}
+
+.cell:hover,
+.final-cell:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }

@@ -17,16 +17,17 @@ body {
 #header {
   display: flex;
   /*background-color: #002244;*/
-  background-color: #0B2447;
+  background-color: #0b2447;
   padding: 30px;
   justify-content: start;
   text-align: center;
   gap: 20px;
   align-items: center;
-  position: relative;
   width: 100%;
   height: 110px;
   min-height: 110px;
+  position: fixed;
+  z-index: 9999;
 }
 
 .logo {
@@ -62,15 +63,17 @@ div nav a:hover {
 /* Body Section */
 
 #main {
-  /* height: 100vh; */
-  /* flex: 1; */
   flex: 1;
+  /* Make up for position fixed */
+
+  position: relative;
+  top: 110px;
 }
 
-#fiek-photo{
-  width: 100%; 
-  height: 870px; 
-  background: url('images/FIEK-FOTO.JPG') center/cover no-repeat; 
+#fiek-photo {
+  width: 100%;
+  height: 870px;
+  background: url("images/FIEK-FOTO.JPG") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,7 +82,7 @@ div nav a:hover {
   filter: grayscale(60%);
 }
 
-#text-inside-fiek-photo{
+#text-inside-fiek-photo {
   position: absolute;
   top: 45%;
   left: 70%;
@@ -94,7 +97,7 @@ div nav a:hover {
   font-family: "Playfair Display", sans-serif;
 }
 
-.about{
+.about {
   margin: 0px;
   background-color: #002244;
   position: relative;
@@ -136,37 +139,39 @@ div nav a:hover {
   z-index: 1;
 }
 
-.three-icons{
- background-color: #fff;
- width: 100%;
- margin: 0px;
- height: 370px;
- position: relative;bottom: 100px;
- display: flex;
- align-items: center;
- justify-content: space-around;
+.three-icons {
+  background-color: #fff;
+  width: 100%;
+  margin: 0px;
+  height: 370px;
+  position: relative;
+  bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.small-box{
+.small-box {
   width: 33%;
   display: inline-block;
   text-align: center;
 }
-.icon{
-width: 85px;
-height: 85px;
+.icon {
+  width: 85px;
+  height: 85px;
 }
-.big-text{
- font-family: 'Playfair Display', sans-serif;
- color: black;
- font-weight: 600;
- font-size: 25px;
+.big-text {
+  font-family: "Playfair Display", sans-serif;
+  color: black;
+  font-weight: 600;
+  font-size: 25px;
 }
-.small-text{
-font-family: 'Montserrat', sans-serif;
-color: black;
-font-size: 18px;
-width: 350px;
-position: relative; left: 70px;
+.small-text {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: 18px;
+  width: 350px;
+  position: relative;
+  left: 70px;
 }
 
 /* The side navigation menu */
@@ -240,6 +245,9 @@ div.content {
   bottom: 0;
   width: 100%;
   height: 130px;
+  /* Make up for position fixed */
+  position: relative;
+  top: 110px;
 }
 
 footer a img {
