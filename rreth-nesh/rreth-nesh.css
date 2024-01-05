@@ -7,60 +7,83 @@
 .s1,
 .s2,
 .s3,
-.s4 {
+.s4,
+.s5 {
   border: 0px solid black;
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 .s1 .inner-section,
 .s2 .inner-section,
 .s3 .inner-section,
-.s4.inner-section {
+.s4 .inner-section {
   width: 50%;
 }
-.fotoja1 {
+.photo1 {
   border: 0px solid black;
   margin-left: auto;
   margin-right: auto;
-  height: 403px;
-  width: 302px;
+  height: 350px;
+  width: 500px;
 }
-.fotoja1 img {
+.photo1 img {
   height: 100%;
   width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px black;
 }
-.fotoja2 {
+.photo2 {
   border: 0px solid black;
   margin-left: auto;
   margin-right: auto;
   height: 500px;
   width: 650px;
 }
-.fotoja2 img {
+.photo2 img {
   height: 100%;
   width: 100%;
 }
-.fotoja3 {
-  border: 0px solid black;
+.photo4 {
+  height: 400px;
+  width: 800px;
   margin-left: auto;
   margin-right: auto;
-  height: 403px;
-  width: 302px;
+  border: 0px solid black;
 }
-.fotoja3 img {
+.photo4 img {
   height: 100%;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px black;
+}
+.photo6 {
+  height: 400px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 10px solid black;
+}
+.photo6 img {
+  height: 100%;
+  width: 800%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px black;
 }
 .text {
   border-width: 2px solid #0b2447;
   padding: 18px;
   border-radius: 10px;
 }
-
 h3 {
   color: #0b2447;
   border: 2px solid #0b2447;
   border-radius: 10px;
+  margin: 6px;
 }
 
 .inner-section {
@@ -73,4 +96,7 @@ h3 {
   background-color: #0b2447;
   color: white;
   text-align: left;
+}
+.s3 .text {
+  height: 170px;
 }
