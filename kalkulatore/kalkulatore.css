@@ -224,7 +224,7 @@ select {
 .permbajtja3 {
   /* background-color: rgba(1, 20, 71, 0.93); */
   background-color: rgba(0, 0, 0, 0.5);
-  width: 800px;
+  width: 750px;
   height: 280px;
   font-size: 18px;
   border-radius: 10px;
@@ -235,7 +235,7 @@ select {
   box-shadow: 2px 2px 15px;
   padding-top: 2px;
   display: flex;
-  justify-content: center ;
+  /* justify-content: center ; */
   gap: 30px;
 }
 
@@ -291,8 +291,8 @@ select {
 .vlerat {
   box-shadow: 2px 2px 15px;
   width: 60%;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin: 1%;
+
 }
 
 .zgjidhjet {
@@ -338,6 +338,9 @@ select {
   float: right;
 }
 
+#rreshtiZ{
+  margin-left: 31%;
+}
 
 input[type="button"]:hover {
   background-color: white;
