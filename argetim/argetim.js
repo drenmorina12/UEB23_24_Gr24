@@ -20,10 +20,10 @@ const finalResulTemplate = "Zgjidhja Perfundimtare";
 // ---------------------------------------
 
 const fizikaSolutions = {
-  A: "Zgjidhja A TEST",
-  B: "Zgjidhja B TEST",
-  C: "Zgjidhja C TEST",
-  D: "Zgjidhja D TEST",
+  A: "Shpërthim",
+  B: "Hiroshima - 1945",
+  C: "Montimi",
+  D: "",
 };
 
 const finalResultFizika = "Atomi";
@@ -43,7 +43,7 @@ const fizika = {
 };
 
 const matematikaSolution = {
-  A: "Zgjidhja 1",
+  A: "Zgjidhja ",
   B: "Zgjidhja 2",
   C: "Zgjidhja 3",
   D: "Zgjidhja 4",
