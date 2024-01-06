@@ -192,13 +192,50 @@
 }
 
 .orari-headeri {
+    align-items: center;
+    justify-content: center;
+    display: flex;
     width: 40%;
     align-items: center;
 }
 
+#orarii{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .color-of-table1,
 .color-of-table2,
 .color-of-table3 {
-  background-color: #f9f9f9;
+  /* background-color: ; */
+  /* text-decoration: underline;
+  text-decoration-color: red; */
+
+}
+.vitet-akademike{
+  color: #212529;
+  font-weight: 800;
 }
 
+.hene{
+  text-decoration: underline 2px;
+  text-decoration-color: red ;
+}
+.marte{
+  text-decoration: underline 2px;
+  text-decoration-color: yellow ;
+}
+.merkure{
+  text-decoration: underline 2px;
+  text-decoration-color: green;
+}
+.enjte{
+  text-decoration: underline 2px;
+  text-decoration-color: blue;
+}
+.premte{
+  text-decoration: underline 2px;
+  text-decoration-color: purple ;
+}
