@@ -1,7 +1,6 @@
-html{
+html {
   scroll-behavior: smooth;
 }
-
 
 * {
   margin: 0px;
@@ -51,14 +50,14 @@ body {
   transform: translate(-50%);
 }
 
-div nav a {
+#header nav a {
   text-decoration: none;
   color: #fff;
   white-space: nowrap;
   padding: 10px 20px;
 }
 
-div nav a:hover {
+#header nav a:hover {
   /* color: #49796B; */
   color: #002244;
   background-color: #fff;
@@ -70,7 +69,6 @@ div nav a:hover {
 #main {
   flex: 1;
   /* Make up for position fixed */
-
   position: relative;
   top: 110px;
 }
@@ -179,35 +177,52 @@ div nav a:hover {
   left: 70px;
 }
 
-/* The side navigation menu */
+/* Start of sidebar */
 .sidebar {
-  width: 200px;
-  margin: 20px;
-  background-color: #19376d;
-  height: auto;
-  overflow: auto;
-  flex:1;
-}
+  position: sticky;
+  top: 110px;
+  left: 0;
+  min-width: 250px;
+  height: 100vh;
+  background-color: #132c50;
 
-/* Sidebar links */
-.sidebar a {
-  display: block;
-  color: #fff;
-  padding: 16px;
+  color: white;
   text-decoration: none;
+  /* flex: 1; */
 }
 
-/* Active/current link */
-.sidebar a.active {
-  background-color: #02103b;
-  color: #fff;
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+  background-color: #0b2447fd;
+  opacity: 0.9;
+  user-select: none;
 }
 
-/* Links on mouse-over */
-.sidebar a:hover {
-  background-color: #a5d7e8;
-  color: #fff;
+.sidebar ul a {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid black;
+  transition: 0.4s;
 }
+
+ul li:hover a {
+  padding-left: 50px;
+}
+ul li a {
+  padding-left: 50px;
+}
+
+/* End of sidebar */
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
