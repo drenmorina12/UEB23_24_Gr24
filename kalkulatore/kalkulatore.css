@@ -51,17 +51,15 @@ p {
   padding: 15px; */
 }
 
-
 /*==-=-=-=-=-=-=-=-=-=-Konvertori=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-
 ///////////////////////////////////////////////////////*/
-.vlera2t{
+.vlera2t {
   box-shadow: 2px 2px 15px;
   width: 60%;
   display: inline-block;
   margin-bottom: 2%;
   margin-left: 1%;
 }
-
 
 .butoniKonverto {
   background-color: gray;
@@ -95,28 +93,31 @@ p {
   gap: 30px;
 }
 
-
-.tabela{
+.tabela {
   width: 36%;
   display: inline-block;
   margin-left: 1%;
   padding-top: 2%;
   height: 170px;
 }
-table, thead, th, tr, td{
+table,
+thead,
+th,
+tr,
+td {
   border: 5px solid gray;
   border-collapse: collapse;
   text-align: center;
   padding: 5px;
-  background-color:  rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
-th{
+th {
   width: 9%;
 }
-thead{
+thead {
   margin-top: 20px;
 }
-#tabela2Gj{
+#tabela2Gj {
   margin-top: 13px;
 }
 
@@ -180,7 +181,7 @@ select {
   font-weight: bold;
 }
 
-#njesiaVleraGj{
+#njesiaVleraGj {
   padding-bottom: 10px;
 }
 /*==-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -336,9 +337,7 @@ input[type="button"]:active {
   transition: 0.1s ease;
 }
 
-
-
-.main-contentveglat{
+.main-contentveglat {
   flex: 5.5;
   display: flex;
   flex-direction: column;
