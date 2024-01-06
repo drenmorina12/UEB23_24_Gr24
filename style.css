@@ -182,13 +182,18 @@ body {
   position: sticky;
   top: 110px;
   left: 0;
-  min-width: 250px;
+  min-width: 200px;
   height: 100vh;
   background-color: #132c50;
 
   color: white;
   text-decoration: none;
   /* flex: 1; */
+}
+
+.sidebard ul {
+  position: fixed;
+  width: 13%;
 }
 
 .sidebar header {
