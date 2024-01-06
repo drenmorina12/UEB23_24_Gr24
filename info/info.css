@@ -196,3 +196,9 @@
     align-items: center;
 }
 
+.color-of-table1,
+.color-of-table2,
+.color-of-table3 {
+  background-color: #f9f9f9;
+}
+
