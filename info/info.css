@@ -5,7 +5,7 @@
     padding: 0;
     background-color: none;
     text-decoration: none;
-    color: #424551; 
+    /* color: #424551;  */
     /* font-family: "Playfair Display", sans-serif; */
   }
   body {
@@ -74,10 +74,6 @@
     margin: 6px 0;
   }
   
-  .fiek-info del {
-    color: #a9a9a9;
-  }
-  
   .fiek-info p {
     color: #424551;
     margin: 15px 0;
@@ -102,10 +98,17 @@
     align-items: center;
     width: 70%;
     color: #787a80;
-    font-size: 12px;
+    font-size: 18px;
     font-family: Lato;
     line-height: 150%;
     letter-spacing: 1px;
+  }
+
+  #objekt-personel-orar :hover{
+    text-decoration: none;
+    opacity: 0.4;
+    text-decoration: none;
+    color: #424551;
   }
 
   .OBJEKTI-MENU,
@@ -116,12 +119,7 @@
     cursor: pointer;
     font-size: 22px;
   }
-  .OBJEKTI-MENU :hover,
-  .PERSONELI-MENU :hover,
-  .ORARI-MENU :hover {
-    opacity: 0.4;
-  }
-  
+
   .vija-horizontale{
     border: none;
     height: 3px;
@@ -192,7 +190,50 @@
 }
 
 .orari-headeri {
+    align-items: center;
+    justify-content: center;
+    display: flex;
     width: 40%;
     align-items: center;
 }
 
+#orarii{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.color-of-table1,
+.color-of-table2,
+.color-of-table3 {
+  /* background-color: ; */
+  /* text-decoration: underline;
+  text-decoration-color: red; */
+
+}
+.vitet-akademike{
+  color: #212529;
+  font-weight: 800;
+}
+
+.hene{
+  text-decoration: underline 2px;
+  text-decoration-color: red ;
+}
+.marte{
+  text-decoration: underline 2px;
+  text-decoration-color: yellow ;
+}
+.merkure{
+  text-decoration: underline 2px;
+  text-decoration-color: green;
+}
+.enjte{
+  text-decoration: underline 2px;
+  text-decoration-color: blue;
+}
+.premte{
+  text-decoration: underline 2px;
+  text-decoration-color: purple ;
+}
