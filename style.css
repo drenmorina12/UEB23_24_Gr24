@@ -6,7 +6,7 @@ html {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  line-height: 1.5;
+  /* line-height: 1.5; */
 }
 
 body {
@@ -202,6 +202,11 @@ body {
   width: 13%;
 }
 
+#listaEsidebar{
+  list-style-type: none;
+  padding-left: 0px;
+}
+
 .sidebar header {
   font-size: 22px;
   color: white;
@@ -288,6 +293,12 @@ div.content {
   /* Make up for position fixed */
   position: relative;
   top: 110px;
+}
+
+footer p{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+  margin: 10px;
 }
 
 footer a img {

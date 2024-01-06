@@ -10,8 +10,8 @@
   }
   body {
     /* max-width: 1280px; */
-    margin: 0 auto;
-    padding: 0 30px;
+    /* margin: 0 auto; */
+    /* padding: 0 30px; */
   }
   
   header {
@@ -136,7 +136,7 @@
     /* margin: 0 auto; */
     padding: 0;
     box-sizing: border-box;
-    color: #424551;
+    /* color: #424551; */
 }
 .main-personeli-container {
     display: flex;
