@@ -137,16 +137,9 @@
 }
 
 #canvas {
-  background-color: green;
+  /* background-color: green;
   padding: 0;
-  /* margin: auto; */
-  /* display: block; */
-  /* position: absolute; */
-  /* top: 0; */
-  /* bottom: 0; */
-  /* left: 0; */
-  right: 0;
   width: 1000px;
-  height: 600px;
+  height: 600px; */
 }
 /* Drawing app end */
