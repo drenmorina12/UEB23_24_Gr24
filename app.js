@@ -1,0 +1,1 @@
+// const sidebarLinks = document.querySelectorAll(".sidebar ul li")

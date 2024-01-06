@@ -82,14 +82,207 @@ function pastrimi() {
   x11.focus();
 }
 
-let testtti = document.querySelector(".testi");
-function myFunction() {
-  var x = document.getElementById("permbajtjaKalkulatori");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+
+
+///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+var vleraGj = document.getElementById('vleraGj');
+
+var selectVGj = document.getElementById('njesiaVleraGj');
+var selecttRGj = document.getElementById('njesiaRezultatiGj');
+
+
+function konvertimGj() {
+    var njesiaVleraGj = selectVGj.options[selectVGj.selectedIndex].value;
+    var njesiaRrezultatiGj = selecttRGj.options[selecttRGj.selectedIndex].value;
+
+    if (vleraGj.value >= 0) {
+        if (njesiaVleraGj == "meterV" && njesiaRrezultatiGj == "meterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 1;
+
+            console.log(njesiaVleraGj);
+            console.log(njesiaRrezultatiGj);
+
+        } else if (njesiaVleraGj == "meterV" && njesiaRrezultatiGj == "milimeterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 1000;
+        } else if (njesiaVleraGj == "meterV" && njesiaRrezultatiGj == "centimeterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 100;
+        } else if (njesiaVleraGj == "meterV" && njesiaRrezultatiGj == "decimeterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 10;
+        } else if (njesiaVleraGj == "meterV" && njesiaRrezultatiGj == "dekameterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value / 10;
+        } else if (njesiaVleraGj == "meterV" && njesiaRrezultatiGj == "hektameterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value / 100;
+        } else if (njesiaVleraGj == "meterV" && njesiaRrezultatiGj == "kilometerR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value / 1000;
+        } else if (njesiaVleraGj == "milimeterV" && njesiaRrezultatiGj == "meterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value / 1000;
+        } else if (njesiaVleraGj == "milimeterV" && njesiaRrezultatiGj == "milimeterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 1;
+        } else if (njesiaVleraGj == "milimeterV" && njesiaRrezultatiGj == "centimeterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value / 10;
+        } else if (njesiaVleraGj == "milimeterV" && njesiaRrezultatiGj == "decimeterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value / 100;
+        } else if (njesiaVleraGj == "milimeterV" && njesiaRrezultatiGj == "dekameterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value / 10000;
+        } else if (njesiaVleraGj == "milimeterV" && njesiaRrezultatiGj == "hektameterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value / 100000;
+        } else if (njesiaVleraGj == "milimeterV" && njesiaRrezultatiGj == "kilometerR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value / 1000000;
+        } else if (njesiaVleraGj == "centimeterV" && njesiaRrezultatiGj == "meterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value / 100;
+        } else if (njesiaVleraGj == "centimeterV" && njesiaRrezultatiGj == "milimeterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 10;
+        } else if (njesiaVleraGj == "centimeterV" && njesiaRrezultatiGj == "centimeterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 1;
+        } else if (njesiaVleraGj == "centimeterV" && njesiaRrezultatiGj == "decimeterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value / 10;
+        } else if (njesiaVleraGj == "centimeterV" && njesiaRrezultatiGj == "dekameterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value / 1000;
+        } else if (njesiaVleraGj == "centimeterV" && njesiaRrezultatiGj == "hektameterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value / 10000;
+        } else if (njesiaVleraGj == "centimeterV" && njesiaRrezultatiGj == "kilometerR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value / 100000;
+        } else if (njesiaVleraGj == "decimeterV" && njesiaRrezultatiGj == "meterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value / 10;
+        } else if (njesiaVleraGj == "decimeterV" && njesiaRrezultatiGj == "milimeterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 100;
+        } else if (njesiaVleraGj == "decimeterV" && njesiaRrezultatiGj == "centimeterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 10;
+        } else if (njesiaVleraGj == "decimeterV" && njesiaRrezultatiGj == "decimeterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 1;
+        } else if (njesiaVleraGj == "decimeterV" && njesiaRrezultatiGj == "dekameterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value / 100;
+        } else if (njesiaVleraGj == "decimeterV" && njesiaRrezultatiGj == "hektameterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value / 1000;
+        } else if (njesiaVleraGj == "decimeterV" && njesiaRrezultatiGj == "kilometerR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value / 10000;
+        } else if (njesiaVleraGj == "dekameterV" && njesiaRrezultatiGj == "meterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 10;
+        } else if (njesiaVleraGj == "dekameterV" && njesiaRrezultatiGj == "milimeterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 10000;
+        } else if (njesiaVleraGj == "dekameterV" && njesiaRrezultatiGj == "centimeterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 1000;
+        } else if (njesiaVleraGj == "dekameterV" && njesiaRrezultatiGj == "decimeterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 100;
+        } else if (njesiaVleraGj == "dekameterV" && njesiaRrezultatiGj == "dekameterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 1;
+        } else if (njesiaVleraGj == "dekameterV" && njesiaRrezultatiGj == "hektameterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value / 10;
+        } else if (njesiaVleraGj == "dekameterV" && njesiaRrezultatiGj == "kilometerR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value / 100;
+        } else if (njesiaVleraGj == "hektameterV" && njesiaRrezultatiGj == "meterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 100;
+        } else if (njesiaVleraGj == "hektameterV" && njesiaRrezultatiGj == "milimeterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 100000;
+        } else if (njesiaVleraGj == "hektameterV" && njesiaRrezultatiGj == "centimeterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 10000;
+        } else if (njesiaVleraGj == "hektameterV" && njesiaRrezultatiGj == "decimeterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 1000;
+        } else if (njesiaVleraGj == "hektameterV" && njesiaRrezultatiGj == "dekameterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 10;
+        } else if (njesiaVleraGj == "hektameterV" && njesiaRrezultatiGj == "hektameterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 1;
+        } else if (njesiaVleraGj == "hektameterV" && njesiaRrezultatiGj == "kilometerR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value / 10;
+        } else if (njesiaVleraGj == "kilometerV" && njesiaRrezultatiGj == "meterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 1000;
+        } else if (njesiaVleraGj == "kilometerV" && njesiaRrezultatiGj == "milimeterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 1000000;
+        } else if (njesiaVleraGj == "kilometerV" && njesiaRrezultatiGj == "centimeterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 100000;
+        } else if (njesiaVleraGj == "kilometerV" && njesiaRrezultatiGj == "decimeterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 10000;
+        } else if (njesiaVleraGj == "kilometerV" && njesiaRrezultatiGj == "dekameterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 100;
+        } else if (njesiaVleraGj == "kilometerV" && njesiaRrezultatiGj == "hektameterR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 10;
+        } else if (njesiaVleraGj == "kilometerV" && njesiaRrezultatiGj == "kilometerR") {
+            document.getElementById('rezultatiGj').value = vleraGj.value * 1;
+        } else if (njesiaVleraGj == "zgjedhe nje opsion") {
+            alert('Zgjidhni një njësi !')
+        } else if (njesiaRrezultatiGj == "zgjedhe nje opsion") {
+            alert('Zgjidhni një njësi !')
+        }
+    } else {
+        alert('Vendosni vlera valide !');
+    }
 }
 
-testtti.addEventListener("click", myFunction);
+
+
+var vleraP = document.getElementById('vleraP');
+
+var selectVP = document.getElementById('njesiaVleraP');
+var selecttRP = document.getElementById('njesiaRezultatiP');
+
+function konvertimP() {
+    var njesiaVleraP = selectVP.options[selectVP.selectedIndex].value;
+    var njesiaRrezultatiP = selecttRP.options[selecttRP.selectedIndex].value;
+
+    if (vleraP.value >= 0) {
+        if (njesiaVleraP == "kilogramV" && njesiaRrezultatiP == "kilogramR") {
+            document.getElementById('rezultatiP').value = vleraP.value * 1;
+
+            console.log(njesiaVleraGj);
+            console.log(njesiaRrezultatiGj);
+        } else if (njesiaVleraP == "kilogramV" && njesiaRrezultatiP == "miligramR") {
+            document.getElementById('rezultatiP').value = vleraP.value * 1000000;
+        } else if (njesiaVleraP == "kilogramV" && njesiaRrezultatiP == "gramR") {
+            document.getElementById('rezultatiP').value = vleraP.value * 1000;
+        } else if (njesiaVleraP == "kilogramV" && njesiaRrezultatiP == "dekagramR") {
+            document.getElementById('rezultatiP').value = vleraP.value * 100;
+        } else if (njesiaVleraP == "kilogramV" && njesiaRrezultatiP == "tonR") {
+            document.getElementById('rezultatiP').value = vleraP.value / 1000;
+        } else if (njesiaVleraP == "miligramV" && njesiaRrezultatiP == "kilogramR") {
+            document.getElementById('rezultatiP').value = vleraP.value / 1000000;
+        } else if (njesiaVleraP == "miligramV" && njesiaRrezultatiP == "miligramR") {
+            document.getElementById('rezultatiP').value = vleraP.value * 1;
+        } else if (njesiaVleraP == "miligramV" && njesiaRrezultatiP == "gramR") {
+            document.getElementById('rezultatiP').value = vleraP.value / 1000;
+        } else if (njesiaVleraP == "miligramV" && njesiaRrezultatiP == "dekagramR") {
+            document.getElementById('rezultatiP').value = vleraP.value / 10000;
+        } else if (njesiaVleraP == "miligramV" && njesiaRrezultatiP == "tonR") {
+            document.getElementById('rezultatiP').value = vleraP.value / 1000000000;
+        } else if (njesiaVleraP == "gramV" && njesiaRrezultatiP == "kilogramR") {
+            document.getElementById('rezultatiP').value = vleraP.value / 1000;
+        } else if (njesiaVleraP == "gramV" && njesiaRrezultatiP == "miligramR") {
+            document.getElementById('rezultatiP').value = vleraP.value * 1000;
+        } else if (njesiaVleraP == "gramV" && njesiaRrezultatiP == "gramR") {
+            document.getElementById('rezultatiP').value = vleraP.value * 1;
+        } else if (njesiaVleraP == "gramV" && njesiaRrezultatiP == "dekagramR") {
+            document.getElementById('rezultatiP').value = vleraP.value / 100;
+        } else if (njesiaVleraP == "gramV" && njesiaRrezultatiP == "tonR") {
+            document.getElementById('rezultatiP').value = vleraP.value / 1000000;
+        } else if (njesiaVleraP == "dekagramV" && njesiaRrezultatiP == "kilogramR") {
+            document.getElementById('rezultatiP').value = vleraP.value / 100;
+        } else if (njesiaVleraP == "dekagramV" && njesiaRrezultatiP == "miligramR") {
+            document.getElementById('rezultatiP').value = vleraP.value * 10000;
+        } else if (njesiaVleraP == "dekagramV" && njesiaRrezultatiP == "gramR") {
+            document.getElementById('rezultatiP').value = vleraP.value * 10;
+        } else if (njesiaVleraP == "dekagramV" && njesiaRrezultatiP == "dekagramR") {
+            document.getElementById('rezultatiP').value = vleraP.value * 1;
+        } else if (njesiaVleraP == "dekagramV" && njesiaRrezultatiP == "tonR") {
+            document.getElementById('rezultatiP').value = vleraP.value / 100000;
+        } else if (njesiaVleraP == "tonV" && njesiaRrezultatiP == "kilogramR") {
+            document.getElementById('rezultatiP').value = vleraP.value * 1000;
+        } else if (njesiaVleraP == "tonV" && njesiaRrezultatiP == "miligramR") {
+            document.getElementById('rezultatiP').value = vleraP.value * 1000000000;
+        } else if (njesiaVleraP == "tonV" && njesiaRrezultatiP == "gramR") {
+            document.getElementById('rezultatiP').value = vleraP.value * 1000000;
+        } else if (njesiaVleraP == "tonV" && njesiaRrezultatiP == "dekagramR") {
+            document.getElementById('rezultatiP').value = vleraP.value * 100000;
+        } else if (njesiaVleraP == "tonV" && njesiaRrezultatiP == "tonR") {
+            document.getElementById('rezultatiP').value = vleraP.value * 1;
+        } else if (njesiaVleraP == "zgjedhe nje opsion") {
+            alert('Zgjidhni një njësi !')
+        } else if (njesiaRrezultatiP == "zgjedhe nje opsion") {
+            alert('Zgjidhni një njësi !')
+        }
+
+    } else {
+        alert('Vendosni vlera valide !');
+    }
+}

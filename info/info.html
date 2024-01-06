@@ -32,6 +32,7 @@
 
     <main id="main">
 
+  <div id="objekt-personel-orar">
       <div class="OBJEKTI-MENU">
         <a href="#featured-image">| OBJEKTI |</a>  
     </div>
@@ -41,18 +42,19 @@
     <div class="ORARI-MENU">
         <a href="#start-orari">ORARI |</a>
     </div>
+  </div>
     <hr class="vija-horizontale"><br>
     <!-- product section -->
     <section class="main-container">
         <!-- left side -->
         <div class="img-card">
-            <img src="../images/TEKNIKU.jpg" alt="" id="featured-image">
+            <img src="../images/TEKNIKU.jpg" alt="" id="featured-image" data-aos="zoom-out" data-aos-duration="1000">
             <!-- small img -->
             <div class="small-Card">
-                <img src="../images/Amfiteatri411.jpg" alt="" class="small-Img">
-                <img src="../images/Amfiteatri408.jpg" alt="" class="small-Img">
-                <img src="../images/Salla621.jpg" alt="" class="small-Img">
-                <img src="../images/SallaMesimiFIEK.png" alt="" class="small-Img">
+                <img src="../images/Amfiteatri411.jpg" alt="" class="small-Img" data-aos="fade-left" data-aos-duration="1000">
+                <img src="../images/Amfiteatri408.jpg" alt="" class="small-Img" data-aos="fade-right" data-aos-duration="1000">
+                <img src="../images/Salla621.jpg" alt="" class="small-Img" data-aos="fade-left" data-aos-duration="1000">
+                <img src="../images/SallaMesimiFIEK.png" alt="" class="small-Img" data-aos="fade-right" data-aos-duration="1000">
             </div>
         </div>
         <!-- Right side -->
@@ -72,7 +74,6 @@
             </div>
   
             <div>
-                <p>Kapaciteti / Kati :</p>
                 <div class="infoFIEK">
                     <p><b><i>FIEK</i></b></p> <p><b>Amfiteatri / Salla</b></p> <p><b>Kati</b></p>
                 </div>
@@ -94,7 +95,7 @@
                     <p>40-60 ulëse</p> 
                     <p>6-të</p>
                 </div>
-            </div><br><br><br><br><br>
+            </div><br>
             <p class="adresaFIEK">Adresa:Bregu i Diellit, 10000 Prishtinë, Republika e Kosovës
                 <a href="mailto:fiek@uni-pr.edu"><br>email-fiek</a>
             </p>
@@ -142,16 +143,32 @@
   <hr class="vija-horizontale"><br>
 
       <!-- ORARI INFO :  -->
-
+      <div id="orarii">
       <div class="orari-headeri"><h1>Orari - FIEK</h1></div><br>
       <!-- TABELA VITI 1 : -->
-<div class="container mt-5">
-  <table class="table table-bordered table-striped">
+      <div style="display: flex; align-items: center;">
+        <span style="display: inline-block; width: 10px; height: 10px; background-color: red; border-radius: 50%;"></span>
+        <span style="margin-left: 5px;">e hënë &nbsp</span>
+        <span style="display: inline-block; width: 10px; height: 10px; background-color: yellow; border-radius: 50%;"></span>
+        <span style="margin-left: 5px;">e martë &nbsp</span>
+        <span style="display: inline-block; width: 10px; height: 10px; background-color: green; border-radius: 50%;"></span>
+        <span style="margin-left: 5px;">e mërkurë &nbsp</span>
+        <span style="display: inline-block; width: 10px; height: 10px; background-color: blue; border-radius: 50%;"></span>
+        <span style="margin-left: 5px;">e enjte &nbsp</span>
+        <span style="display: inline-block; width: 10px; height: 10px; background-color: purple; border-radius: 50%;"></span>
+        <span style="margin-left: 5px;">e premte</span>
+      </div>
+    </div>
+    
+      <div class="container mt-5">
+  <p class="vitet-akademike">VITI AKADEMIK : I</p>
+  <table class="table table-bordered table-striped color-of-table1">
     <thead class="table-dark">
       <tr>
         <th scope="col">#</th>
         <th scope="col">Lëndët</th>
         <th scope="col">Profesori</th>
+        <th scope="col">Asistenti</th>
         <th scope="col">Kreditë</th>
         <th scope="col">Orari | Klasa</th>
       </tr>
@@ -161,71 +178,81 @@
         <th scope="row">1</th>
         <td>Shkathtësi komunikuese</td>
         <td>Blerim Rexha | Sabrije Osmanaj</td>
+        <td>/</td>
         <td>5</td>
-        <td>16:30-18:00 | Amfiteatri 411</td>
+        <td class="marte">16:30-18:00 | Amfiteatri 411</td>
       </tr>
       <tr>
         <th scope="row">2</th>
         <td>Bazat e Inxhinierisë Elektrike 1</td>
         <td>Vjosa Shatri | Enver Hamiti | Mimoza Ibrani </td>
+        <td>Jeta Dobruna</td>
         <td>7</td>
-        <td>10:30-12:00 | Amfiteatri 411</td>
+        <td class="hene">10:30-12:00 | Amfiteatri 411</td>
       </tr>
       <tr>
         <th scope="row">3</th>
         <td>Bazat e programimit</td>
         <td>Kadri Sylejmani | Avni Rexhepi</td>
+        <td>Labeat Arbneshi</td>
         <td>5</td>
-        <td>09:30-11:00 | Amfiteatri 411</td>
+        <td class="premte">09:30-11:00 | Amfiteatri 411</td>
       </tr>
       <tr>
         <th scope="row">4</th>
         <td>Algjebra Lineare dhe Kalkulus 1</td>
         <td>Shqipe Lohaj | Qefsere Gjonbalaj | Valdete Hamiti</td>
+        <td>Blerta Haziri</td>
         <td>7</td>
-        <td>08:00-10:30 | Amfiteatri 408</td>
+        <td class="marte">08:00-10:30 | Amfiteatri 408</td>
       </tr>
       <tr>
         <th scope="row">5</th>
         <td>Fizika 1</td>
         <td>Valon Veliu</td>
+        <td>Yllka Delija</td>
         <td>6</td>
-        <td>16:30-18:00 | Amfiteatri 408</td>
+        <td class="hene">16:30-18:00 | Amfiteatri 408</td>
       </tr>
       <tr>
         <th scope="row">6</th>
         <td>Algoritmet dhe Strukturat e te Dhenave</td>
         <td>Kadri Sylejmani | Avni Rexhepi</td>
+        <td>Ardian Ymeri</td>
         <td>5</td>
-        <td>08:00-09:30 | Amfiteatri 411</td>
+        <td class="premte">08:00-09:30 | Amfiteatri 411</td>
       </tr>
       <tr>
         <th scope="row">7</th>
         <td>Fizika 2</td>
         <td>Valon Veliu</td>
+        <td>Yllka Kabashi</td>
         <td>6</td>
-        <td>14:45-16:15 | Amfiteatri 408</td>
+        <td class="enjte">14:45-16:15 | Amfiteatri 408</td>
       </tr>
       <tr>
         <th scope="row">8</th>
         <td>Algjebra Lineare dhe Kalkulus 2</td>
         <td>Shqipe Lohaj | Qefsere Gjonbalaj | Valdete Hamiti</td>
+        <td>Astrit Syla</td>
         <td>7</td>
-        <td>09:40-11:15 | Amfiteatri 408</td>
+        <td class="merkure">09:40-11:15 | Amfiteatri 408</td>
       </tr>
       <tr>
         <th scope="row">9</th>
         <td>Qarqe Digjitale</td>
         <td>Sabrije Osmanaj | Artan Mazrekaj</td>
+        <td>Kadrije Simnica</td>
         <td>5</td>
-        <td>13:30-15:00 | Salla 621</td>
+        <td class="premte">13:30-15:00 | Salla 621</td>
       </tr>
       <tr>
         <th scope="row">10</th>
         <td>Bazat e Inxhinierisë Elektrike 2</td>
         <td>Vjosa Shatri | Enver Hamiti | Mimoza Ibrani</td>
+        <td>Jeta Dobruna</td>
         <td>7</td>
-        <td>10:30-12:45 | Amfiteatri 411</td>
+        <td class="marte">10:30-12:45 | Amfiteatri 411</td>
       </tr>
     </tbody>
   </table>
@@ -233,12 +260,14 @@
 
 <!-- TABELA VITI 2 : -->
 <div class="container mt-5">
-  <table class="table table-bordered table-striped">
+  <p class="vitet-akademike">VITI AKADEMIK : II</p>
+  <table class="table table-bordered table-striped color-of-table2">
     <thead class="table-dark">
       <tr>
         <th scope="col">#</th>
         <th scope="col">Lëndët</th>
         <th scope="col">Profesori</th>
+        <th scope="col">Asistenti</th>
         <th scope="col">Kreditë</th>
         <th scope="col">Orari | Klasa</th>
       </tr>
@@ -248,89 +277,201 @@
         <th scope="row">1</th>
         <td>Elektronika</td>
         <td>Qamil Kabashi | Milaim Zabeli</td>
+        <td>Ramadan Plakolli</td>
         <td>5</td>
-        <td>16:30-18:00 | Amfiteatri 411</td>
+        <td class="merkure">16:30-18:00 | Amfiteatri 411</td>
       </tr>
       <tr>
         <th scope="row">2</th>
-        <td>Web 1</td>
+        <td>Programimi në ueb II</td>
         <td>Dhurata Hyseni</td>
+        <td>Dalinë Vranovci</td>
         <td>5</td>
-        <td>10:30-12:00 | Amfiteatri 411</td>
+        <td class="hene">10:30-12:00 | Amfiteatri 411</td>
       </tr>
       <tr>
         <th scope="row">3</th>
         <td>Bazat e të dhënave</td>
         <td>Lule Ahmedi</td>
+        <td>Dalinë Vranovci</td>
         <td>5</td>
-        <td>09:30-11:00 | Amfiteatri 411</td>
+        <td class="hene">09:30-11:00 | Amfiteatri 411</td>
       </tr>
       <tr>
         <th scope="row">4</th>
         <td>Programimi I Orientuar në Objekte</td>
         <td>Isak Shabani</td>
+        <td>Blend Arifaj</td>
         <td>5</td>
-        <td>08:00-10:30 | Amfiteatri 408</td>
+        <td class="merkure">08:00-10:30 | Amfiteatri 408</td>
       </tr>
       <tr>
         <th scope="row">5</th>
         <td>Arkitekturë</td>
         <td>Valon Raca</td>
+        <td>Synim Selimi</td>
         <td>5</td>
-        <td>16:30-18:00 | Amfiteatri 408</td>
+        <td class="premte">16:30-18:00 | Amfiteatri 408</td>
       </tr>
       <tr>
         <th scope="row">6</th>
-        <td>Matematikë Diskrete</td>
+        <td>Matematika diskrete dhe probabiliteti</td>
         <td>Qefsere Gjonbalaj</td>
+        <td>Fatmire Hyseni</td>
         <td>5</td>
-        <td>08:00-09:30 | Amfiteatri 411</td>
+        <td class="premte">08:00-09:30 | Amfiteatri 411</td>
       </tr>
       <tr>
         <th scope="row">7</th>
-        <td>Fizika 2</td>
-        <td>Valon Veliu</td>
+        <td>Sistemet operative</td>
+        <td>Artan Mazrekaj</td>
+        <td>Dalinë Vranovci</td>
         <td>5</td>
-        <td>14:45-16:15 | Amfiteatri 408</td>
+        <td class="enjte">9:00-10:30 | Salla 626</td>
       </tr>
       <tr>
         <th scope="row">8</th>
-        <td>Algjebra Lineare dhe Kalkulus 2</td>
-        <td>Shqipe Lohaj | Qefsere Gjonbalaj | Valdete Hamiti</td>
+        <td>Siguria e të dhënave</td>
+        <td>Blerim Rexha</td>
+        <td>Mërgim Hoti</td>
         <td>5</td>
-        <td>09:40-11:15 | Amfiteatri 408</td>
+        <td class="marte">9:00-10:30 | Salla 621</td>
       </tr>
       <tr>
         <th scope="row">9</th>
-        <td>Qarqe Digjitale</td>
-        <td>Sabrije Osmanaj | Artan Mazrekaj</td>
+        <td>Komunikimi njeri-kompjuter</td>
+        <td>Isak Shabani</td>
+        <td>Mërgim Hoti</td>
         <td>5</td>
-        <td>13:30-15:00 | Salla 621</td>
+        <td class="merkure">10:30-12:00 | Salla 626</td>
       </tr>
       <tr>
         <th scope="row">10</th>
-        <td>Bazat e Inxhinierisë Elektrike 2</td>
-        <td>Vjosa Shatri | Enver Hamiti | Mimoza Ibrani</td>
+        <td>Inxhinieria softuerike</td>
+        <td>Blerim Rexha</td>
+        <td>Arbnor Halili</td>
         <td>5</td>
-        <td>10:30-12:45 | Amfiteatri 411</td>
+        <td class="enjte">10:30-12:00 | Salla 621</td>
       </tr>
       <tr>
         <th scope="row">11</th>
-        <td>Bazat e Inxhinierisë Elektrike 2</td>
-        <td>Vjosa Shatri | Enver Hamiti | Mimoza Ibrani</td>
+        <td>Programimi në ueb II</td>
+        <td>Dhuarata Hyseni</td>
+        <td>Dalinë Vranovci</td>
         <td>5</td>
-        <td>10:30-12:45 | Amfiteatri 411</td>
+        <td class="hene">12:00-13:30 | Salla 621</td>
       </tr>
       <tr>
         <th scope="row">12</th>
-        <td>Bazat e Inxhinierisë Elektrike 2</td>
-        <td>Vjosa Shatri | Enver Hamiti | Mimoza Ibrani</td>
+        <td>Buxheti dhe analiza e shpenzimeve</td>
+        <td>Bahri Prebreza</td>
+        <td>/</td>
         <td>5</td>
-        <td>10:30-12:45 | Amfiteatri 411</td>
+        <td class="enjte">12:30-15:30 | Amfiteatri 411</td>
       </tr>
     </tbody>
   </table>
 </div>
+
+  <!-- TABELA VITI 3 : -->
+  <div class="container mt-5">
+    <p class="vitet-akademike">VITI AKADEMIK : III</p>
+    <table class="table table-bordered table-striped color-of-table3">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Lëndët</th>
+          <th scope="col">Profesori</th>
+          <th scope="col">Asistenti</th>
+          <th scope="col">Kreditë</th>
+          <th scope="col">Orari | Klasa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mikroprocesorët dhe mikrokontrollerët</td>
+          <td>Lavdim Kurtaj</td>
+          <td>/</td>
+          <td>6</td>
+          <td class="enjte">11:45-13:15 | Salla 611</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Inxhinieria softuerike</td>
+          <td>Blerim Rexha</td>
+          <td>Arbnor Halili</td>
+          <td>6</td>
+          <td class="marte">10:00-11:30 | Salla 621</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Sistemet Operative</td>
+          <td>Artan Mazrekaj</td>
+          <td>Dalinë Vranovci</td>
+          <td>6</td>
+          <td class="enjte">8:45-10.15 | Salla 621</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Siguria e Internetit</td>
+          <td>Blerim Rexha</td>
+          <td>Mërgim Hoti</td>
+          <td>6</td>
+          <td class="hene">14:00-16:15 | Salla 621</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Ndërmarrësi</td>
+          <td>S.Alshiqi</td>
+          <td>/</td>
+          <td>6</td>
+          <td class="enjte">15:30-17:00 | Amfiteatri 411</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>Sistemet e shpërndara</td>
+          <td>Dhurata Hyseni</td>
+          <td>Blend Arifaj</td>
+          <td>6</td>
+          <td class="enjte">14:30-16:00 | Salla 621</td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>Dizajni dhe analiza e algoritmeve</td>
+          <td>Avni Rexhepi</td>
+          <td>/</td>
+          <td>6</td>
+          <td class="enjte">10:30-12:00 | Amfiteatri 411</td>
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td>Praktika e rrjeteve Kompjuterike</td>
+          <td>Blerim Rexha</td>
+          <td>Mërgim Hoti</td>
+          <td>6</td>
+          <td class="merkure">8:30-10.00 | Salla 621</td>
+        </tr>
+        <tr>
+          <th scope="row">9</th>
+          <td>Programimi i pajisjeve mobile</td>
+          <td>Blerim Rexha</td>
+          <td>/</td>
+          <td>6</td>
+          <td class="premte">17:30-19:00 | Salla 621</td>
+        </tr>
+        <tr>
+          <th scope="row">10</th>
+          <td>Praktika profesionale</td>
+          <td>Valon Raca</td>
+          <td>/</td>
+          <td>6</td>
+          <td class="enjte">13:00-15:30 | /</td>
+        </tr>
+      </tbody>
+    </table>
+    <p id="start-orari">Orari i plotë + master : <a href="https://fiek.uni-pr.edu/page.aspx?id=1,37,1115">KLIKO KËTU</a></p>
+    <hr class="vija-horizontale"><br>
 </main>
 
     <!-- FOOTER : -->

@@ -20,23 +20,30 @@ const finalResulTemplate = "Zgjidhja Perfundimtare";
 // ---------------------------------------
 
 const fizikaSolutions = {
-  A: "Zgjidhja A TEST",
-  B: "Zgjidhja B TEST",
-  C: "Zgjidhja C TEST",
-  D: "Zgjidhja D TEST",
+  A: "Shpërthim",
+  B: "Hiroshima - 1945",
+  C: "Montimi",
+  D: "",
 };
 
 const finalResultFizika = "Atomi";
 
 const fizika = {
-  A: ["A1-test", "A2-test", "A3-test", "A4-test", fizikaSolutions.A, "TESTTT"],
+  A: [
+    "A1-test",
+    "A2-test",
+    "A3-test",
+    "A4-test",
+    fizikaSolutions.A,
+    finalResultFizika,
+  ],
   B: ["B1-test", "B2-test", "B3-test", "B4-test", fizikaSolutions.B],
   C: ["C1-test", "C2-test", "C3-test", "C4-test", fizikaSolutions.C],
   D: ["D1-test", "D2-test", "D3-test", "D4-test", fizikaSolutions.D],
 };
 
 const matematikaSolution = {
-  A: "Zgjidhja 1",
+  A: "Zgjidhja ",
   B: "Zgjidhja 2",
   C: "Zgjidhja 3",
   D: "Zgjidhja 4",
@@ -65,7 +72,7 @@ const pergjithshemSolution = {
   D: "D!",
 };
 
-const finalResultPergjithshem = "integrali";
+const finalResultPergjithshem = "!FINAAAl";
 
 const pergjithshem = {
   A: ["!", "!", "!", "!", pergjithshemSolution.A, finalResultPergjithshem],

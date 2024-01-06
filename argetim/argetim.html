@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div id="header">
@@ -18,14 +22,39 @@
       <nav class="nav-bar">
         <a href="../index.html">Ballina</a>
         <a href="../kalkulatore/kalkulatore.html">Kalkulatorë</a>
-        <a href="?">Argetim</a>
+        <a href="#">Argetim</a>
         <a href="../literatura/literatura.html">Literatura</a>
         <a href="../info/info.html">Info</a>
         <a href="../rreth-nesh/rreth-nesh.html">Rreth nesh</a>
       </nav>
     </div>
-    <div id="main">
-      <div class="side-bar"></div>
+    <main id="main">
+      <div class="sidebar">
+        <!-- <header>Argetimi</header> -->
+        <ul>
+          <li>
+            <a href="#asosacioni">
+              <span>Asosacioni</span>
+            </a>
+          </li>
+          <li class="sidebar-active">
+            <a href="#kuizi">
+              <span>Kuizi</span>
+            </a>
+          </li>
+          <li>
+            <a href="#loja1">
+              <span>Loja 1</span>
+            </a>
+          </li>
+          <li>
+            <a href="#loja2">
+              <span>Loja 2</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
       <div class="main-content">
         <!-- Asosacioni -->
         <div id="asosacioni">
@@ -35,13 +64,13 @@
           <div class="asosacioni-content">
             <div class="asosacioni-buttons">
               <button class="asosacioni-button active" data-name="pergjithshem">
-                Pergjithshem
+                Përgjithshëm
               </button>
               <button class="asosacioni-button" data-name="fizika">
-                Fizika
+                Fizikë
               </button>
               <button class="asosacioni-button" data-name="matematika">
-                Matematika
+                Matematikë
               </button>
 
               <button class="reset-button">Reset</button>
@@ -52,14 +81,108 @@
           </div>
         </div>
         <div id="kuizi">
-          <div class="testing-div"></div>
-          <div class="testing-div"></div>
-          <div class="testing-div"></div>
+          <div class="start-screen">
+            <button id="start-button" onclick="playAudio1()">Fillo !</button>
+          </div>
+          <div id="display-container">
+            <div class="header">
+              <div class="number-of-count">
+                <span class="number-of-question">1 nga 3 pyetje</span>
+              </div>
+              <div class="timer-div">
+                <img src="../images/timer-icon.svg" />
+                <span class="time-left">10s</span>
+              </div>
+            </div>
+            <div id="container"></div>
+            <button id="next-button">Pyetja Tjeter</button>
+          </div>
+          <div class="score-container hide">
+            <div id="user-score">Demo Score</div>
+            <button id="restart" onclick="playAudio2()">Luaj Perseri</button>
+          </div>
+      
+          <audio id="restartAudio">
+            <source src="../audio/finishAudio.mp3" type="audio/mp3" />
+            Your browser does not support the audio element.
+          </audio>
+          <audio id="startAudio">
+            <source src="../audio/clapAudio.mp3" type="audio/mp3" />
+            Your browser does not support the audio element.
+          </audio>
         </div>
-        <div id="loja1"></div>
+
+        <div id="loja1">
+          <div class="container">
+            <section class="tools-board">
+              <div class="row">
+                <label class="title">Format</label>
+                <ul class="options">
+                  <li class="option tool" id="rectangle">
+                    <img src="icons/rectangle.svg" alt="" />
+                    <span>Drejtkëndësh</span>
+                  </li>
+                  <li class="option tool" id="circle">
+                    <img src="icons/circle.svg" alt="" />
+                    <span>Rreth</span>
+                  </li>
+                  <li class="option tool" id="triangle">
+                    <img src="icons/triangle.svg" alt="" />
+                    <span>Trekëndësh</span>
+                  </li>
+                  <li class="option">
+                    <input type="checkbox" id="fill-color" />
+                    <label for="fill-color">Mbush ngjyrën</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="row">
+                <label class="title">Opsionet</label>
+                <ul class="options">
+                  <li class="option active tool" id="brush">
+                    <img src="icons/brush.svg" alt="" />
+                    <span>Lapsi</span>
+                  </li>
+                  <li class="option tool" id="eraser">
+                    <img src="icons/eraser.svg" alt="" />
+                    <span>Goma</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="range"
+                      id="size-slider"
+                      min="1"
+                      max="30"
+                      value="5"
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div class="row colors">
+                <label class="title">Ngjyrat</label>
+                <ul class="options">
+                  <li class="option"></li>
+                  <li class="option selected"></li>
+                  <li class="option"></li>
+                  <li class="option"></li>
+                  <li class="option">
+                    <input type="color" id="color-picker" value="#4A98F7" />
+                  </li>
+                </ul>
+              </div>
+              <div class="row buttons">
+                <button class="clear-canvas">Pastro</button>
+                <button class="save-img">Ruaj Shënimet</button>
+              </div>
+            </section>
+            <section class="drawing-board">
+              <canvas></canvas>
+            </section>
+          </div>
+        </div>
         <div id="loja2"></div>
       </div>
-    </div>
+    </main>
 
     <footer id="footer">
       <p>Github Accounts :</p>
@@ -79,5 +202,7 @@
     </footer>
 
     <script src="argetim.js"></script>
+    <script src="draw.js"></script>
+    <script src="kuizi.js"></script>
   </body>
 </html>
