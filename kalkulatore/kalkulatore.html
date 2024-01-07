@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
-
     <link rel="icon" href="../images/logo1.png" />
     <title>Up Student Toolkit</title>
     <link rel="stylesheet" href="../style.css" />
@@ -14,13 +12,21 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    
 
     <style>
       #main {
         background-color: #f0f0f0;
       }
+
+      .drawing-board {
+        outline: 3px black solid;
+      }
+
+      .tools-board {
+        outline: 3px black solid;
+      }
     </style>
+    <script src="draw.js" defer></script>
   </head>
   <body>
     <div id="header">
@@ -34,7 +40,8 @@
         <a href="../rreth-nesh/rreth-nesh.html">Rreth nesh</a>
       </nav>
     </div>
-    <main style="background-color: rgba(1, 30, 110, 0.5)" id="main">
+    <main id="main" style="background-color: rgba(1, 30, 110, 0.5)">
+      <!-- Sidebar -->
       <div class="sidebar">
         <!-- <header>Argetimi</header> -->
         <ul id="listaEsidebar">
@@ -49,20 +56,19 @@
             </a>
           </li>
           <li>
-            <!-- <a href="#loja1">
-              <span>Loja1</span>
+            <a href="#drawing-table">
+              <span>Tabela e Vizatimit</span>
             </a>
           </li>
-          <li>
+          <!-- <li>
             <a href="#loja2">
               <span>Loja2</span>
             </a>
           </li> -->
-          </li>
         </ul>
       </div>
       <div class="main-contentveglat">
-        <!-- Page content -->
+        <!-- Kalkulatori -->
         <div id="permbajtjaKalkulatori">
           <div class="pershkrimi2">
             <h2>Kalkulatori</h2>
@@ -135,6 +141,8 @@
             </div>
           </div>
         </div>
+
+        <!-- Konvertori -->
         <div id="permbajtjaKonvertori">
           <div class="pershkrimi2">
             <h2>Konvertuesi i njsëive</h2>
@@ -366,6 +374,76 @@
                 </tbody>
               </table>
             </div>
+          </div>
+        </div>
+
+        <!-- Tabela per vizatim -->
+        <div id="drawing-table">
+          <div class="container">
+            <section class="tools-board">
+              <div class="row">
+                <label class="title">Format</label>
+                <ul class="options">
+                  <li class="option tool" id="rectangle">
+                    <img src="icons/rectangle.svg" alt="" />
+                    <span>Drejtkëndësh</span>
+                  </li>
+                  <li class="option tool" id="circle">
+                    <img src="icons/circle.svg" alt="" />
+                    <span>Rreth</span>
+                  </li>
+                  <li class="option tool" id="triangle">
+                    <img src="icons/triangle.svg" alt="" />
+                    <span>Trekëndësh</span>
+                  </li>
+                  <li class="option">
+                    <input type="checkbox" id="fill-color" />
+                    <label for="fill-color">Mbush ngjyrën</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="row">
+                <label class="title">Opsionet</label>
+                <ul class="options">
+                  <li class="option active tool" id="brush">
+                    <img src="icons/brush.svg" alt="" />
+                    <span>Lapsi</span>
+                  </li>
+                  <li class="option tool" id="eraser">
+                    <img src="icons/eraser.svg" alt="" />
+                    <span>Goma</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="range"
+                      id="size-slider"
+                      min="1"
+                      max="30"
+                      value="5"
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div class="row colors">
+                <label class="title">Ngjyrat</label>
+                <ul class="options">
+                  <li class="option"></li>
+                  <li class="option selected"></li>
+                  <li class="option"></li>
+                  <li class="option"></li>
+                  <li class="option">
+                    <input type="color" id="color-picker" value="#4A98F7" />
+                  </li>
+                </ul>
+              </div>
+              <div class="row buttons">
+                <button class="clear-canvas">Pastro</button>
+                <button class="save-img">Ruaj Shënimet</button>
+              </div>
+            </section>
+            <section class="drawing-board">
+              <canvas></canvas>
+            </section>
           </div>
         </div>
       </div>
