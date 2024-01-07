@@ -246,7 +246,7 @@ button {
 /* Tic-Tac-Toe start */
 :root {
   --cell-size: 100px;
-  --mark-size: cal(var(--cell-size) * 0.9);
+  --mark-size: calc(var(--cell-size) * 0.9);
 }
 
 #tic-tac-toe {
@@ -269,6 +269,10 @@ button {
   width: var(--cell-size);
   height: var(--cell-size);
   border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .cell:first-child,
@@ -291,6 +295,41 @@ button {
   border-bottom: none;
 }
 
+.cell.x::before,
+.cell.x::after {
+  content: "";
+  position: absolute;
+  width: calc(var(--mark-size) * 0.15);
+  height: var(--mark-size);
+  background-color: #000000;
+}
+
+.cell.x::before {
+  transform: rotate(45deg);
+}
+
+.cell.x::after {
+  transform: rotate(-45deg);
+}
+
+.cell.circle::before,
+.cell.circle::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.cell.circle::before {
+  width: var(--mark-size);
+  height: var(--mark-size);
+  background-color: black;
+}
+
+.cell.circle::after {
+  width: calc(var(--mark-size) * 0.7);
+  height: calc(var(--mark-size) * 0.7);
+  background-color: white;
+}
 /* Tic-Tac-Toe end */
 
 /* Loja2 start */
