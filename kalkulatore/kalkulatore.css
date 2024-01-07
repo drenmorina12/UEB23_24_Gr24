@@ -204,6 +204,7 @@ select {
 #njesiaRezultatiP {
   width: 145px;
   font-size: 13px;
+  height: 40px;
 }
 #vleraGj,
 #rezultatiGj,
@@ -211,6 +212,7 @@ select {
 #rezultatiP {
   width: 100px;
   font-size: 13px;
+  height: 40px;
 }
 /*==-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-
 ///////////////////////////////////////////////////////*/
