@@ -146,3 +146,12 @@ saveImg.addEventListener("click", () => {
 canvas.addEventListener("mousedown", startDraw);
 canvas.addEventListener("mousemove", drawing);
 canvas.addEventListener("mouseup", () => (isDrawing = false));
+canvas.addEventListener("mouseleave", () => (isDrawing = false));
+canvas.addEventListener("mouseenter", () => {
+  // canvas.style.cursor = "crosshair, pointer";
+  canvas.style.cursor = "crosshair";
+});
+
+canvas.addEventListener("mouseleave", () => {
+  canvas.style.cursor = "auto"; // Reset the cursor to the default when leaving the canvas
+});
