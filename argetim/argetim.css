@@ -263,6 +263,23 @@ button {
   min-width: 110px;
 }
 
+.notification {
+  display: none;
+  /* border: 10px solid brown; */
+  position: relative;
+  width: 300px;
+  height: 50px;
+  left: 940px;
+  bottom: 250px;
+  /* top: 300px; */
+  /* right: 10px; */
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  /* z-index: 1000; */
+}
+
 .card-bg {
   background-color: #002244;
 }

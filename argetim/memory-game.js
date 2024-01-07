@@ -1,5 +1,9 @@
-const gridDisplay = document.querySelector("#grid");
-const resultDisplay = document.querySelector("#result");
+const $gridDisplay = $("#grid");
+const $resultDisplay = $("#result");
+const $notification = $("#notification");
+// const $gridDisplay = document.querySelector("#grid");
+// const $resultDisplay = document.querySelector("#result");
+// const $notification = document.querySelector("#notification");
 
 const cardArray = [
   {
@@ -94,12 +98,15 @@ let isChecking = false;
 
 function createBoard() {
   for (let i = 0; i < cardArray.length; i++) {
-    const card = document.createElement("img");
-    card.setAttribute("src", "../images/memory-game/blank-1.png");
-    // card.setAttribute("class", "card-bg");
-    card.setAttribute("data-id", i);
-    card.addEventListener("click", flipCard);
-    gridDisplay.append(card);
+    const $card = $("<img>")
+      .attr({
+        src: "../images/memory-game/blank-1.png",
+        // "class": "card-bg", // uncomment this line if needed
+        "data-id": i,
+      })
+      .on("click", flipCard);
+
+    $gridDisplay.append($card);
   }
 }
 
@@ -109,8 +116,8 @@ function flipCard() {
   if (isChecking) {
     return;
   }
-
-  const cardId = this.getAttribute("data-id");
+  // jquery get
+  const cardId = $(this).data("id");
 
   if (cardsChosenIds[0] !== cardId) {
     cardsChosen.push(cardArray[cardId].name);
@@ -126,7 +133,7 @@ function flipCard() {
 }
 
 function checkMatch() {
-  const cards = document.querySelectorAll("#grid img");
+  const cards = $("#grid img");
   const optionOneId = cardsChosenIds[0];
   const optionTwoId = cardsChosenIds[1];
 
@@ -135,25 +142,36 @@ function checkMatch() {
   console.log(cardsChosen[0]);
   console.log(cardsChosen[1]);
 
-  if (cardsChosen[0] === cardsChosen[1] && optionOneId != optionTwoId) {
-    alert("You found a match");
-    cards[optionOneId].setAttribute("src", "../images/memory-game/white.png");
-    cards[optionTwoId].setAttribute("src", "../images/memory-game/white.png");
-    cards[optionOneId].removeEventListener("click", flipCard);
-    cards[optionTwoId].removeEventListener("click", flipCard);
+  if (cardsChosen[0] === cardsChosen[1] && optionOneId !== optionTwoId) {
+    // jquery set
+    cards.eq(optionOneId).attr("src", "../images/memory-game/white.png");
+    cards.eq(optionTwoId).attr("src", "../images/memory-game/white.png");
+    cards.eq(optionOneId).off("click", flipCard);
+    cards.eq(optionTwoId).off("click", flipCard);
     cardsWon.push(cardsChosen[0]);
+    showNotification(`You found a match: ${cardsChosen[1]}`);
   } else {
-    cards[optionOneId].setAttribute("src", "../images/memory-game/blank-1.png");
-    cards[optionTwoId].setAttribute("src", "../images/memory-game/blank-1.png");
+    cards.eq(optionOneId).attr("src", "../images/memory-game/blank-1.png");
+    cards.eq(optionTwoId).attr("src", "../images/memory-game/blank-1.png");
   }
-  resultDisplay.textContent = cardsWon.length;
+  $resultDisplay.text(cardsWon.length);
 
   cardsChosen = [];
   cardsChosenIds = [];
 
   if (cardsWon.length === cardArray.length / 2) {
-    resultDisplay.innerHTML = "You won !!!";
+    // $resultDisplay.html("You won !!!");
+    alert("You won !!!");
   }
 
   isChecking = false;
+}
+
+function showNotification(message) {
+  $notification.text(message);
+  $notification.fadeIn();
+
+  setTimeout(() => {
+    $notification.fadeOut();
+  }, 3000);
 }
