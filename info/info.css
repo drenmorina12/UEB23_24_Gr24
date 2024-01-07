@@ -8,12 +8,14 @@
     /* color: #424551;  */
     /* font-family: "Playfair Display", sans-serif; */
   }
+/*   
   body {
-    /* max-width: 1280px; */
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 30px;
-  }
+  } */
   
+
   header {
     margin-bottom: 20px;
   }
@@ -136,7 +138,7 @@
     /* margin: 0 auto; */
     padding: 0;
     box-sizing: border-box;
-    color: #424551;
+    /* color: #424551; */
 }
 .main-personeli-container {
     display: flex;
@@ -204,14 +206,14 @@
 }
 
 
-.color-of-table1,
+/* .color-of-table1,
 .color-of-table2,
 .color-of-table3 {
-  /* background-color: ; */
-  /* text-decoration: underline;
-  text-decoration-color: red; */
+  background-color: ;
+  text-decoration: underline;
+  text-decoration-color: red;
 
-}
+} */
 .vitet-akademike{
   color: #212529;
   font-weight: 800;
