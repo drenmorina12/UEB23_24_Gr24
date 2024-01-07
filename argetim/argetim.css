@@ -248,7 +248,14 @@ button {
 
 /* Loja1 end */
 
+/* Memory game start */
+#grid {
+  border: 1px solid black;
+  height: 450px;
+  width: 600px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-/* Loja2 start */
-
-/* Loja2 end */
+/* Memory game end */
