@@ -29,6 +29,7 @@
       </nav>
     </div>
     <main id="main">
+      <!-- Sidebar -->
       <div class="sidebar">
         <!-- <header>Argetimi</header> -->
         <ul>
@@ -80,7 +81,12 @@
             </div>
           </div>
         </div>
+
+        <!-- Kuizi -->
         <div id="kuizi">
+          <div class="kuizi-text">
+            <h3>KUIZI TEXT</h3>
+          </div>
           <div class="start-screen">
             <button id="start-button" onclick="playAudio1()">Fillo !</button>
           </div>
@@ -101,7 +107,7 @@
             <div id="user-score">Demo Score</div>
             <button id="restart" onclick="playAudio2()">Luaj Perseri</button>
           </div>
-      
+
           <audio id="restartAudio">
             <source src="../audio/finishAudio.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
@@ -112,75 +118,15 @@
           </audio>
         </div>
 
-        <div id="loja1">
-          <div class="container">
-            <section class="tools-board">
-              <div class="row">
-                <label class="title">Format</label>
-                <ul class="options">
-                  <li class="option tool" id="rectangle">
-                    <img src="icons/rectangle.svg" alt="" />
-                    <span>Drejtkëndësh</span>
-                  </li>
-                  <li class="option tool" id="circle">
-                    <img src="icons/circle.svg" alt="" />
-                    <span>Rreth</span>
-                  </li>
-                  <li class="option tool" id="triangle">
-                    <img src="icons/triangle.svg" alt="" />
-                    <span>Trekëndësh</span>
-                  </li>
-                  <li class="option">
-                    <input type="checkbox" id="fill-color" />
-                    <label for="fill-color">Mbush ngjyrën</label>
-                  </li>
-                </ul>
-              </div>
-              <div class="row">
-                <label class="title">Opsionet</label>
-                <ul class="options">
-                  <li class="option active tool" id="brush">
-                    <img src="icons/brush.svg" alt="" />
-                    <span>Lapsi</span>
-                  </li>
-                  <li class="option tool" id="eraser">
-                    <img src="icons/eraser.svg" alt="" />
-                    <span>Goma</span>
-                  </li>
-                  <li class="option">
-                    <input
-                      type="range"
-                      id="size-slider"
-                      min="1"
-                      max="30"
-                      value="5"
-                    />
-                  </li>
-                </ul>
-              </div>
-              <div class="row colors">
-                <label class="title">Ngjyrat</label>
-                <ul class="options">
-                  <li class="option"></li>
-                  <li class="option selected"></li>
-                  <li class="option"></li>
-                  <li class="option"></li>
-                  <li class="option">
-                    <input type="color" id="color-picker" value="#4A98F7" />
-                  </li>
-                </ul>
-              </div>
-              <div class="row buttons">
-                <button class="clear-canvas">Pastro</button>
-                <button class="save-img">Ruaj Shënimet</button>
-              </div>
-            </section>
-            <section class="drawing-board">
-              <canvas></canvas>
-            </section>
-          </div>
+        <!-- Loja 1 -->
+        <div id="loja1"></div>
+
+        <!-- Loja 2 -->
+        <div id="loja2">
+          <h3>Score: <span id="result"></span></h3>
+
+          <div id="grid"></div>
         </div>
-        <div id="loja2"></div>
       </div>
     </main>
 
@@ -201,7 +147,7 @@
       <p>&copy; 2023 UP Student Toolkit. All Rights Reserved.</p>
     </footer>
 
-    <script src="argetim.js"></script>
+    <script src="asosacioni.js"></script>
     <script src="draw.js"></script>
     <script src="kuizi.js"></script>
   </body>

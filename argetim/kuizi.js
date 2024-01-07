@@ -20,27 +20,38 @@ const quizArray = [
   {
     id: "0",
     question: "Qfare kuptimi ka HTML?",
-    options: ["HyperText Markup Language", "HighText Marketing Language", "Hover Textual Medium Language", "Hacker Tool Language"],
+    options: [
+      "HyperText Markup Language",
+      "HighText Marketing Language",
+      "Hover Textual Medium Language",
+      "Hacker Tool Language",
+    ],
     correct: "HyperText Markup Language",
   },
   {
     id: "1",
     question: "Qfare sherben tag-u strong ne front developing?",
-    options: ["Mundson siguri me te madhe ne web-faqe", "Tregon numrin e karaktereve", "Rrit weight-in e nje pjese te deshiruar", "Tag-u nuk egziston"],
+    options: [
+      "Mundson siguri me te madhe ne web-faqe",
+      "Tregon numrin e karaktereve",
+      "Rrit weight-in e nje pjese te deshiruar",
+      "Tag-u nuk egziston",
+    ],
     correct: "Rrit weight-in e nje pjese te deshiruar",
   },
   {
     id: "2",
-    question: "Cfare shkurtese/prapashtese vendoset pas . kur ruajme file te gjuhes javascript?",
+    question:
+      "Cfare shkurtese/prapashtese vendoset pas . kur ruajme file te gjuhes javascript?",
     options: [".javasc", ".js", ".script", ".JavaScript"],
     correct: ".js",
   },
   {
     id: "3",
-    question: "Kush baba i dren morines?",
-    options: ["kadria", "xoni", "fejza", "kejt kapak"],
-    correct: "kejt kapak",
-  }
+    question: "Qa osht endriti: ",
+    options: ["i meqem", "i qart", "suiiii", "asnojna"],
+    correct: "asnojna",
+  },
 ];
 
 //Restart Quiz
@@ -151,7 +162,6 @@ function checker(userOption) {
   }
 }
 
-
 //initial setup
 function initial() {
   quizContainer.innerHTML = "";
@@ -179,10 +189,10 @@ window.onload = () => {
 
 //audio at start and restart button
 function playAudio2() {
-  var audio = document.getElementById('startAudio');
+  var audio = document.getElementById("startAudio");
   audio.play();
 }
 function playAudio1() {
-  var audio = document.getElementById('restartAudio');
+  var audio = document.getElementById("restartAudio");
   audio.play();
 }
