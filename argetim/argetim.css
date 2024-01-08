@@ -367,7 +367,7 @@ button {
   background-color: white;
 }
 
-/* .winning-message {
+.winning-message {
   display: none;
   position: fixed;
   top: 0;
@@ -375,7 +375,6 @@ button {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.9);
-  display: flex;
   justify-content: center;
   align-items: center;
   color: white;
@@ -398,7 +397,7 @@ button {
 
 .winning-message.show {
   display: flex;
-} */
+}
 
 /* Tic-Tac-Toe end */
 

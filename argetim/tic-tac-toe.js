@@ -1,5 +1,10 @@
 const cellElements = document.querySelectorAll("[data-cell]");
 const board = document.querySelector("#board");
+const winningMessageTextElement = document.querySelector(
+  ".winning-message-text"
+);
+const winningMessageElement = document.querySelector("#winningMessage");
+const restartButton = document.querySelector("#restartButton");
 
 const X_CLASS = "x";
 const CIRLCE_CLASS = "circle";
@@ -17,12 +22,18 @@ let circleTurn;
 
 startGame();
 
+restartButton.addEventListener("click", startGame);
+
 function startGame() {
+  circleTurn = false;
   cellElements.forEach((cell) => {
-    circleTurn = false;
+    cell.classList.remove(X_CLASS);
+    cell.classList.remove(CIRLCE_CLASS);
+    cell.removeEventListener("click", handleClick);
     cell.addEventListener("click", handleClick, { once: true });
   });
   setBoardHoverClass();
+  winningMessageElement.classList.remove("show");
 }
 
 function handleClick(e) {
@@ -30,13 +41,32 @@ function handleClick(e) {
   const currentClass = circleTurn ? CIRLCE_CLASS : X_CLASS;
   placeMark(cell, currentClass);
   if (checkWin(currentClass)) {
-    console.log("WINNER");
+    endGame(false);
+  } else if (isDraw()) {
+    endGame(true);
   }
-  // checkForWin
-  // checkForDraw
-  // switchTurns
+
   swapTurns();
   setBoardHoverClass();
+}
+
+function endGame(draw) {
+  if (draw) {
+    winningMessageTextElement.textContent = `Its a draw`;
+  } else {
+    winningMessageTextElement.textContent = `${
+      circleTurn ? "O's" : "X's"
+    } Wins!`;
+  }
+  winningMessageElement.classList.add("show");
+}
+
+function isDraw() {
+  return [...cellElements].every((cell) => {
+    return (
+      cell.classList.contains(X_CLASS) || cell.classList.contains(CIRLCE_CLASS)
+    );
+  });
 }
 
 function placeMark(cell, currentClass) {
