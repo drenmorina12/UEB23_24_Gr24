@@ -5,7 +5,8 @@ body {
   background-size: 100% 100%;
 }
 
-h2 {
+#permbajtjaKalkulatori h2,
+#permbajtjaKonvertori h2 {
   text-align: center;
   font-family: sans-serif;
   font-size: 35px;
@@ -215,7 +216,8 @@ select {
 /*==-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-
 ///////////////////////////////////////////////////////*/
 
-#main h2 {
+#permbajtjaKalkulatori h2,
+#permbajtjaKonvertori h2 {
   text-align: center;
   font-family: sans-serif;
   font-size: 30px;
@@ -526,10 +528,46 @@ input[type="button"]:active {
 }
 
 #calculator-container {
-  min-height: 100vh;
-  background-color: white;
+  min-height: 110vh;
+  /* background-color: white; */
   border: 10px solid orange;
   display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#calculator-container .calculator-title {
+  border: 2px black double;
+  padding: 30px;
+  text-align: center;
+  background-color: #19376d;
+  color: white;
+}
+
+.wrapping-div {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.restrictions {
+  border: 1px double black;
+  height: 400px;
+  width: 330px;
+}
+
+.restrictions h2 {
+  margin: 10px;
+}
+
+.restrictions ul li,
+.restrictions ol li {
+  margin-left: 50px;
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 2;
 }
 
 #calculator {
@@ -541,7 +579,7 @@ input[type="button"]:active {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  margin: auto;
+  /* margin: auto; */
 }
 
 #calculator .display {
