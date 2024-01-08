@@ -290,9 +290,12 @@ div.content {
   position: relative;
   top: 110px;
 }
-
+@font-face {
+  font-family: footerFont;
+  src: url("../../../Downloads/Salsa/Salsa-Regular.ttf");
+}
 footer p {
-  font-family: "Courier New", Courier, monospace;
+  font-family: footerFont;
   font-size: medium;
   margin: 10px;
 }
