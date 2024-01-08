@@ -283,4 +283,16 @@ button {
 .card-bg {
   background-color: #002244;
 }
+
+#memory-game-button {
+  background-color: #19376d;
+  color: white;
+  padding: 10px 30px;
+  margin: 30px;
+  min-width: 150px;
+}
+#memory-game-button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
 /* Memory game end */

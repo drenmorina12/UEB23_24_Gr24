@@ -89,14 +89,22 @@ const cardArray = [
 ];
 
 // Shuffles the array randomly
-cardArray.sort(() => 0.5 - Math.random());
 
 let cardsChosen = [];
 let cardsChosenIds = [];
 const cardsWon = [];
 let isChecking = false;
 
+$("#memory-game-button").on("click", restartGame);
+
+function restartGame() {
+  $gridDisplay.empty();
+  createBoard();
+}
+
 function createBoard() {
+  $resultDisplay.text(0);
+  cardArray.sort(() => 0.5 - Math.random());
   for (let i = 0; i < cardArray.length; i++) {
     const $card = $("<img>")
       .attr({
@@ -104,7 +112,8 @@ function createBoard() {
         // "class": "card-bg", // uncomment this line if needed
         "data-id": i,
       })
-      .on("click", flipCard);
+      .on("click", flipCard)
+      .css("cursor", "pointer"); // Set the cursor to pointer on hover;
 
     $gridDisplay.append($card);
   }
@@ -143,7 +152,7 @@ function checkMatch() {
   console.log(cardsChosen[1]);
 
   if (cardsChosen[0] === cardsChosen[1] && optionOneId !== optionTwoId) {
-    // jquery set
+    // jquery
     cards.eq(optionOneId).attr("src", "../images/memory-game/white.png");
     cards.eq(optionTwoId).attr("src", "../images/memory-game/white.png");
     cards.eq(optionOneId).off("click", flipCard);
