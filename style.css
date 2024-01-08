@@ -43,7 +43,7 @@ body {
   font-family: "Playfair Display", sans-serif;
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 10px;
   text-align: center;
   position: absolute;
   left: 50%;
@@ -65,9 +65,18 @@ body {
   white-space: nowrap;
   padding: 10px 20px;
 }
+select{
+  padding: 10px;
+}
 
+#header nav a:hover{
+  /* color: #49796B; */
+  color: #002244;
+  background-color: #fff;
+  border-radius: 8%;
+}
 
-#header nav a:hover {
+#header nav select:hover{
   /* color: #49796B; */
   color: #002244;
   background-color: #fff;
