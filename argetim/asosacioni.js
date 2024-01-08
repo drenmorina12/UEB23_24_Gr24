@@ -23,7 +23,7 @@ const fizikaSolutions = {
   A: "BOMBA",
   B: "BËRTHAM/ORE",
   C: "GRIMCË",
-  D: "CHERNOBYL"
+  D: "CHERNOBYL",
 };
 
 const finalResultFizika = "Atomi";
@@ -79,6 +79,22 @@ const pergjithshem = {
   B: ["!", "!", "!", "!", pergjithshemSolution.B],
   C: ["!", "!", "!", "!", pergjithshemSolution.C],
   D: ["!", "!", "!", "!", pergjithshemSolution.D],
+};
+
+const webSolutions = {
+  A: "A!",
+  B: "B!",
+  C: "C!",
+  D: "D!",
+};
+
+const finalResulWeb = "WEB";
+
+const web = {
+  A: ["!web", "!web", "!", "!", webSolutions.A, finalResulWeb],
+  B: ["!web", "!web", "!", "!", webSolutions.B],
+  C: ["!web", "!web", "!", "!", webSolutions.C],
+  D: ["!web", "!web", "!", "!", webSolutions.D],
 };
 
 //--------------------------------------------------
@@ -170,6 +186,11 @@ asosacioniButtons.forEach((button) => {
         currentAsosacionText = "pergjithshem";
         addCellEventListeners(pergjithshem);
         currentAsosacion = pergjithshem;
+        break;
+      case "web":
+        currentAsosacionText = "web";
+        addCellEventListeners(web);
+        currentAsosacion = web;
         break;
       default:
         alert("Ky asosacion nuk ekziston! ");
