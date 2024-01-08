@@ -25,28 +25,20 @@
         <a href="../kalkulatore/kalkulatore.html">Kalkulatorë</a>
         <a href="../argetim/argetim.html">Argetim</a>
         <a href="../literatura/literatura.html">Literatura</a>
-        <a href="?">Info</a>
+        <select onchange="navigate()" style="width: 145px;">
+          <option value="" disabled selected>Info</option>
+          <option value="#featured-image">Objekti</option>
+          <option value="#start-personeli">Personeli</option>
+          <option value="#start-orari">Orari</option>
+        </select>
         <a href="../rreth-nesh/rreth-nesh.html">Rreth nesh</a>
       </nav>
     </div>
 
 <main id="main">
 
-  <div id="objekt-personel-orar">
-      <div class="OBJEKTI-MENU">
-        <a href="#featured-image">| OBJEKTI |</a>  
-    </div>
-    <div class="PERSONELI-MENU">
-        <a href="#start-personeli">PERSONELI |</a>
-    </div>
-    <div class="ORARI-MENU">
-        <a href="#start-orari">ORARI |</a>
-    </div>
-  </div>
-    <hr class="vija-horizontale"><br>
-    <!-- product section -->
+
     <section class="main-container">
-        <!-- left side -->
         <div class="img-card">
             <img src="../images/TEKNIKU.jpg" alt="" id="featured-image" data-aos="zoom-out" data-aos-duration="1000">
             <!-- small img -->
@@ -98,7 +90,7 @@
             </div><br>
             <address class="adresaFIEK">Adresa:Bregu i Diellit, 10000 Prishtinë, Republika e Kosovës
                 <a href="mailto:fiek@uni-pr.edu"><br>Email-Fiek</a>
-            </address>
+            </address>  
             <p id="start-personeli"></p>
         </div>
     </section><br><br>
@@ -162,6 +154,19 @@
     
       <div class="container mt-5">
   <p class="vitet-akademike">VITI AKADEMIK : I</p>
+  <div>
+    <label for="searchInput" style="font-family: 'Times New Roman', Times, serif;">Search:</label>
+    <input type="text" id="searchInput" class="search-bar" placeholder="Type to search">
+    <label for="selectColumn" style="font-family: 'Times New Roman', Times, serif;">Select Column:</label>
+    <select id="selectColumn">
+        <option value="0">#</option>
+        <option value="1">Lëndët</option>
+        <option value="2">Profesori</option>
+        <option value="3">Asistenti</option>
+        <option value="4">Kreditë</option>
+        <option value="5">Orari | Klasa</option>
+    </select>
+</div>
   <table class="table table-bordered table-striped color-of-table1">
     <thead class="table-dark">
       <tr>
@@ -496,6 +501,43 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          
+            const searchInput = document.getElementById("searchInput");
+            const selectColumn = document.getElementById("selectColumn");
+
+            searchInput.addEventListener("input", filterTable);
+            selectColumn.addEventListener("change", filterTable);
+
+            function filterTable() {
+                const searchValue = searchInput.value.toLowerCase();
+                const columnIndex = parseInt(selectColumn.value);
+
+                const rows = document.querySelectorAll("table tbody tr");
+
+                const filteredRows = Array.from(rows).filter(row => {
+                    const columnText = columnIndex === 0 ? row.cells[columnIndex].textContent : row.cells[columnIndex].textContent.toLowerCase();
+                    return columnText.includes(searchValue);
+                });
+
+                Array.from(rows).map(row => ({
+                    row,
+                    isVisible: filteredRows.includes(row)
+                })).reduce((acc, { row, isVisible }) => {
+                    row.style.display = isVisible ? "" : "none";
+                }, {});
+            }
+        });
+    </script>
+    <script>
+      function navigate() {
+        var selectedValue = document.querySelector(".nav-bar select").value;
+        if (selectedValue) {
+          window.location.href = selectedValue;
+        }
+      }
     </script>
   </body>
 </html>
