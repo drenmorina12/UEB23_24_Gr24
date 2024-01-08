@@ -197,9 +197,9 @@
       <div class="container mt-5">
   <p class="vitet-akademike">VITI AKADEMIK : I</p>
   <div>
-    <label for="searchInput" style="font-family: 'Times New Roman', Times, serif;">Search:</label>
+    <label for="searchInput">Search:</label>
     <input type="text" id="searchInput" class="search-bar" placeholder="Type to search">
-    <label for="selectColumn" style="font-family: 'Times New Roman', Times, serif;">Select Column:</label>
+    <label for="selectColumn">Select Column:</label>
     <select id="selectColumn">
         <option value="0">#</option>
         <option value="1">Lëndët</option>
@@ -544,30 +544,34 @@
     <script>
       AOS.init();
     </script>
-        <script>
-          function allowDrop(ev) {
-            ev.preventDefault();
-          }
-    
-          function drag(ev) {
-            ev.dataTransfer.setData("text", ev.target.id);
-          }
-    
-          function drop(ev) {
-            ev.preventDefault();
-            let data = ev.dataTransfer.getData("text");
-            let draggedElement = document.getElementById(data);
-            let targetElement = ev.target;
-    
-            // Check if the target is an image
-            if (targetElement.tagName.toLowerCase() === "img") {
-              // Swap the source URLs of the dragged and target images
-              let tempSrc = draggedElement.src;
-              draggedElement.src = targetElement.src;
-              targetElement.src = tempSrc;
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchInput = document.getElementById("searchInput");
+            const selectColumn = document.getElementById("selectColumn");
+
+            searchInput.addEventListener("input", filterTable);
+            selectColumn.addEventListener("change", filterTable);
+
+            function filterTable() {
+                const searchValue = searchInput.value.toLowerCase();
+                const columnIndex = parseInt(selectColumn.value);
+
+                const rows = document.querySelectorAll("table tbody tr");
+
+                const filteredRows = Array.from(rows).filter(row => {
+                    const columnText = columnIndex === 0 ? row.cells[columnIndex].textContent : row.cells[columnIndex].textContent.toLowerCase();
+                    return columnText.includes(searchValue);
+                });
+
+                Array.from(rows).map(row => ({
+                    row,
+                    isVisible: filteredRows.includes(row)
+                })).reduce((acc, { row, isVisible }) => {
+                    row.style.display = isVisible ? "" : "none";
+                }, {});
             }
-          }
-        </script>
+        });
+    </script>
   </body>
 </html>
 
