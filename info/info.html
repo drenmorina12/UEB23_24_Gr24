@@ -25,28 +25,20 @@
         <a href="../kalkulatore/kalkulatore.html">Kalkulatorë</a>
         <a href="../argetim/argetim.html">Argetim</a>
         <a href="../literatura/literatura.html">Literatura</a>
-        <a href="?">Info</a>
+        <select onchange="navigate()" style="width: 145px;">
+          <option value="" disabled selected>Info</option>
+          <option value="#featured-image">Objekti</option>
+          <option value="#start-personeli">Personeli</option>
+          <option value="#start-orari">Orari</option>
+        </select>
         <a href="../rreth-nesh/rreth-nesh.html">Rreth nesh</a>
       </nav>
     </div>
 
 <main id="main">
 
-  <div id="objekt-personel-orar">
-      <div class="OBJEKTI-MENU">
-        <a href="#featured-image">| OBJEKTI |</a>  
-    </div>
-    <div class="PERSONELI-MENU">
-        <a href="#start-personeli">PERSONELI |</a>
-    </div>
-    <div class="ORARI-MENU">
-        <a href="#start-orari">ORARI |</a>
-    </div>
-  </div>
-    <hr class="vija-horizontale"><br>
-    <!-- product section -->
+
     <section class="main-container">
-        <!-- left side -->
         <div class="img-card">
             <img src="../images/TEKNIKU.jpg" alt="" id="featured-image" data-aos="zoom-out" data-aos-duration="1000">
             <!-- small img -->
@@ -62,7 +54,6 @@
             <h3>FIEK</h3>
             <p>Fakulteti i Inxhinierisë Elektrike dhe Kompjuterike</p>
             <p></p>
-  
             <div class="fiek-capacity">
                 <p>Amfiteatri / Salla:</p>
                 <select name="Fiek-capacity" id="fiek-capacity" class="fiek-capacity-option">
@@ -111,30 +102,73 @@
           <div class="personel-headeri"><h1>Personeli Akademik - FIEK</h1></div>
 
           <div class="personeli-photos">
-              <div class="img">
-                  <img src="../images/qamili.jpg" alt="" width="250px" data-aos="flip-up" data-aos-duration="1000">
-                  <div><p><b>Prodekan </b>- Qamil Kabashi</p></div>
+              <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" class="img">
+                  <img
+                  id="drag1"
+                   src="../images/qamili.jpg" 
+                   alt="" 
+                   draggable="true"
+                   ondragstart="drag(event)"
+                   width="250px" 
+                   data-aos="flip-up" 
+                   data-aos-duration="1000">
               </div>
 
-              <div class="imgdown">
-                  <img  src="../images/isaku.jpg" alt="" width="250px" data-aos="flip-up" data-aos-duration="1000">
-                  <div><p><b>Dekan </b>- Isak Shabani</p></div>
+              <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" class="imgdown">
+                  <img  
+                  id="drag2"
+                  src="../images/isaku.jpg" 
+                  alt="" 
+                  draggable="true"
+                  ondragstart="drag(event)"
+                  width="250px" 
+                  data-aos="flip-up" 
+                  data-aos-duration="1000">
               </div>
-              <div class="img">
-                  <img src="../images/zabeli.jpg" alt="" width="250px" data-aos="flip-up" data-aos-duration="1000">
-                  <div><p><b>Prodekan </b>- Milaim Zabeli</p></div>
+              <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" class="img">
+                  <img
+                  id="drag3" 
+                  src="../images/zabeli.jpg" 
+                  alt="" 
+                  draggable="true"
+                  ondragstart="drag(event)"
+                  width="250px" 
+                  data-aos="flip-up" 
+                  data-aos-duration="1000">
               </div>
-              <div class="img media">
-                   <img class="br" src="../images/dalina.jpg" alt="" width="250px" data-aos="flip-up" data-aos-duration="1000">
-                   <div><p><b>Prof.Ass </b>- Dalin&euml Vranovci</p></div>
+              <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)" class="img media">
+                   <img
+                   id="drag4" 
+                   class="br" 
+                   src="../images/dalina.jpg" 
+                   alt="" 
+                   draggable="true"
+                   ondragstart="drag(event)"
+                   width="250px" 
+                   data-aos="flip-up" 
+                   data-aos-duration="1000">
               </div>
-              <div class="imgdown grif">
-                  <img src="../images/dhuarata.jpg" alt="" width="250px" data-aos="flip-up" data-aos-duration="1000">
-                  <div><p><b>Prof.Dr </b>- Dhuarata Hyseni</p></div>
+              <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)" class="imgdown grif">
+                  <img
+                  id="drag5"
+                  src="../images/dhuarata.jpg" 
+                  alt="" 
+                  draggable="true"
+                  ondragstart="drag(event)"
+                  width="250px" 
+                  data-aos="flip-up" 
+                  data-aos-duration="1000">
               </div>
-              <div class="img media">
-                  <img src="../images/blerimi.jpg" alt="" width="250px" data-aos="flip-up" data-aos-duration="1000">
-                  <div><p><b>Prof.Dr </b>- Blerim Rexha</p></div>
+              <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)" class="img media">
+                  <img 
+                  id="drag6"
+                  src="../images/blerimi.jpg" a
+                  alt="" 
+                   draggable="true"
+                   ondragstart="drag(event)"
+                  width="250px" 
+                  data-aos="flip-up" 
+                  data-aos-duration="1000">
               </div>
           </div>
       </div>
@@ -510,35 +544,30 @@
     <script>
       AOS.init();
     </script>
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          
-            const searchInput = document.getElementById("searchInput");
-            const selectColumn = document.getElementById("selectColumn");
-
-            searchInput.addEventListener("input", filterTable);
-            selectColumn.addEventListener("change", filterTable);
-
-            function filterTable() {
-                const searchValue = searchInput.value.toLowerCase();
-                const columnIndex = parseInt(selectColumn.value);
-
-                const rows = document.querySelectorAll("table tbody tr");
-
-                const filteredRows = Array.from(rows).filter(row => {
-                    const columnText = columnIndex === 0 ? row.cells[columnIndex].textContent : row.cells[columnIndex].textContent.toLowerCase();
-                    return columnText.includes(searchValue);
-                });
-
-                Array.from(rows).map(row => ({
-                    row,
-                    isVisible: filteredRows.includes(row)
-                })).reduce((acc, { row, isVisible }) => {
-                    row.style.display = isVisible ? "" : "none";
-                }, {});
+        <script>
+          function allowDrop(ev) {
+            ev.preventDefault();
+          }
+    
+          function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+          }
+    
+          function drop(ev) {
+            ev.preventDefault();
+            let data = ev.dataTransfer.getData("text");
+            let draggedElement = document.getElementById(data);
+            let targetElement = ev.target;
+    
+            // Check if the target is an image
+            if (targetElement.tagName.toLowerCase() === "img") {
+              // Swap the source URLs of the dragged and target images
+              let tempSrc = draggedElement.src;
+              draggedElement.src = targetElement.src;
+              targetElement.src = tempSrc;
             }
-        });
-    </script>
+          }
+        </script>
   </body>
 </html>
 
