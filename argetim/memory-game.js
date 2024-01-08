@@ -7,84 +7,84 @@ const $notification = $("#notification");
 
 const cardArray = [
   {
-    name: "fries",
-    img: "../images/memory-game/fries.png",
+    name: "Blerimi",
+    img: "../images/blerimi.jpg",
   },
   {
-    name: "cheeseburger",
-    img: "../images/memory-game/cheeseburger.png",
+    name: "Blerimi",
+    img: "../images/blerimi.jpg",
   },
   {
-    name: "hotdog",
-    img: "../images/memory-game/hotdog.png",
+    name: "Qamili",
+    img: "../images/qamili.jpg",
   },
   {
-    name: "ice-cream",
-    img: "../images/memory-game/ice-cream.png",
+    name: "Qamili",
+    img: "../images/qamili.jpg",
   },
   {
-    name: "milkshake",
-    img: "../images/memory-game/milkshake.png",
+    name: "Dalina",
+    img: "../images/dalina.jpg",
   },
   {
-    name: "pizza",
-    img: "../images/memory-game/pizza.png",
+    name: "Dalina",
+    img: "../images/dalina.jpg",
   },
   {
-    name: "fries",
-    img: "../images/memory-game/fries.png",
+    name: "Zabeli",
+    img: "../images/zabeli.jpg",
   },
   {
-    name: "cheeseburger",
-    img: "../images/memory-game/cheeseburger.png",
+    name: "Zabeli",
+    img: "../images/zabeli.jpg",
   },
   {
-    name: "hotdog",
-    img: "../images/memory-game/hotdog.png",
+    name: "Kadria",
+    img: "../images/kadri.jpg",
   },
   {
-    name: "ice-cream",
-    img: "../images/memory-game/ice-cream.png",
+    name: "Kadria",
+    img: "../images/kadri.jpg",
   },
   {
-    name: "milkshake",
-    img: "../images/memory-game/milkshake.png",
+    name: "Qefserja",
+    img: "../images/qefsere.jpg",
   },
   {
-    name: "pizza",
-    img: "../images/memory-game/pizza.png",
+    name: "Qefserja",
+    img: "../images/qefsere.jpg",
   },
   {
-    name: "test1",
-    img: "../images/memory-game/pizza.png",
+    name: "Dhurata",
+    img: "../images/dhuarata.jpg",
   },
   {
-    name: "test2",
-    img: "../images/memory-game/pizza.png",
+    name: "Dhurata",
+    img: "../images/dhuarata.jpg",
   },
   {
-    name: "test2",
-    img: "../images/memory-game/pizza.png",
+    name: "Isaku",
+    img: "../images/isaku.jpg",
   },
   {
-    name: "test2",
-    img: "../images/memory-game/pizza.png",
+    name: "Isaku",
+    img: "../images/isaku.jpg",
   },
   {
-    name: "test2",
-    img: "../images/memory-game/pizza.png",
+    name: "Valoni",
+    img: "../images/valoni.jpg",
   },
   {
-    name: "test2",
-    img: "../images/memory-game/pizza.png",
+    name: "Valoni",
+    img: "../images/valoni.jpg",
   },
   {
-    name: "test2",
-    img: "../images/memory-game/pizza.png",
+    name: "Labeati",
+    img: "../images/labeati.jpg",
   },
   {
-    name: "test2",
-    img: "../images/memory-game/pizza.png",
+    name: "Labeati",
+    img: "../images/labeati.jpg",
   },
 ];
 
@@ -158,7 +158,7 @@ function checkMatch() {
     cards.eq(optionOneId).off("click", flipCard);
     cards.eq(optionTwoId).off("click", flipCard);
     cardsWon.push(cardsChosen[0]);
-    showNotification(`You found a match: ${cardsChosen[1]}`);
+    showNotification(`Keni gjetur profen: ${cardsChosen[1]}`);
   } else {
     cards.eq(optionOneId).attr("src", "../images/memory-game/blank-1.png");
     cards.eq(optionTwoId).attr("src", "../images/memory-game/blank-1.png");
@@ -170,7 +170,7 @@ function checkMatch() {
 
   if (cardsWon.length === cardArray.length / 2) {
     // $resultDisplay.html("You won !!!");
-    alert("You won !!!");
+    alert("Fituat !");
   }
 
   isChecking = false;
