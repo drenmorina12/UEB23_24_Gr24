@@ -25,25 +25,19 @@
         <a href="../kalkulatore/kalkulatore.html">Kalkulatorë</a>
         <a href="../argetim/argetim.html">Argetim</a>
         <a href="../literatura/literatura.html">Literatura</a>
-        <a href="?">Info</a>
+        <select onchange="navigate()">
+          <option value="" disabled selected>Info</option>
+          <option value="#featured-image">OBJEKTI</option>
+          <option value="#start-personeli">PERSONELI</option>
+          <option value="#start-orari">ORARI</option>
+        </select>
         <a href="../rreth-nesh/rreth-nesh.html">Rreth nesh</a>
       </nav>
     </div>
 
 <main id="main">
 
-  <div id="objekt-personel-orar">
-      <div class="OBJEKTI-MENU">
-        <a href="#featured-image">| OBJEKTI |</a>  
-    </div>
-    <div class="PERSONELI-MENU">
-        <a href="#start-personeli">PERSONELI |</a>
-    </div>
-    <div class="ORARI-MENU">
-        <a href="#start-orari">ORARI |</a>
-    </div>
-  </div>
-    <hr class="vija-horizontale"><br>
+
     <!-- product section -->
     <section class="main-container">
         <!-- left side -->
@@ -162,19 +156,6 @@
     
       <div class="container mt-5">
   <p class="vitet-akademike">VITI AKADEMIK : I</p>
-  <div>
-    <label for="searchInput">Search:</label>
-    <input type="text" id="searchInput" class="search-bar" placeholder="Type to search">
-    <label for="selectColumn">Select Column:</label>
-    <select id="selectColumn">
-        <option value="0">#</option>
-        <option value="1">Lëndët</option>
-        <option value="2">Profesori</option>
-        <option value="3">Asistenti</option>
-        <option value="4">Kreditë</option>
-        <option value="5">Orari | Klasa</option>
-    </select>
-</div>
   <table class="table table-bordered table-striped color-of-table1">
     <thead class="table-dark">
       <tr>
@@ -510,33 +491,13 @@
     <script>
       AOS.init();
     </script>
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const searchInput = document.getElementById("searchInput");
-            const selectColumn = document.getElementById("selectColumn");
-
-            searchInput.addEventListener("input", filterTable);
-            selectColumn.addEventListener("change", filterTable);
-
-            function filterTable() {
-                const searchValue = searchInput.value.toLowerCase();
-                const columnIndex = parseInt(selectColumn.value);
-
-                const rows = document.querySelectorAll("table tbody tr");
-
-                const filteredRows = Array.from(rows).filter(row => {
-                    const columnText = columnIndex === 0 ? row.cells[columnIndex].textContent : row.cells[columnIndex].textContent.toLowerCase();
-                    return columnText.includes(searchValue);
-                });
-
-                Array.from(rows).map(row => ({
-                    row,
-                    isVisible: filteredRows.includes(row)
-                })).reduce((acc, { row, isVisible }) => {
-                    row.style.display = isVisible ? "" : "none";
-                }, {});
-            }
-        });
+    <script>
+      function navigate() {
+        var selectedValue = document.querySelector(".nav-bar select").value;
+        if (selectedValue) {
+          window.location.href = selectedValue;
+        }
+      }
     </script>
   </body>
 </html>
