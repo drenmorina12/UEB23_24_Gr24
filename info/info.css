@@ -250,3 +250,7 @@
   margin-bottom: 5px;
   height: 100%;
 }
+
+table tbody tr td.celula {
+  background-color: red;
+  }
