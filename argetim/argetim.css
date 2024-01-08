@@ -401,6 +401,53 @@ button {
 
 /* Tic-Tac-Toe end */
 
-/* Loja2 start */
 
-/* Loja2 end */
+
+/* Memory game start */
+#grid {
+  /* border: 1px solid black; */
+  height: 450px;
+  width: 580px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+#grid img {
+  min-width: 110px;
+}
+
+.notification {
+  display: none;
+  /* border: 10px solid brown; */
+  position: relative;
+  width: 300px;
+  height: 50px;
+  left: 940px;
+  bottom: 250px;
+  /* top: 300px; */
+  /* right: 10px; */
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  /* z-index: 1000; */
+}
+
+.card-bg {
+  background-color: #002244;
+}
+
+#memory-game-button {
+  background-color: #19376d;
+  color: white;
+  padding: 10px 30px;
+  margin: 30px;
+  min-width: 150px;
+}
+#memory-game-button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+/* Memory game end */
