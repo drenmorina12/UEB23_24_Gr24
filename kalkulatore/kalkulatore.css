@@ -517,3 +517,85 @@ input[type="button"]:active {
   height: 100%;
 }
 /* Drawing table end */
+
+/* Calculator start */
+#calculator * {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#calculator-container {
+  min-height: 100vh;
+  background-color: white;
+  border: 10px solid orange;
+  display: flex;
+}
+
+#calculator {
+  width: 426px;
+  border: 10px solid rgba(47, 47, 47, 1);
+  align-self: center;
+  background-color: black;
+  /* background-color: white; */
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: auto;
+}
+
+#calculator .display {
+  background-color: #b2b9b7;
+  width: 396px;
+  height: 93px;
+  border: 1px solid black;
+  margin: auto;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-right: 5px;
+  font-size: 80px;
+  letter-spacing: 2px;
+}
+
+#calculator .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+#calculator button {
+  width: 98px;
+  height: 78px;
+  border: 1px solid black;
+  flex-grow: 1;
+  font-size: 30px;
+  border-radius: 8%;
+  color: black;
+}
+
+#calculator button:active {
+  opacity: 0.7;
+}
+
+#calculator .number,
+#calculator .decimal {
+  background-color: #217c7e;
+}
+
+#calculator .operator,
+#calculator .equals {
+  background-color: #ff8f1f;
+}
+
+#calculator .percent,
+#calculator .sign,
+#calculator .clear {
+  background-color: dodgerblue;
+}
+
+#calculator .delete {
+  background-color: red;
+}
+
+/* Calculator end */
