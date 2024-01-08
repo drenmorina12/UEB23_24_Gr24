@@ -434,15 +434,14 @@ button {
   display: none;
   /* border: 10px solid brown; */
   position: relative;
-  width: 300px;
+  width: 250px;
   height: 50px;
-  left: 940px;
+  left: 820px;
   bottom: 250px;
   /* top: 300px; */
   /* right: 10px; */
   padding: 10px;
-  background-color: #333;
-  color: #fff;
+  background-color: #19376d;
   border-radius: 5px;
   /* z-index: 1000; */
 }
