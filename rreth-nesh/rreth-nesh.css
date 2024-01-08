@@ -13,8 +13,8 @@
 .photo3 {
   border: 0px solid black;
   display: flex;
-  align-items: center;
-  gap: 10px;
+  align-items: center; 
+  gap: 10px; 
 }
 .s1 .inner-section,
 .s2 .inner-section,
@@ -28,7 +28,7 @@
   border: 0px solid black;
   margin-left: auto;
   margin-right: auto;
-  height: 350px;
+  height: 320px;
   width: 500px;
 }
 .photo1 img {
@@ -42,7 +42,7 @@
   border: 0px solid black;
   margin-left: auto;
   margin-right: auto;
-  height: 350px;
+  height: 650px;
   width: 550px;
 }
 .photo2 img {
@@ -100,6 +100,16 @@
   padding: 18px;
   border-radius: 10px;
 }
+
+.photo1:hover,
+.photo2:hover,
+.photo3:hover,
+.photo4:hover,
+.photo5:hover{
+  opacity: 0.6;
+  cursor: pointer;
+}
+
 h3 {
   color: #0b2447;
   border: 2px double #0b2447;
@@ -111,6 +121,12 @@ h3 {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+#nested-list{
+  text-align: left;
+  background-color: #0b2447;
+  color: white;
 }
 
 .text {
