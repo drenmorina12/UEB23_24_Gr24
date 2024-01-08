@@ -13,8 +13,8 @@
 .photo3 {
   border: 0px solid black;
   display: flex;
-  align-items: center; 
-  gap: 10px; 
+  align-items: center;
+  gap: 10px;
 }
 .s1 .inner-section,
 .s2 .inner-section,
@@ -42,7 +42,7 @@
   border: 0px solid black;
   margin-left: auto;
   margin-right: auto;
-  height: 650px;
+  height: 400px;
   width: 550px;
 }
 .photo2 img {
@@ -105,7 +105,7 @@
 .photo2:hover,
 .photo3:hover,
 .photo4:hover,
-.photo5:hover{
+.photo5:hover {
   opacity: 0.6;
   cursor: pointer;
 }
@@ -123,10 +123,11 @@ h3 {
   padding-bottom: 10px;
 }
 
-#nested-list{
+#nested-list {
   text-align: left;
   background-color: #0b2447;
   color: white;
+  border-radius: 10px;
 }
 
 .text {
