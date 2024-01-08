@@ -533,6 +533,14 @@
             }
         });
     </script>
+    <script>
+      function navigate() {
+        var selectedValue = document.querySelector(".nav-bar select").value;
+        if (selectedValue) {
+          window.location.href = selectedValue;
+        }
+      }
+    </script>
   </body>
 </html>
 
