@@ -65,6 +65,14 @@ p {
   padding: 15px; */
 }
 
+#pershkrimi2-kalkulatorithjesht{
+  margin-left: 7%;
+  text-align: center;
+
+}
+
+
+
 /*==-=-=-=-=-=-=-=-=-=-Konvertori=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-
 ///////////////////////////////////////////////////////*/
 .vlera2t {
@@ -564,7 +572,7 @@ input[type="button"]:active {
   border: 1px double black;
   height: 400px;
   width: 330px;
-  background-color: #0b2447;
+  border-radius: 10px;
 }
 
 .restrictions h2 {
