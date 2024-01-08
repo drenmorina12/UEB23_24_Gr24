@@ -57,6 +57,15 @@ body {
   padding: 10px 20px;
 }
 
+#header nav select {
+  background-color: #0b2447;
+  border: none;
+  color: #fff;
+  white-space: nowrap;
+  padding: 10px 20px;
+}
+
+
 #header nav a:hover {
   /* color: #49796B; */
   color: #002244;

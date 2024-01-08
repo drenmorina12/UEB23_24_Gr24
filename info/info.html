@@ -25,25 +25,19 @@
         <a href="../kalkulatore/kalkulatore.html">Kalkulatorë</a>
         <a href="../argetim/argetim.html">Argetim</a>
         <a href="../literatura/literatura.html">Literatura</a>
-        <a href="?">Info</a>
+        <select onchange="navigate()">
+          <option value="" disabled selected>Info</option>
+          <option value="#featured-image">OBJEKTI</option>
+          <option value="#start-personeli">PERSONELI</option>
+          <option value="#start-orari">ORARI</option>
+        </select>
         <a href="../rreth-nesh/rreth-nesh.html">Rreth nesh</a>
       </nav>
     </div>
 
 <main id="main">
 
-  <div id="objekt-personel-orar">
-      <div class="OBJEKTI-MENU">
-        <a href="#featured-image">| OBJEKTI |</a>  
-    </div>
-    <div class="PERSONELI-MENU">
-        <a href="#start-personeli">PERSONELI |</a>
-    </div>
-    <div class="ORARI-MENU">
-        <a href="#start-orari">ORARI |</a>
-    </div>
-  </div>
-    <hr class="vija-horizontale"><br>
+
     <!-- product section -->
     <section class="main-container">
         <!-- left side -->
@@ -538,6 +532,14 @@
                 }, {});
             }
         });
+    </script>
+    <script>
+      function navigate() {
+        var selectedValue = document.querySelector(".nav-bar select").value;
+        if (selectedValue) {
+          window.location.href = selectedValue;
+        }
+      }
     </script>
   </body>
 </html>
