@@ -93,78 +93,76 @@
 
     <div class="main-personeli-container">
       <div class="headeri">
-          <div class="personel-headeri"><h1>Personeli Akademik - FIEK</h1></div>
-
-          <div class="personeli-photos">
-              <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" class="img">
-                  <img
-                  id="drag1"
-                   src="../images/qamili.jpg" 
-                   alt="" 
-                   draggable="true"
-                   ondragstart="drag(event)"
-                   width="250px" 
-                   data-aos="flip-up" 
-                   data-aos-duration="1000">
-              </div>
-
-              <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" class="imgdown">
-                  <img  
-                  id="drag2"
-                  src="../images/isaku.jpg" 
-                  alt="" 
-                  draggable="true"
-                  ondragstart="drag(event)"
-                  width="250px" 
-                  data-aos="flip-up" 
-                  data-aos-duration="1000">
-              </div>
-              <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" class="img">
-                  <img
-                  id="drag3" 
-                  src="../images/zabeli.jpg" 
-                  alt="" 
-                  draggable="true"
-                  ondragstart="drag(event)"
-                  width="250px" 
-                  data-aos="flip-up" 
-                  data-aos-duration="1000">
-              </div>
-              <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)" class="img media">
-                   <img
-                   id="drag4" 
-                   class="br" 
-                   src="../images/dalina.jpg" 
-                   alt="" 
-                   draggable="true"
-                   ondragstart="drag(event)"
-                   width="250px" 
-                   data-aos="flip-up" 
-                   data-aos-duration="1000">
-              </div>
-              <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)" class="imgdown grif">
-                  <img
-                  id="drag5"
-                  src="../images/dhuarata.jpg" 
-                  alt="" 
-                  draggable="true"
-                  ondragstart="drag(event)"
-                  width="250px" 
-                  data-aos="flip-up" 
-                  data-aos-duration="1000">
-              </div>
-              <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)" class="img media">
-                  <img 
-                  id="drag6"
-                  src="../images/blerimi.jpg" a
-                  alt="" 
-                   draggable="true"
-                   ondragstart="drag(event)"
-                  width="250px" 
-                  data-aos="flip-up" 
-                  data-aos-duration="1000">
-              </div>
+        <div class="personeli-photos">
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" class="img">
+              <img
+              id="drag1"
+               src="../images/qamili.jpg" 
+               alt="" 
+               draggable="true"
+               ondragstart="drag(event)"
+               width="250px" 
+               data-aos="flip-up" 
+               data-aos-duration="1000">
           </div>
+
+          <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" class="imgdown">
+              <img  
+              id="drag2"
+              src="../images/isaku.jpg" 
+              alt="" 
+              draggable="true"
+              ondragstart="drag(event)"
+              width="250px" 
+              data-aos="flip-up" 
+              data-aos-duration="1000">
+          </div>
+          <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" class="img">
+              <img
+              id="drag3" 
+              src="../images/zabeli.jpg" 
+              alt="" 
+              draggable="true"
+              ondragstart="drag(event)"
+              width="250px" 
+              data-aos="flip-up" 
+              data-aos-duration="1000">
+          </div>
+          <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)" class="img media">
+               <img
+               id="drag4" 
+               class="br" 
+               src="../images/dalina.jpg" 
+               alt="" 
+               draggable="true"
+               ondragstart="drag(event)"
+               width="250px" 
+               data-aos="flip-up" 
+               data-aos-duration="1000">
+          </div>
+          <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)" class="imgdown grif">
+              <img
+              id="drag5"
+              src="../images/dhuarata.jpg" 
+              alt="" 
+              draggable="true"
+              ondragstart="drag(event)"
+              width="250px" 
+              data-aos="flip-up" 
+              data-aos-duration="1000">
+          </div>
+          <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)" class="img media">
+              <img 
+              id="drag6"
+              src="../images/blerimi.jpg" a
+              alt="" 
+               draggable="true"
+               ondragstart="drag(event)"
+              width="250px" 
+              data-aos="flip-up" 
+              data-aos-duration="1000">
+          </div>
+      </div>
       </div>
   </div>
   <p id="start-orari">Lista e plotë e stafit akademik : <a href="https://fiek.uni-pr.edu/page.aspx?id=1,14">KLIKO KËTU</a></p>
@@ -537,6 +535,30 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+
+      function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+      }
+
+      function drop(ev) {
+        ev.preventDefault();
+        let data = ev.dataTransfer.getData("text");
+        let draggedElement = document.getElementById(data);
+        let targetElement = ev.target;
+
+        // Check if the target is an image
+        if (targetElement.tagName.toLowerCase() === "img") {
+          // Swap the source URLs of the dragged and target images
+          let tempSrc = draggedElement.src;
+          draggedElement.src = targetElement.src;
+          targetElement.src = tempSrc;
+        }
+      }
     </script>
       <script>
         document.addEventListener("DOMContentLoaded", function () {
