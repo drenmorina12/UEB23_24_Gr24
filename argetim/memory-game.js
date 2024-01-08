@@ -7,19 +7,19 @@ const $notification = $("#notification");
 
 const cardArray = [
   {
-    name: "Blerimi",
+    name: "Blerim",
     img: "../images/blerimi.jpg",
   },
   {
-    name: "Blerimi",
+    name: "Blerim",
     img: "../images/blerimi.jpg",
   },
   {
-    name: "Qamili",
+    name: "Qamil",
     img: "../images/qamili.jpg",
   },
   {
-    name: "Qamili",
+    name: "Qamil",
     img: "../images/qamili.jpg",
   },
   {
@@ -31,27 +31,27 @@ const cardArray = [
     img: "../images/dalina.jpg",
   },
   {
-    name: "Zabeli",
+    name: "Milaim",
     img: "../images/zabeli.jpg",
   },
   {
-    name: "Zabeli",
+    name: "Milaim",
     img: "../images/zabeli.jpg",
   },
   {
-    name: "Kadria",
+    name: "Kadri",
     img: "../images/kadri.jpg",
   },
   {
-    name: "Kadria",
+    name: "Kadri",
     img: "../images/kadri.jpg",
   },
   {
-    name: "Qefserja",
+    name: "Qefsere",
     img: "../images/qefsere.jpg",
   },
   {
-    name: "Qefserja",
+    name: "Qefsere",
     img: "../images/qefsere.jpg",
   },
   {
@@ -63,27 +63,27 @@ const cardArray = [
     img: "../images/dhuarata.jpg",
   },
   {
-    name: "Isaku",
+    name: "Isak",
     img: "../images/isaku.jpg",
   },
   {
-    name: "Isaku",
+    name: "Isak",
     img: "../images/isaku.jpg",
   },
   {
-    name: "Valoni",
+    name: "Valon",
     img: "../images/valoni.jpg",
   },
   {
-    name: "Valoni",
+    name: "Valon",
     img: "../images/valoni.jpg",
   },
   {
-    name: "Labeati",
+    name: "Labeat",
     img: "../images/labeati.jpg",
   },
   {
-    name: "Labeati",
+    name: "Labeat",
     img: "../images/labeati.jpg",
   },
 ];
