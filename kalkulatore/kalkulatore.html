@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@400;600&display=swap"
       rel="stylesheet"
     />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <style>
       #main {
         background-color: #f0f0f0;
@@ -385,15 +385,15 @@
                 <label class="title">Format</label>
                 <ul class="options">
                   <li class="option tool" id="rectangle">
-                    <img src="icons/rectangle.svg" alt="" />
+                    <!-- <img src="icons/rectangle.svg" alt="" /> -->
                     <span>Drejtkëndësh</span>
                   </li>
                   <li class="option tool" id="circle">
-                    <img src="icons/circle.svg" alt="" />
+                    <!-- <img src="icons/circle.svg" alt="" /> -->
                     <span>Rreth</span>
                   </li>
                   <li class="option tool" id="triangle">
-                    <img src="icons/triangle.svg" alt="" />
+                    <!-- <img src="icons/triangle.svg" alt="" /> -->
                     <span>Trekëndësh</span>
                   </li>
                   <li class="option">
@@ -406,11 +406,11 @@
                 <label class="title">Opsionet</label>
                 <ul class="options">
                   <li class="option active tool" id="brush">
-                    <img src="icons/brush.svg" alt="" />
+                    <!-- <img src="icons/brush.svg" alt="" /> -->
                     <span>Lapsi</span>
                   </li>
                   <li class="option tool" id="eraser">
-                    <img src="icons/eraser.svg" alt="" />
+                    <!-- <img src="icons/eraser.svg" alt="" /> -->
                     <span>Goma</span>
                   </li>
                   <li class="option">
@@ -446,6 +446,62 @@
             </section>
           </div>
         </div>
+        <div id="calculator-container">
+          <div class="calculator-title">
+            <h1>Kalkulatori i thjeshte</h1>
+          </div>
+          <div class="wrapping-div">
+            <div class="restrictions">
+              <h2>Kushtezimet:</h2>
+              <ul style="list-style-type: circle">
+                <li><mark>Mos pjesëto me zero</mark></li>
+                <li>
+                  <mark>
+                    Pas zgjedhjes së operatorit, shënoni një numer para fillimit
+                    të kalkulimit</mark
+                  >
+                </li>
+              </ul>
+            </div>
+            <div id="calculator">
+              <span class="display">0</span>
+              <div class="buttons">
+                <button type="button" class="clear" value="clear">AC</button>
+                <button type="button" class="sign" value="sign">+/-</button>
+                <button type="button" class="percent" value="percent">%</button>
+                <button type="button" class="operator" value="/">/</button>
+                <button type="button" class="number" value="7">7</button>
+                <button type="button" class="number" value="8">8</button>
+                <button type="button" class="number" value="9">9</button>
+                <button type="button" class="operator" value="*">*</button>
+                <button type="button" class="number" value="4">4</button>
+                <button type="button" class="number" value="5">5</button>
+                <button type="button" class="number" value="6">6</button>
+                <button type="button" class="operator" value="-">-</button>
+                <button type="button" class="number" value="1">1</button>
+                <button type="button" class="number" value="2">2</button>
+                <button type="button" class="number" value="3">3</button>
+                <button type="button" class="operator" value="+">+</button>
+                <button type="button" class="delete" value="delete">DEL</button>
+                <button type="button" class="number" value="0">0</button>
+                <button type="button" class="decimal" value=".">.</button>
+                <button type="button" class="equals" value="=">=</button>
+              </div>
+            </div>
+            <span class="restrictions">
+              <h2>Operacionet e mbeshtetura:</h2>
+              <ol>
+                <li>Mbledhja</li>
+                <li>Zbritja</li>
+                <li>Shumëzimi</li>
+                <li>Pjesëtimi</li>
+                <li>Përqindja</li>
+                <li>Ndërrimi i shenjës</li>
+              </ol>
+            </span>
+            <div class="error-message"></div>
+          </div>
+        </div>
       </div>
     </main>
     <footer id="footer">
@@ -464,7 +520,7 @@
       </a>
       <p>&copy; 2023 UP Student Toolkit. All Rights Reserved.</p>
     </footer>
-
+    <script src="calculator.js"></script>
     <script src="kalkulatore.js"></script>
   </body>
 </html>
