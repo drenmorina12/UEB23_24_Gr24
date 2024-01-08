@@ -86,6 +86,7 @@
   }
   
   .fiek-capacity p {
+    text-decoration: underline;
     font-size: 22px;
     color: black;
   }
@@ -188,6 +189,9 @@
     width: 100%; 
     position: relative;
 }
+#start-orari{
+  padding-left: 50px;
+}
 
 .orari-headeri {
     align-items: center;
@@ -236,4 +240,13 @@
 .premte{
   text-decoration: underline 2px;
   text-decoration-color: purple ;
+}
+
+.search-bar{
+  margin-right: 45px;
+  height: 42px;
+}
+#selectColumn{
+  margin-bottom: 5px;
+  height: 100%;
 }
