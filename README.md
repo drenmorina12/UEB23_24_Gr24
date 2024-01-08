@@ -5,7 +5,10 @@ Mirë se vini në projektin tonë të web-faqes të universitetit! Ky projekt ë
 
 Detajet e Projektit:
 Emri i Projektit: UP Student Toolkit.
-Zhvilluesit: Blerta Lutolli, Dren Morina, Endrit Kastrati, Edon Gashi.
+Zhvilluesit: Blerta Lutolli, Dren Morina, Endrit Kastrati, Edon Gashi, Artin Dulahi.
+
+.
+
 <!-- Statusi: Në Zhvillim / Beta / Publikuar -->
 
 Përshkrimi i Projektit:
