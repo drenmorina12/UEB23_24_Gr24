@@ -66,35 +66,35 @@ const matematika = {
 };
 
 const pergjithshemSolution = {
-  A: "A!",
-  B: "B!",
-  C: "C!",
-  D: "D!",
+  A: "GJURI",
+  B: "KUPA",
+  C: "SYRI",
+  D: "TENXHERE",
 };
 
-const finalResultPergjithshem = "!FINAAAl";
+const finalResultPergjithshem = "Kapaku";
 
 const pergjithshem = {
-  A: ["!", "!", "!", "!", pergjithshemSolution.A, finalResultPergjithshem],
-  B: ["!", "!", "!", "!", pergjithshemSolution.B],
-  C: ["!", "!", "!", "!", pergjithshemSolution.C],
-  D: ["!", "!", "!", "!", pergjithshemSolution.D],
+  A: ["Këmba", "Femuri", "Meniskusi", "Patella", pergjithshemSolution.A, finalResultPergjithshem],
+  B: ["Ari", "Qielli", "Finale", "Trofe", pergjithshemSolution.B],
+  C: ["Londra", "Shqisa", "Shqiponj", "Syzet", pergjithshemSolution.C],
+  D: ["Gjella", "Zierja", "Ceka", "E metalit", pergjithshemSolution.D],
 };
 
 const webSolutions = {
-  A: "A!",
-  B: "B!",
-  C: "C!",
-  D: "D!",
+  A: "KUQE",
+  B: "GAZETA",
+  C: "NUMRI",
+  D: "WEB-",
 };
 
-const finalResulWeb = "WEB";
+const finalResulWeb = "Faqe";
 
 const web = {
-  A: ["!web", "!web", "!", "!", webSolutions.A, finalResulWeb],
-  B: ["!web", "!web", "!", "!", webSolutions.B],
-  C: ["!web", "!web", "!", "!", webSolutions.C],
-  D: ["!web", "!web", "!", "!", webSolutions.D],
+  A: ["RGB", "Zemra", "Vera", "Molla", webSolutions.A, finalResulWeb],
+  B: ["Lajme", "Ditore", "Leximi", "Letra", webSolutions.B],
+  C: ["Romak", "Monedh", "Binar", "Fanella", webSolutions.C],
+  D: ["www", "Interneti", "URL", "Domeni", webSolutions.D],
 };
 
 //--------------------------------------------------
