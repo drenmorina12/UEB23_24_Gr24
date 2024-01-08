@@ -8,6 +8,7 @@
     /* color: #424551;  */
     /* font-family: "Playfair Display", sans-serif; */
   }
+
 /*   
   body {
     max-width: 1280px;
@@ -25,6 +26,8 @@
     justify-content: start;
     align-items: start;
     gap: 40px;
+    padding-top: 30px;
+    padding-left: 30px;
   }
   .img-card img {
     width: 100%;
@@ -134,12 +137,7 @@
   }
 
   /* PERSONELI AKADEMIK CSS : */
-  *{
-    /* margin: 0 auto; */
-    padding: 0;
-    box-sizing: border-box;
-    /* color: #424551; */
-}
+
 .main-personeli-container {
     display: flex;
     flex-direction: row;

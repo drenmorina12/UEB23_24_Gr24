@@ -14,16 +14,12 @@
   
   body {
     -ms-overflow-style: none; 
-    scrollbar-width: none; 
-    overflow-y: scroll;
     box-sizing: border-box;
     font-family: var(--body-font);
-    min-height: 100vh;
-    background-image: url("../images/main-background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: var(--blue);
-    background-position: center;
+    overflow: hidden;
+    /* min-height: 100vh; */
+    background: rgb(0,0,0);
+    background: linear-gradient(24deg, rgba(0,0,0,1) 0%, rgba(93,6,11,1) 24%, rgba(4,6,68,1) 47%, rgba(3,11,170,1) 84%, rgba(255,255,255,1) 100%);
   }
   body::-webkit-scrollbar {
     display: none; 
@@ -35,7 +31,7 @@
     width: 90%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 7.5rem;
+    margin-top: 6.9rem;
     grid-gap: 1.4rem;
   }
 
@@ -84,7 +80,7 @@
     border-radius: 5px;
     border-width: 1px;
     border-style: solid;
-    border-color: var(--green);
+    border-color: rgba(4,6,68,1);
     opacity: 0.8;
     font-family: var(--body-font);
     padding-left: 1rem;
@@ -108,7 +104,7 @@
     border-color: transparent;
     border-style: solid;
     cursor: pointer;
-    background-color: var(--green);
+    background-color: rgba(4,6,68,1);
     color: var(--white); 
     text-transform: uppercase;
     padding: 1.2rem;
@@ -116,18 +112,28 @@
     font-weight: 600;
     transition: all ease-in-out 0.3s;
   }
+  #submit-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .submit-info:hover {
     opacity: 0.7;
-    transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 1s;
   }
   .tnc {
-    font-size: 0.68rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: var(--gray-blue);
     text-align: center;
   }
   .tnc a {
     text-decoration: none;
-    color: var(--green);
+    color: rgba(4,6,68,1);
     font-weight: 600;
+  }
+
+  .sign-up-logo{
+    width: 120px;
+    height: 120px;
   }

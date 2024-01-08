@@ -20,65 +20,81 @@ const finalResulTemplate = "Zgjidhja Perfundimtare";
 // ---------------------------------------
 
 const fizikaSolutions = {
-  A: "Shpërthim",
-  B: "Hiroshima - 1945",
-  C: "Montimi",
-  D: "",
+  A: "BOMBA",
+  B: "BËRTHAM/ORE",
+  C: "GRIMCË",
+  D: "CHERNOBYL",
 };
 
 const finalResultFizika = "Atomi";
 
 const fizika = {
   A: [
-    "A1-test",
-    "A2-test",
-    "A3-test",
-    "A4-test",
+    "Shpërthim",
+    "Hiroshima - 1945",
+    "Lufta",
+    "Montimi",
     fizikaSolutions.A,
     finalResultFizika,
   ],
-  B: ["B1-test", "B2-test", "B3-test", "B4-test", fizikaSolutions.B],
-  C: ["C1-test", "C2-test", "C3-test", "C4-test", fizikaSolutions.C],
-  D: ["D1-test", "D2-test", "D3-test", "D4-test", fizikaSolutions.D],
+  B: ["Toka", "Avokado", "Armët", "Energji-", fizikaSolutions.B],
+  C: ["Orizi", "Molekula", "E imët", "bit", fizikaSolutions.C],
+  D: ["Ukraina", "Katastrofa", "Rrezatimi", "I Pa banuar", fizikaSolutions.D],
 };
 
 const matematikaSolution = {
-  A: "Zgjidhja ",
-  B: "Zgjidhja 2",
-  C: "Zgjidhja 3",
-  D: "Zgjidhja 4",
+  A: "HEXADECIMAL",
+  B: "INT",
+  C: "VITI",
+  D: "IMAGJINARË",
 };
 
-const finalResultMatematika = "integrali";
+const finalResultMatematika = "Numrat";
 
 const matematika = {
   A: [
-    "Math",
-    "test",
-    "modulo",
-    "vija",
+    "Sistem",
+    "16",
+    "Shkronja",
+    "0-F",
     matematikaSolution.A,
     finalResultMatematika,
   ],
-  B: ["plus", "numer", ",", "romb", matematikaSolution.B],
-  C: ["minus", "/", ".", "rreth", matematikaSolution.C],
-  D: ["derivat", "*", "i", "katror", matematikaSolution.D],
+  B: ["4-byte", "Shifra", "Programim", "Deklarim", matematikaSolution.B],
+  C: ["I brishtë", "Akademik", "Qytet", "I Ri", matematikaSolution.C],
+  D: ["Ëndërra", "Jo reale", "Dëshira", "Truri", matematikaSolution.D],
 };
 
 const pergjithshemSolution = {
-  A: "A!",
-  B: "B!",
-  C: "C!",
-  D: "D!",
+  A: "GJURI",
+  B: "KUPA",
+  C: "SYRI",
+  D: "TENXHERE",
 };
 
-const finalResultPergjithshem = "!FINAAAl";
+const finalResultPergjithshem = "Kapaku";
 
 const pergjithshem = {
-  A: ["!", "!", "!", "!", pergjithshemSolution.A, finalResultPergjithshem],
-  B: ["!", "!", "!", "!", pergjithshemSolution.B],
-  C: ["!", "!", "!", "!", pergjithshemSolution.C],
-  D: ["!", "!", "!", "!", pergjithshemSolution.D],
+  A: ["Këmba", "Femuri", "Meniskusi", "Patella", pergjithshemSolution.A, finalResultPergjithshem],
+  B: ["Ari", "Qielli", "Finale", "Trofe", pergjithshemSolution.B],
+  C: ["Londra", "Shqisa", "Shqiponj", "Syzet", pergjithshemSolution.C],
+  D: ["Gjella", "Zierja", "Ceka", "E metalit", pergjithshemSolution.D],
+};
+
+const webSolutions = {
+  A: "KUQE",
+  B: "GAZETA",
+  C: "NUMRI",
+  D: "WEB-",
+};
+
+const finalResulWeb = "Faqe";
+
+const web = {
+  A: ["RGB", "Zemra", "Vera", "Molla", webSolutions.A, finalResulWeb],
+  B: ["Lajme", "Ditore", "Leximi", "Letra", webSolutions.B],
+  C: ["Romak", "Monedh", "Binar", "Fanella", webSolutions.C],
+  D: ["www", "Interneti", "URL", "Domeni", webSolutions.D],
 };
 
 //--------------------------------------------------
@@ -170,6 +186,11 @@ asosacioniButtons.forEach((button) => {
         currentAsosacionText = "pergjithshem";
         addCellEventListeners(pergjithshem);
         currentAsosacion = pergjithshem;
+        break;
+      case "web":
+        currentAsosacionText = "web";
+        addCellEventListeners(web);
+        currentAsosacion = web;
         break;
       default:
         alert("Ky asosacion nuk ekziston! ");
