@@ -102,6 +102,7 @@ select{
   opacity: 0.8;
   /* filter: brightness(0.7) contrast(0.8); */
   filter: grayscale(60%);
+  background-origin: none;
 }
 
 #text-inside-fiek-photo {
@@ -309,9 +310,12 @@ div.content {
   position: relative;
   top: 110px;
 }
-
+@font-face {
+  font-family: footerFont;
+  src: url("../../../Downloads/Salsa/Salsa-Regular.ttf");
+}
 footer p {
-  font-family: "Courier New", Courier, monospace;
+  font-family: footerFont;
   font-size: medium;
   margin: 10px;
 }
