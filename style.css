@@ -55,6 +55,7 @@ body {
   color: #fff;
   white-space: nowrap;
   padding: 10px 20px;
+  width: 145px;
 }
 
 #header nav select {
