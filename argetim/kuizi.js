@@ -20,38 +20,27 @@ const quizArray = [
   {
     id: "0",
     question: "Qfare kuptimi ka HTML?",
-    options: [
-      "HyperText Markup Language",
-      "HighText Marketing Language",
-      "Hover Textual Medium Language",
-      "Hacker Tool Language",
-    ],
+    options: ["HyperText Markup Language", "HighText Marketing Language", "Hover Textual Medium Language", "Hacker Tool Language"],
     correct: "HyperText Markup Language",
   },
   {
     id: "1",
     question: "Qfare sherben tag-u strong ne front developing?",
-    options: [
-      "Mundson siguri me te madhe ne web-faqe",
-      "Tregon numrin e karaktereve",
-      "Rrit weight-in e nje pjese te deshiruar",
-      "Tag-u nuk egziston",
-    ],
+    options: ["Mundson siguri me te madhe ne web-faqe", "Tregon numrin e karaktereve", "Rrit weight-in e nje pjese te deshiruar", "Tag-u nuk egziston"],
     correct: "Rrit weight-in e nje pjese te deshiruar",
   },
   {
     id: "2",
-    question:
-      "Cfare shkurtese/prapashtese vendoset pas . kur ruajme file te gjuhes javascript?",
+    question: "Cfare shkurtese/prapashtese vendoset pas . kur ruajme file te gjuhes javascript?",
     options: [".javasc", ".js", ".script", ".JavaScript"],
     correct: ".js",
   },
   {
     id: "3",
-    question: "Qa osht endriti: ",
-    options: ["i meqem", "i qart", "suiiii", "asnojna"],
-    correct: "asnojna",
-  },
+    question: "Si formohet një hyperlink në html &lt &gt?",
+    options: ["link", "web", "linkto", "a"],
+    correct: "a",
+  }
 ];
 
 //Restart Quiz
@@ -65,21 +54,18 @@ restart.addEventListener("click", () => {
 nextBtn.addEventListener(
   "click",
   (displayNext = () => {
-    //increment questionCount
+    
     questionCount += 1;
-    //if last question
+    
     if (questionCount == quizArray.length) {
-      //hide question container and display score
+
       displayContainer.classList.add("hide");
       scoreContainer.classList.remove("hide");
-      //user score
       userScore.innerHTML =
         "Keni qelluar " + scoreCount + " nga " + questionCount + " pyetje !";
     } else {
-      //display questionCount
       countOfQuestion.innerHTML =
         questionCount + 1 + " nga " + quizArray.length + " pyetje";
-      //display quiz
       quizDisplay(questionCount);
       count = 11;
       clearInterval(countdown);
@@ -100,26 +86,21 @@ const timerDisplay = () => {
   }, 1000);
 };
 
-//Display quiz
 const quizDisplay = (questionCount) => {
   let quizCards = document.querySelectorAll(".container-mid");
-  //Hide other cards
   quizCards.forEach((card) => {
     card.classList.add("hide");
   });
-  //display current question card
   quizCards[questionCount].classList.remove("hide");
 };
 
-//Quiz Creation
+//Quiz 
 function quizCreator() {
   //randomly sort questions
   quizArray.sort(() => Math.random() - 0.5);
-  //generate quiz
   for (let i of quizArray) {
     //randomly sort options
     i.options.sort(() => Math.random() - 0.5);
-    //quiz card creation
     let div = document.createElement("div");
     div.classList.add("container-mid", "hide");
     //question number
@@ -147,7 +128,6 @@ function checker(userOption) {
     document.getElementsByClassName("container-mid")[questionCount];
   let options = question.querySelectorAll(".option-div");
 
-  //if user clicked answer == correct option stored in object
   if (userSolution === quizArray[questionCount].correct) {
     userOption.classList.add("correct");
     scoreCount++;
@@ -162,7 +142,6 @@ function checker(userOption) {
   }
 }
 
-//initial setup
 function initial() {
   quizContainer.innerHTML = "";
   questionCount = 0;
@@ -174,14 +153,12 @@ function initial() {
   quizDisplay(questionCount);
 }
 
-//when user click on start button
 startButton.addEventListener("click", () => {
   startScreen.classList.add("hide");
   displayContainer.classList.remove("hide");
   initial();
 });
 
-//hide quiz and display start screen
 window.onload = () => {
   startScreen.classList.remove("hide");
   displayContainer.classList.add("hide");
@@ -189,10 +166,10 @@ window.onload = () => {
 
 //audio at start and restart button
 function playAudio2() {
-  var audio = document.getElementById("startAudio");
+  var audio = document.getElementById('startAudio');
   audio.play();
 }
 function playAudio1() {
-  var audio = document.getElementById("restartAudio");
+  var audio = document.getElementById('restartAudio');
   audio.play();
 }
