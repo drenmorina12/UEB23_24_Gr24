@@ -138,3 +138,45 @@ h3 {
 .s3 .text {
   height: 170px;
 }
+
+/* FORMA PER KOMUNIKIM ME USER : */
+
+#forma-user{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin-top: 15px;
+    margin-bottom: -30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#label-user-form{
+  display: block;
+  margin-bottom: 8px;
+}
+
+#email-user-form {
+  width: 200px;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+#buttoni-user-form {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#buttoni-user-form:hover {
+  background-color: #45a049;
+}
