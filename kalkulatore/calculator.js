@@ -7,6 +7,7 @@ const percent = document.querySelector(".percent");
 const decimal = document.querySelector(".decimal");
 const sign = document.querySelector(".sign");
 const deleteButton = document.querySelector(".delete");
+// const $errorMessage =  ${"#error-message"};
 
 const MAX_LENGTH = 9;
 let number1 = "";
@@ -45,7 +46,9 @@ function operate(number1, number2, operator) {
 
     case "/":
       if (number2 == 0) {
-        return "SUI";
+        throw new Error("Pjestimi me zero nuk lejohet!");
+
+        // return "SUI";
       }
       return divide(number1, number2);
 
@@ -68,6 +71,7 @@ function clear() {
 }
 
 function formatResult(result) {
+  // Perdorimi i toString
   let stringResult = result.toString();
   if (stringResult.length > 9) {
     stringResult = parseFloat(result).toExponential(2);
@@ -76,13 +80,34 @@ function formatResult(result) {
 }
 
 function calculate() {
-  n1 = parseFloat(number1);
-  n2 = parseFloat(number2);
-  let result = operate(n1, n2, operator);
-  let formatedResult = formatResult(result);
-  displayText = formatedResult;
-  displayResult();
-  number1 = formatedResult;
+  try {
+    // Perdorime te Parse Float
+    n1 = parseFloat(number1);
+    if (number2 === "") {
+      throw new Error("Second number hasn't been selected.");
+    }
+    n2 = parseFloat(number2);
+    let result = operate(n1, n2, operator);
+    let formattedResult = formatResult(result);
+    displayText = formattedResult;
+    displayResult();
+    number1 = formattedResult;
+
+    displayErrorMessage("");
+  } catch (error) {
+    console.error(error.message);
+    // Optionally, you can display an error message to the user
+    // For example: alert(error.message);
+    displayErrorMessage(error.message);
+  }
+}
+
+function displayErrorMessage(message) {
+  $(".error-message").text(message).show();
+
+  setTimeout(() => {
+    $(".error-message").text(message).hide();
+  }, 5000);
 }
 
 numbers.forEach((number) => {
