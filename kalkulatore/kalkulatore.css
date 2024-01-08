@@ -530,7 +530,7 @@ input[type="button"]:active {
 #calculator-container {
   min-height: 110vh;
   /* background-color: white; */
-  border: 10px solid orange;
+  /* border: 10px solid orange; */
   display: flex;
   flex-direction: column;
   position: relative;
@@ -554,6 +554,9 @@ input[type="button"]:active {
 }
 
 .restrictions {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  box-shadow: 2px 2px 15px;
   border: 1px double black;
   height: 400px;
   width: 330px;
