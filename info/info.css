@@ -189,6 +189,9 @@
     width: 100%; 
     position: relative;
 }
+#start-orari{
+  padding-left: 50px;
+}
 
 .orari-headeri {
     align-items: center;
