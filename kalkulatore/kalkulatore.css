@@ -546,7 +546,7 @@ input[type="button"]:active {
 
 .wrapping-div {
   flex: 1;
-  background-color: white;
+  /* background-color: white; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -557,10 +557,12 @@ input[type="button"]:active {
   border: 1px double black;
   height: 400px;
   width: 330px;
+  background-color: #0b2447;
 }
 
 .restrictions h2 {
   margin: 10px;
+  color: white;
 }
 
 .restrictions ul li,
@@ -568,7 +570,7 @@ input[type="button"]:active {
   margin-left: 50px;
   margin-top: 10px;
   font-size: 20px;
-  line-height: 2;
+  color: white;
 }
 
 #calculator {
