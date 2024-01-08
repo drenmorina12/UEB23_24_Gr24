@@ -131,6 +131,7 @@ select {
   text-align: center;
   position: relative;
   top: 15px;
+  text-shadow: 3px 3px black
 }
 .about-text {
   color: #fff;
