@@ -30,9 +30,20 @@
   </head>
   <body>
     <div id="header">
-      <div style="display: flex;">
+      <div style="display: flex">
         <img class="logo" src="../images/logo1.png" />
-        <h3 style="margin: 12px 0px 0px 30px; color: whitesmoke;  text-shadow: 1px 1px 30px; font-size: 23px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">UP Student Toolkit</h3>
+        <h3
+          style="
+            margin: 12px 0px 0px 30px;
+            color: whitesmoke;
+            /* text-shadow: 1px 1px 30px; */
+            font-size: 23px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+              serif;
+          "
+        >
+          UP Student Toolkit
+        </h3>
       </div>
       <nav class="nav-bar">
         <a href="../index.html">Ballina</a>
@@ -49,22 +60,34 @@
         <!-- <header>Argetimi</header> -->
         <ul id="listaEsidebar">
           <li>
-            <a href="#permbajtjaKalkulatori">
+            <a
+              href="javascript:void(0);"
+              onclick="scrollToSection('permbajtjaKalkulatori')"
+            >
               <span>Sistemet</span>
             </a>
           </li>
           <li class="sidebar-active">
-            <a href="#permbajtjaKonvertori">
+            <a
+              href="javascript:void(0);"
+              onclick="scrollToSection('permbajtjaKonvertori')"
+            >
               <span>Konvertori</span>
             </a>
           </li>
           <li>
-            <a href="#drawing-table">
+            <a
+              href="javascript:void(0);"
+              onclick="scrollToSection('drawing-table')"
+            >
               <span>Tabela e Vizatimit</span>
             </a>
           </li>
           <li>
-            <a href="#wrapping-div">
+            <a
+              href="javascript:void(0);"
+              onclick="scrollToSection('calculator-container')"
+            >
               <span>Kalkulatori</span>
             </a>
           </li>
@@ -539,5 +562,6 @@
     </footer>
     <script src="calculator.js"></script>
     <script src="kalkulatore.js"></script>
+    <script src="../app.js"></script>
   </body>
 </html>

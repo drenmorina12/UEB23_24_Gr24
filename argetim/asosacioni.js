@@ -1,10 +1,12 @@
 const asosacioni = document.querySelector("#asosacioni-table");
 const asosacioniButtons = document.querySelectorAll(".asosacioni-button");
 const resetBtn = document.querySelector(".reset-button");
-const asosacioniHeaderText = document.querySelector(".asosacioni-text h3");
+const asosacioniHeaderText = document.querySelector(
+  "#asosacioni .heading-text h3"
+);
 
 let currentAsosacion;
-let currentAsosacionText = "pergjithshem";
+let currentAsosacionText = '"Përgjithshëm"';
 
 // Templates -----------------------------
 const columns = ["A", "B", "C", "D"];
@@ -75,7 +77,14 @@ const pergjithshemSolution = {
 const finalResultPergjithshem = "Kapaku";
 
 const pergjithshem = {
-  A: ["Këmba", "Femuri", "Meniskusi", "Patella", pergjithshemSolution.A, finalResultPergjithshem],
+  A: [
+    "Këmba",
+    "Femuri",
+    "Meniskusi",
+    "Patella",
+    pergjithshemSolution.A,
+    finalResultPergjithshem,
+  ],
   B: ["Ari", "Qielli", "Finale", "Trofe", pergjithshemSolution.B],
   C: ["Londra", "Shqisa", "Shqiponj", "Syzet", pergjithshemSolution.C],
   D: ["Gjella", "Zierja", "Ceka", "E metalit", pergjithshemSolution.D],
@@ -172,23 +181,23 @@ asosacioniButtons.forEach((button) => {
 
     switch (subject) {
       case "matematika":
-        currentAsosacionText = "matematika";
+        currentAsosacionText = '"Matematika"';
         addCellEventListeners(matematika);
         currentAsosacion = matematika;
 
         break;
       case "fizika":
-        currentAsosacionText = "fizika";
+        currentAsosacionText = '"Fizika"';
         addCellEventListeners(fizika);
         currentAsosacion = fizika;
         break;
       case "pergjithshem":
-        currentAsosacionText = "pergjithshem";
+        currentAsosacionText = '"Përgjithshëm"';
         addCellEventListeners(pergjithshem);
         currentAsosacion = pergjithshem;
         break;
       case "web":
-        currentAsosacionText = "web";
+        currentAsosacionText = '"Web"';
         addCellEventListeners(web);
         currentAsosacion = web;
         break;

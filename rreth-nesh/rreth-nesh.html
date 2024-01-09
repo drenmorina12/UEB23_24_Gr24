@@ -20,65 +20,65 @@
     <!-- BOOTSTRAP-->
 
     <style>
-.permbajtja-formes {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 350px;
-    font-size: 14px;
-    border-radius: 10px;
-    margin-top: 10%;
-    margin-left: 41%;
-    margin-right: auto;
-    color: white;
-    box-shadow: 2px 2px 15px;
-}
+      .permbajtja-formes {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 350px;
+        font-size: 14px;
+        border-radius: 10px;
+        margin-top: 10%;
+        margin-left: 41%;
+        margin-right: auto;
+        color: white;
+        box-shadow: 2px 2px 15px;
+      }
 
       .kolona-1 {
-    float: left;
-    width: 38%;
-    margin-top: 5px;
-}
+        float: left;
+        width: 38%;
+        margin-top: 5px;
+      }
 
-.kolona-2 {
-    float: left;
-    width: 57%;
-    margin-top: 5px;
-}
+      .kolona-2 {
+        float: left;
+        width: 57%;
+        margin-top: 5px;
+      }
 
-.rreshti:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+      .rreshti:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
 
-label {
-    display: inline-block;
-    font-family: sans-serif;
-    font-size: 18px;
-    font-style: italic;
-    margin: 10px;
-}
+      label {
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 18px;
+        font-style: italic;
+        margin: 10px;
+      }
 
-input[type=text] {
-    width: 180px;
-    height: 29px;
-    border-radius: 20px;
-    padding: 10px;
-    cursor: pointer;
-}
+      input[type="text"] {
+        width: 180px;
+        height: 29px;
+        border-radius: 20px;
+        padding: 10px;
+        cursor: pointer;
+      }
 
-#mesazhi {
-    width: 180px;
-    height: 80px;
-    border-radius: 20px;
-    padding: 10px;
-    cursor: pointer;
-}
+      #mesazhi {
+        width: 180px;
+        height: 80px;
+        border-radius: 20px;
+        padding: 10px;
+        cursor: pointer;
+      }
 
-input,
-textarea {
-    margin-top: 7px;
-    resize: none;
-}
+      input,
+      textarea {
+        margin-top: 7px;
+        resize: none;
+      }
 
 input[type=button] {
     background-color: forestgreen;
@@ -98,14 +98,14 @@ input[type=button]:hover {
     transition: .9s ease;
 }
 
-input[type=text]:focus,
-textarea:focus {
-    background-color: #0d0c4e;
-    color: white;
-    outline: none;
-    border: 1px solid black;
-    transition: .5s ease;
-}
+      input[type="text"]:focus,
+      textarea:focus {
+        background-color: #0d0c4e;
+        color: white;
+        outline: none;
+        border: 1px solid black;
+        transition: 0.5s ease;
+      }
 
 input[type=button]:active {
     background-color: #039dfc;
@@ -116,10 +116,21 @@ input[type=button]:active {
   </head>
   <body>
     <div id="header">
-      <div style="display: flex;">
-      <img class="logo" src="../images/logo1.png" />
-      <h3 style="margin: 12px 0px 0px 30px; color: whitesmoke;  text-shadow: 1px 1px 30px; font-size: 23px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">UP Student Toolkit</h3>
-    </div>
+      <div style="display: flex">
+        <img class="logo" src="../images/logo1.png" />
+        <h3
+          style="
+            margin: 12px 0px 0px 30px;
+            color: whitesmoke;
+            /* text-shadow: 1px 1px 30px; */
+            font-size: 23px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+              serif;
+          "
+        >
+          UP Student Toolkit
+        </h3>
+      </div>
       <nav class="nav-bar">
         <a href="../index.html">Ballina</a>
         <a href="../kalkulatore/kalkulatore.html">Kalkulatorë</a>
@@ -164,40 +175,44 @@ input[type=button]:active {
         </div>
         <div class="inner-section">
           <h3>ÇFARË OFROJMË</h3>
-            <div id="nested-list">
-              <p class="text">
-                Up-Student-Toolkit ofron:
-           <ol>
-            <li><b>Kalkulatorët</b></li>
-            <ul>
-              <li>Kalkulatori</li>
-              <li>Konvertori</li>
-              <li>Tabelën e vizatimit</li>
-            </ul>
-            <li><b>Argëtimin</b></li>
-            <ul>
+          <div id="nested-list" class="text">
+            <p>Up-Student-Toolkit ofron:</p>
+            <ol>
               <li>
-                Asosacionet:
+                <b>Kalkulatorët</b>
                 <ul>
-                  <li>Përgjithshëm</li>
-                  <li>Web</li>
-                  <li>Fizikë</li>
-                  <li>Matematikë</li>
+                  <li>Kalkulatori</li>
+                  <li>Konvertori</li>
+                  <li>Tabelën e vizatimit</li>
                 </ul>
               </li>
-              <li>Kuizin</li>
-              <li>Lojëra të ndryshme</li>
-            </ul>
-            <li><b>Info</b></li>
-            <ul>
-             <li> Objekti i fakultetit</li>
-             <li>Personeli i fakultetit</li>
-             <li>Orari akademik</li>
-            </ul>
-            <li><b>Literaturën</b></li>
-           </ol> 
+              <li>
+                <b>Argëtimin</b>
+                <ul>
+                  <li>
+                    Asosacionet:
+                    <ul>
+                      <li>Përgjithshëm</li>
+                      <li>Web</li>
+                      <li>Fizikë</li>
+                      <li>Matematikë</li>
+                    </ul>
+                  </li>
+                  <li>Kuizin</li>
+                  <li>Lojëra të ndryshme</li>
+                </ul>
+              </li>
+              <li>
+                <b>Info</b>
+                <ul>
+                  <li>Objekti i fakultetit</li>
+                  <li>Personeli i fakultetit</li>
+                  <li>Orari akademik</li>
+                </ul>
+              </li>
+              <li><b>Literaturën</b></li>
+            </ol>
           </div>
-          </p>
           <h3>MISIONI</h3>
           <p class="text">
             Misioni ynë është që të shërbejmë si partner i besueshëm në rrugën
@@ -265,7 +280,12 @@ input[type=button]:active {
       </div>
       <div>
         <div class="photo5">
-          <img src="../images/photo5.jpg" url="" class="img-thumbnail"  style="background-position: center;"/>
+          <img
+            src="../images/photo5.jpg"
+            url=""
+            class="img-thumbnail"
+            style="background-position: center"
+          />
         </div>
       </div>
 
@@ -275,34 +295,53 @@ input[type=button]:active {
       <form action="" name="formaMesazhi">
         <div class="rreshti">
             <div class="kolona-1">
-                <label for="emri">Emri:</label>
+              <label for="emri">Emri:</label>
             </div>
             <div class="kolona-2">
-                <input type="text" id="emri" placeholder="Emri i juaj..." name="emri">
+              <input
+                type="text"
+                id="emri"
+                placeholder="Emri i juaj..."
+                name="emri"
+              />
             </div>
-        </div>
-        <div class="rreshti">
+          </div>
+          <div class="rreshti">
             <div class="kolona-1">
-                <label for="emri">Mbiemri:</label>
+              <label for="emri">Mbiemri:</label>
             </div>
             <div class="kolona-2">
-                <input type="text" id="mbiemri" name="mbiemri" placeholder="Mbiemri i juaj...">
+              <input
+                type="text"
+                id="mbiemri"
+                name="mbiemri"
+                placeholder="Mbiemri i juaj..."
+              />
             </div>
-        </div>
-        <div class="rreshti">
+          </div>
+          <div class="rreshti">
             <div class="kolona-1">
-                <label for="email">Email:</label>
+              <label for="email">Email:</label>
             </div>
             <div class="kolona-2">
-                <input type="text" id="email" name="email" placeholder="Emaili i juaj...">
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Emaili i juaj..."
+              />
             </div>
-        </div>
-        <div class="rreshti">
+          </div>
+          <div class="rreshti">
             <div class="kolona-1">
-                <label for="mesazhi">Mesazhi:</label>
+              <label for="mesazhi">Mesazhi:</label>
             </div>
             <div class="kolona-2">
-                <textarea id="mesazhi" name="mesazhi" placeholder="Vërejtje, këshillë apo informata..."></textarea>
+              <textarea
+                id="mesazhi"
+                name="mesazhi"
+                placeholder="Vërejtje, këshillë apo informata..."
+              ></textarea>
             </div>
         </div>
         <div class="rreshti">

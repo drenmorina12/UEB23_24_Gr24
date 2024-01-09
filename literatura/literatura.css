@@ -185,3 +185,7 @@ p {
   height: 393.75px;
   margin: auto;
 }
+
+#footer {
+  top: 0px;
+}

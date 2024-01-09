@@ -1,3 +1,8 @@
+:root {
+  --main-color: #0b2447;
+  --argetimi-bg: #c0bfd2;
+}
+
 #main {
   display: flex;
   justify-content: center;
@@ -47,11 +52,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* margin-top: 0px; */
+  margin-top: -20px;
 }
 
 .asosacioni-button {
   /* background-color: #002244; */
-  background-color: #19376d;
+  background-color: var(--main-color);
   color: white;
   padding: 10px 30px;
   margin: 30px;
@@ -91,6 +98,8 @@
 .asosacioni-table-container {
   /* border: 5px solid pink; */
   width: 900px;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 #asosacioni .row {
@@ -169,22 +178,35 @@ button {
   font-size: 1.3em;
   padding: 0.5em 1.8em;
   border-radius: 0.2em;
+  background-color: #c0bfd2;
 }
 #restart {
   margin-top: 0.9em;
 }
-#display-container {
-  background-color: #ffffff;
+#display-container,
+#button-container,
+.score-container {
+  background-color: #002244;
+  /* background-color: #ffffff; */
   padding: 3.1em 1.8em;
   width: 80%;
-  max-width: 37.5em;
+  width: 37.5em;
   margin: auto;
   position: relative;
   /* transform: translate(-50%, -50%); */
   /* top: 50%; */
   /* left: 50%; */
   border-radius: 0.6em;
+  height: 500px;
+  margin-bottom: 30px;
 }
+
+#button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header {
   margin-bottom: 1.8em;
   display: flex;
@@ -205,6 +227,7 @@ button {
 .question {
   margin-bottom: 1.25em;
   font-weight: 600;
+  color: white;
 }
 .option-div {
   font-size: 0.9em;
@@ -216,6 +239,7 @@ button {
   background: transparent;
   border: 1px solid #c0bfd2;
   border-radius: 0.3em;
+  color: white;
 }
 .option-div:disabled {
   color: #000000;
@@ -258,6 +282,12 @@ button {
 #tic-tac-toe {
   padding: 0px;
   display: flex;
+  justify-content: space-around;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .x-score-container,
@@ -272,7 +302,7 @@ button {
 .circle-logo {
   width: 100px;
   height: 100px;
-  /* border: 1px solid black; */
+
   margin-top: 70px;
   display: flex;
   justify-content: center;
@@ -287,6 +317,17 @@ button {
   margin-right: 70px;
 }
 
+.x-score-container h3,
+.circle-score-container h3 {
+  font-size: 30px;
+}
+
+.x-score-container .x-score,
+.circle-score-container .circle-score {
+  font-weight: bold;
+  font-size: 40px;
+}
+
 .board {
   flex: 1;
   /* width: 100%; */
@@ -298,6 +339,7 @@ button {
   align-items: center;
 
   grid-template-columns: repeat(3, auto);
+  padding-bottom: 30px;
 }
 
 .cells {
@@ -448,6 +490,32 @@ button {
 /* Tic Tac Toe end */
 
 /* Memory game start */
+#memory-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+
+.heading-text {
+  margin: 40px;
+  /* background-color: white; */
+  background-color: var(--argetimi-bg);
+  min-width: 500px;
+  padding: 20px 30px;
+  color: var(--main-color);
+  border: 3px solid var(--main-color);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.memory-score-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+}
+
 #grid {
   /* border: 1px solid black; */
   height: 450px;
@@ -467,16 +535,17 @@ button {
   display: none;
   /* border: 10px solid brown; */
   position: relative;
-  width: 250px;
+  min-width: 250px;
   height: 50px;
-  left: 820px;
-  bottom: 250px;
+  left: 450px;
+  bottom: 400px;
   /* top: 300px; */
   /* right: 10px; */
-  padding: 10px;
+  padding: 15px;
   background-color: #19376d;
   border-radius: 5px;
   /* z-index: 1000; */
+  color: white;
 }
 
 .card-bg {
