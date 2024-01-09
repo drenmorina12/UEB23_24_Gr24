@@ -7,84 +7,84 @@ const $notification = $("#notification");
 
 const cardArray = [
   {
-    name: "Blerim",
-    img: "../images/blerimi.jpg",
+    name: "C++",
+    img: "../images/cpp.jpg",
   },
   {
-    name: "Blerim",
-    img: "../images/blerimi.jpg",
+    name: "C++",
+    img: "../images/cpp.jpg",
   },
   {
-    name: "Qamil",
-    img: "../images/qamili.jpg",
+    name: "HTML",
+    img: "../images/htmll.jpg",
   },
   {
-    name: "Qamil",
-    img: "../images/qamili.jpg",
+    name: "HTML",
+    img: "../images/htmll.jpg",
   },
   {
-    name: "Dalina",
-    img: "../images/dalina.jpg",
+    name: "CSS",
+    img: "../images/csss.jpg",
   },
   {
-    name: "Dalina",
-    img: "../images/dalina.jpg",
+    name: "CSS",
+    img: "../images/csss.jpg",
   },
   {
-    name: "Milaim",
-    img: "../images/zabeli.jpg",
+    name: "Javascript",
+    img: "../images/javascriptt.jpg",
   },
   {
-    name: "Milaim",
-    img: "../images/zabeli.jpg",
+    name: "Javascript",
+    img: "../images/javascriptt.jpg",
   },
   {
-    name: "Kadri",
-    img: "../images/kadri.jpg",
+    name: "Java",
+    img: "../images/javaa.jpg",
   },
   {
-    name: "Kadri",
-    img: "../images/kadri.jpg",
+    name: "Java",
+    img: "../images/javaa.jpg",
   },
   {
-    name: "Qefsere",
-    img: "../images/qefsere.jpg",
+    name: "Python",
+    img: "../images/pythonn.jpg",
   },
   {
-    name: "Qefsere",
-    img: "../images/qefsere.jpg",
+    name: "Python",
+    img: "../images/pythonn.jpg",
   },
   {
-    name: "Dhurata",
-    img: "../images/dhuarata.jpg",
+    name: "React",
+    img: "../images/reactt.jpg",
   },
   {
-    name: "Dhurata",
-    img: "../images/dhuarata.jpg",
+    name: "React",
+    img: "../images/reactt.jpg",
   },
   {
-    name: "Isak",
-    img: "../images/isaku.jpg",
+    name: "PHP",
+    img: "../images/phpp.jpg",
   },
   {
-    name: "Isak",
-    img: "../images/isaku.jpg",
+    name: "PHP",
+    img: "../images/phpp.jpg",
   },
   {
-    name: "Valon",
-    img: "../images/valoni.jpg",
+    name: "Rubi",
+    img: "../images/rubii.jpg",
   },
   {
-    name: "Valon",
-    img: "../images/valoni.jpg",
+    name: "Rubi",
+    img: "../images/rubii.jpg",
   },
   {
-    name: "Labeat",
-    img: "../images/labeati.jpg",
+    name: "C#",
+    img: "../images/csh.jpg",
   },
   {
-    name: "Labeat",
-    img: "../images/labeati.jpg",
+    name: "C#",
+    img: "../images/csh.jpg",
   },
 ];
 
@@ -158,7 +158,7 @@ function checkMatch() {
     cards.eq(optionOneId).off("click", flipCard);
     cards.eq(optionTwoId).off("click", flipCard);
     cardsWon.push(cardsChosen[0]);
-    showNotification(`Keni gjetur profen: ${cardsChosen[1]}`);
+    showNotification(`Keni gjetur gjuhën programuese: ${cardsChosen[1]}`);
   } else {
     cards.eq(optionOneId).attr("src", "../images/memory-game/blank-1.png");
     cards.eq(optionTwoId).attr("src", "../images/memory-game/blank-1.png");

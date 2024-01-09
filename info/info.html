@@ -18,14 +18,17 @@
   />
   </head>
   <body>
-    <div id="header">
-      <img class="logo" src="../images/logo1.png" />
+    <div id="header" style="padding-left: 1.18%;">
+      <div style="display: flex;">
+        <img class="logo" src="../images/logo1.png" />
+        <h3 style="margin: 12px 0px 0px 30px; color: whitesmoke;  text-shadow: 1px 1px 30px; font-size: 23px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">UP Student Toolkit</h3>
+      </div>
       <nav class="nav-bar">
         <a href="../index.html">Ballina</a>
         <a href="../kalkulatore/kalkulatore.html">Kalkulatorë</a>
         <a href="../argetim/argetim.html">Argetim</a>
         <a href="../literatura/literatura.html">Literatura</a>
-        <select onchange="navigate()" style="width: 145px;">
+        <select onchange="navigate()" style="width: 145px;" id="selektimi">
           <option value="" disabled selected>Info</option>
           <option value="#featured-image">Objekti</option>
           <option value="#start-personeli">Personeli</option>
@@ -165,7 +168,7 @@
       </div>
       </div>
   </div>
-  <p id="start-orari">Lista e plotë e stafit akademik : <a href="https://fiek.uni-pr.edu/page.aspx?id=1,14">KLIKO KËTU</a></p>
+  <p id="start-orari">Lista e plotë e stafit akademik : <a href="https://fiek.uni-pr.edu/page.aspx?id=1,14" target="_blank">KLIKO KËTU</a></p>
   <hr class="vija-horizontale"><br>
 
       <!-- ORARI INFO :  -->
@@ -404,7 +407,7 @@
         <th scope="row">12</th>
         <td>Buxheti dhe analiza e shpenzimeve</td>
         <td>Bahri Prebreza</td>
-        <td>/</td>
+        <td class="celula">/</td>
         <td>5</td>
         <td class="enjte">12:30-15:30 | Amfiteatri 411</td>
       </tr>
@@ -591,6 +594,38 @@
             }
         });
     </script>
+
+<script>
+  // Get all section elements
+  const sections = document.querySelectorAll('div[id^="section"]');
+
+  // Listen for scroll events
+  window.addEventListener('scroll', function () {
+    // Find the visible section
+    let visibleSection;
+    for (const section of sections) {
+      const rect = section.getBoundingClientRect();
+      if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+        visibleSection = section;
+        break;
+      }
+    }
+
+    // Update the dropdown value based on the visible section
+    if (visibleSection) {
+      const dropdown = document.getElementById('selektimi');
+      dropdown.value = `#${visibleSection.id}`;
+    }
+  });
+
+  // Function to navigate when dropdown value changes
+  function navigate() {
+    const selectedValue = document.getElementById('selektimi').value;
+    if (selectedValue) {
+      window.location.href = selectedValue;
+    }
+  }
+</script>
   </body>
 </html>
 
