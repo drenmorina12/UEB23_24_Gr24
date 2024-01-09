@@ -80,23 +80,23 @@
         resize: none;
       }
 
-      input[type="submit"] {
-        background-color: forestgreen;
-        width: 100px;
-        height: 25px;
-        margin-left: 125px;
-        margin-bottom: 10px;
-        border-radius: 9px;
-        font-size: 15px;
-        font-family: sans-serif;
-        font-weight: bold;
-        cursor: pointer;
-      }
+input[type=button] {
+    background-color: forestgreen;
+    width: 100px;
+    height: 25px;
+    margin-left: 125px;
+    margin-bottom: 10px;
+    border-radius: 9px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
 
-      input[type="submit"]:hover {
-        background-color: orangered;
-        transition: 0.9s ease;
-      }
+input[type=button]:hover {
+    background-color: orangered;
+    transition: .9s ease;
+}
 
       input[type="text"]:focus,
       textarea:focus {
@@ -107,11 +107,11 @@
         transition: 0.5s ease;
       }
 
-      input[type="submit"]:active {
-        background-color: #039dfc;
-        color: white;
-        transition: 0.1s ease;
-      }
+input[type=button]:active {
+    background-color: #039dfc;
+    color: white;
+    transition: .1s ease;
+}
     </style>
   </head>
   <body>
@@ -289,18 +289,11 @@
         </div>
       </div>
 
-      <div class="permbajtja-formes" style="padding-top: 10px">
-        <p
-          style="
-            text-align: center;
-            font-size: 20px;
-            text-decoration: underline;
-          "
-        >
-          Ndihuni të lirë të na shkruani !
-        </p>
-        <form action="">
-          <div class="rreshti">
+
+<div class="permbajtja-formes" style="padding-top: 10px; margin-bottom: 80px;">
+  <p style="text-align: center; font-size: 20px; text-decoration: underline;">Ndihuni të lirë të na shkruani !</p>
+      <form action="" name="formaMesazhi">
+        <div class="rreshti">
             <div class="kolona-1">
               <label for="emri">Emri:</label>
             </div>
@@ -350,16 +343,12 @@
                 placeholder="Vërejtje, këshillë apo informata..."
               ></textarea>
             </div>
-          </div>
-          <div class="rreshti">
-            <input
-              type="submit"
-              onclick="alert('Ju keni dërguar mesazhin me sukses. Ju faleminderit që na kontaktuat !')"
-              value="Dergo"
-            />
-          </div>
-        </form>
-      </div>
+        </div>
+        <div class="rreshti">
+            <input type="button" onclick="Valido()" value="Dergo">
+        </div>
+    </form>
+  </div>
     </main>
 
     <footer>
@@ -385,7 +374,29 @@
         </p>
       </div>
     </footer>
-
+    <script>
+        function Valido() {
+          if (document.formaMesazhi.emri.value == "") {
+            alert("Sheno emrin: ");
+            document.formaMesazhi.emri.focus();
+            return false;
+          } else if (document.formaMesazhi.mbiemri.value == "") {
+            alert("Sheno mbiemrin: ");
+            document.formaMesazhi.mbiemri.focus();
+            return false;
+          }else if (document.formaMesazhi.email.value == "") {
+            alert("Sheno email-in: ");
+            document.formaMesazhi.email.focus();
+            return false;
+          } else if (document.formaMesazhi.mesazhi.value == "") {
+            alert("Sheno mesazhin: ");
+            document.formaMesazhi.mesazhi.focus();
+            return false;
+          } else {
+            alert('Ju keni dërguar mesazhin me sukses. Ju faleminderit që na kontaktuat !');
+          }
+        }
+    </script>
     <script src="rreth-nesh.js"></script>
   </body>
 </html>
