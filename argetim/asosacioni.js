@@ -12,7 +12,7 @@ let currentAsosacionText = '"Përgjithshëm"';
 const columns = ["A", "B", "C", "D"];
 
 const template = {
-  A: ["A1", "A2", "A3", "A4", "Zgjidhja A", "TEST ZGJIDHJA"],
+  A: ["A1", "A2", "A3", "A4", "Zgjidhja A", "ZGJIDHJA PËRFUNDIMTARE"],
   B: ["B1", "B2", "B3", "B4", "Zgjidhja B"],
   C: ["C1", "C2", "C3", "C4", "Zgjidhja C"],
   D: ["D1", "D2", "D3", "D4", "Zgjidhja D"],
@@ -118,7 +118,9 @@ function createTable() {
       cell.className = "cell";
       cell.textContent = template[column][i].toLocaleUpperCase();
       cell.setAttribute("data-column", column);
-
+      if (i == 4) {
+        cell.classList.add("final-column-cell");
+      }
       row.appendChild(cell);
     });
 
@@ -132,6 +134,7 @@ function createTable() {
   cell.className = "cell";
   cell.setAttribute("id", "final-cell");
   cell.setAttribute("data-column", "A");
+  cell.classList.add("final-column-cell");
   cell.textContent = template["A"][5].toLocaleUpperCase();
   row.appendChild(cell);
   asosacioni.appendChild(row);
@@ -152,7 +155,13 @@ function upadteCellContent(e, wordList) {
 function addCellEventListeners(subject) {
   const cells = document.querySelectorAll(".cell");
   cells.forEach((cell) => {
-    cell.addEventListener("click", (e) => upadteCellContent(e, subject));
+    cell.addEventListener("click", (e) => {
+      upadteCellContent(e, subject);
+      // if (cell.classList.contains("final-column-cell")) {
+      //   cell.style = "font-weight: bold";
+      // }
+    });
+
     asosacioniHeaderText.textContent = `Jeni duke lujatur asoacionin me temen ${currentAsosacionText} !!`;
   });
 }

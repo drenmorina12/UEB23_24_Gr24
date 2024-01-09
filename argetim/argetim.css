@@ -120,6 +120,11 @@
 
 #asosacioni #final-cell {
   width: 100%;
+  font-weight: bold;
+}
+
+#asosacioni .final-column-cell {
+  font-weight: bold;
 }
 
 #asosacioni .cell:hover,
