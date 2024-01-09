@@ -305,7 +305,7 @@ div.content {
   height: 130px;
   /* Make up for position fixed */
   position: relative;
-  /* top: 70px; */
+  top: 70px;
 }
 @font-face {
   font-family: footerFont;
