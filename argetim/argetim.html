@@ -22,9 +22,20 @@
   </head>
   <body>
     <div id="header">
-      <div style="display: flex;">
+      <div style="display: flex">
         <img class="logo" src="../images/logo1.png" />
-        <h3 style="margin: 12px 0px 0px 30px; color: whitesmoke;  text-shadow: 1px 1px 30px; font-size: 23px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">UP Student Toolkit</h3>
+        <h3
+          style="
+            margin: 12px 0px 0px 30px;
+            color: whitesmoke;
+            text-shadow: 1px 1px 30px;
+            font-size: 23px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+              serif;
+          "
+        >
+          UP Student Toolkit
+        </h3>
       </div>
       <nav class="nav-bar">
         <a href="../index.html">Ballina</a>
@@ -56,7 +67,7 @@
             </a>
           </li>
           <li>
-            <a href="#loja2">
+            <a href="#memory-game">
               <span>Loja 2</span>
             </a>
           </li>
@@ -127,8 +138,13 @@
           </audio>
         </div>
 
-        <!-- Loja 1 -->
+        <!-- Tic Tac Toe -->
         <div id="tic-tac-toe">
+          <div class="x-score-container">
+            <div class="x-logo"></div>
+            <h3>Fitore:</h3>
+            <h3 class="x-score">0</h3>
+          </div>
           <div id="board" class="board">
             <div class="cells" data-cell></div>
             <div class="cells" data-cell></div>
@@ -140,6 +156,11 @@
             <div class="cells" data-cell></div>
             <div class="cells" data-cell></div>
           </div>
+          <div class="circle-score-container">
+            <div class="circle-logo"></div>
+            <h3>Fitore:</h3>
+            <h3 class="circle-score">0</h3>
+          </div>
           <div class="winning-message" id="winningMessage">
             <div class="winning-message-text">X WINS</div>
             <button id="restartButton">Restart</button>
@@ -147,7 +168,7 @@
         </div>
 
         <!-- Loja 2 -->
-        <div id="loja2">
+        <div id="memory-game">
           <h3>Pikët: <span id="result"></span></h3>
           <button id="memory-game-button">Luaj Përsëri</button>
           <div id="grid"></div>
