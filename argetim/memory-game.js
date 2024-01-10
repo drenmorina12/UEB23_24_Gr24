@@ -94,7 +94,7 @@ let cardsChosen = [];
 let cardsChosenIds = [];
 const cardsWon = [];
 let isChecking = false;
-
+// jquery add
 $("#memory-game-button").on("click", restartGame);
 
 function restartGame() {
@@ -152,9 +152,10 @@ function checkMatch() {
   console.log(cardsChosen[1]);
 
   if (cardsChosen[0] === cardsChosen[1] && optionOneId !== optionTwoId) {
-    // jquery
+    // jquery set
     cards.eq(optionOneId).attr("src", "../images/memory-game/white.png");
     cards.eq(optionTwoId).attr("src", "../images/memory-game/white.png");
+    // jquery remove
     cards.eq(optionOneId).off("click", flipCard);
     cards.eq(optionTwoId).off("click", flipCard);
     cardsWon.push(cardsChosen[0]);
@@ -176,11 +177,16 @@ function checkMatch() {
   isChecking = false;
 }
 
+function fadeOutAnimation() {
+  $notification.fadeOut();
+}
+
 function showNotification(message) {
+  // jquery callback function
   $notification.text(message);
   $notification.fadeIn();
 
   setTimeout(() => {
-    $notification.fadeOut();
+    fadeOutAnimation();
   }, 3000);
 }
