@@ -75,7 +75,14 @@ const pergjithshemSolution = {
 const finalResultPergjithshem = "Kapaku";
 
 const pergjithshem = {
-  A: ["Këmba", "Femuri", "Meniskusi", "Patella", pergjithshemSolution.A, finalResultPergjithshem],
+  A: [
+    "Këmba",
+    "Femuri",
+    "Meniskusi",
+    "Patella",
+    pergjithshemSolution.A,
+    finalResultPergjithshem,
+  ],
   B: ["Ari", "Qielli", "Finale", "Trofe", pergjithshemSolution.B],
   C: ["Londra", "Shqisa", "Shqiponj", "Syzet", pergjithshemSolution.C],
   D: ["Gjella", "Zierja", "Ceka", "E metalit", pergjithshemSolution.D],
@@ -144,7 +151,7 @@ function addCellEventListeners(subject) {
   const cells = document.querySelectorAll(".cell");
   cells.forEach((cell) => {
     cell.addEventListener("click", (e) => upadteCellContent(e, subject));
-    asosacioniHeaderText.textContent = `Jeni duke lujatur asoacionin me temen ${currentAsosacionText} !!`;
+    asosacioniHeaderText.textContent = `Jeni pjesë e asociacionit me temën ${currentAsosacionText} !`;
   });
 }
 
