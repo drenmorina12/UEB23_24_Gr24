@@ -5,90 +5,35 @@ const $notification = $("#notification");
 // const $resultDisplay = document.querySelector("#result");
 // const $notification = document.querySelector("#notification");
 
-const cardArray = [
-  {
-    name: "C++",
-    img: "../images/cpp.jpg",
-  },
-  {
-    name: "C++",
-    img: "../images/cpp.jpg",
-  },
-  {
-    name: "HTML",
-    img: "../images/htmll.jpg",
-  },
-  {
-    name: "HTML",
-    img: "../images/htmll.jpg",
-  },
-  {
-    name: "CSS",
-    img: "../images/csss.jpg",
-  },
-  {
-    name: "CSS",
-    img: "../images/csss.jpg",
-  },
-  {
-    name: "Javascript",
-    img: "../images/javascriptt.jpg",
-  },
-  {
-    name: "Javascript",
-    img: "../images/javascriptt.jpg",
-  },
-  {
-    name: "Java",
-    img: "../images/javaa.jpg",
-  },
-  {
-    name: "Java",
-    img: "../images/javaa.jpg",
-  },
-  {
-    name: "Python",
-    img: "../images/pythonn.jpg",
-  },
-  {
-    name: "Python",
-    img: "../images/pythonn.jpg",
-  },
-  {
-    name: "React",
-    img: "../images/reactt.jpg",
-  },
-  {
-    name: "React",
-    img: "../images/reactt.jpg",
-  },
-  {
-    name: "PHP",
-    img: "../images/phpp.jpg",
-  },
-  {
-    name: "PHP",
-    img: "../images/phpp.jpg",
-  },
-  {
-    name: "Rubi",
-    img: "../images/rubii.jpg",
-  },
-  {
-    name: "Rubi",
-    img: "../images/rubii.jpg",
-  },
-  {
-    name: "C#",
-    img: "../images/csh.jpg",
-  },
-  {
-    name: "C#",
-    img: "../images/csh.jpg",
-  },
-];
+// Define a constructor function for a Card
+function Card(name, img) {
+  this.name = name;
+  this.img = img;
+}
 
-// Shuffles the array randomly
+// Create instances of Card
+const cardArray = [
+  new Card("C++", "../images/cpp.jpg"),
+  new Card("C++", "../images/cpp.jpg"),
+  new Card("HTML", "../images/htmll.jpg"),
+  new Card("HTML", "../images/htmll.jpg"),
+  new Card("CSS", "../images/csss.jpg"),
+  new Card("CSS", "../images/csss.jpg"),
+  new Card("Javascript", "../images/javascriptt.jpg"),
+  new Card("Javascript", "../images/javascriptt.jpg"),
+  new Card("Java", "../images/javaa.jpg"),
+  new Card("Java", "../images/javaa.jpg"),
+  new Card("Python", "../images/pythonn.jpg"),
+  new Card("Python", "../images/pythonn.jpg"),
+  new Card("React", "../images/reactt.jpg"),
+  new Card("React", "../images/reactt.jpg"),
+  new Card("PHP", "../images/phpp.jpg"),
+  new Card("PHP", "../images/phpp.jpg"),
+  new Card("Rubi", "../images/rubii.jpg"),
+  new Card("Rubi", "../images/rubii.jpg"),
+  new Card("C#", "../images/csh.jpg"),
+  new Card("C#", "../images/csh.jpg"),
+];
 
 let cardsChosen = [];
 let cardsChosenIds = [];
@@ -104,6 +49,7 @@ function restartGame() {
 
 function createBoard() {
   $resultDisplay.text(0);
+  // Shuffles the array randomly
   cardArray.sort(() => 0.5 - Math.random());
   for (let i = 0; i < cardArray.length; i++) {
     const $card = $("<img>")
