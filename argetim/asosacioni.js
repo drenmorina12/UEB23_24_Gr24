@@ -1,16 +1,18 @@
 const asosacioni = document.querySelector("#asosacioni-table");
 const asosacioniButtons = document.querySelectorAll(".asosacioni-button");
 const resetBtn = document.querySelector(".reset-button");
-const asosacioniHeaderText = document.querySelector(".asosacioni-text h3");
+const asosacioniHeaderText = document.querySelector(
+  "#asosacioni .heading-text h3"
+);
 
 let currentAsosacion;
-let currentAsosacionText = "pergjithshem";
+let currentAsosacionText = '"Përgjithshëm"';
 
 // Templates -----------------------------
 const columns = ["A", "B", "C", "D"];
 
 const template = {
-  A: ["A1", "A2", "A3", "A4", "Zgjidhja A", "TEST ZGJIDHJA"],
+  A: ["A1", "A2", "A3", "A4", "Zgjidhja A", "ZGJIDHJA PËRFUNDIMTARE"],
   B: ["B1", "B2", "B3", "B4", "Zgjidhja B"],
   C: ["C1", "C2", "C3", "C4", "Zgjidhja C"],
   D: ["D1", "D2", "D3", "D4", "Zgjidhja D"],
@@ -116,7 +118,9 @@ function createTable() {
       cell.className = "cell";
       cell.textContent = template[column][i].toLocaleUpperCase();
       cell.setAttribute("data-column", column);
-
+      if (i == 4) {
+        cell.classList.add("final-column-cell");
+      }
       row.appendChild(cell);
     });
 
@@ -130,6 +134,7 @@ function createTable() {
   cell.className = "cell";
   cell.setAttribute("id", "final-cell");
   cell.setAttribute("data-column", "A");
+  cell.classList.add("final-column-cell");
   cell.textContent = template["A"][5].toLocaleUpperCase();
   row.appendChild(cell);
   asosacioni.appendChild(row);
@@ -150,8 +155,14 @@ function upadteCellContent(e, wordList) {
 function addCellEventListeners(subject) {
   const cells = document.querySelectorAll(".cell");
   cells.forEach((cell) => {
-    cell.addEventListener("click", (e) => upadteCellContent(e, subject));
-    asosacioniHeaderText.textContent = `Jeni pjesë e asociacionit me temën ${currentAsosacionText} !`;
+    cell.addEventListener("click", (e) => {
+      upadteCellContent(e, subject);
+      // if (cell.classList.contains("final-column-cell")) {
+      //   cell.style = "font-weight: bold";
+      // }
+    });
+
+    asosacioniHeaderText.textContent = `Jeni duke lujatur asoacionin me temen ${currentAsosacionText} !!`;
   });
 }
 
@@ -179,23 +190,23 @@ asosacioniButtons.forEach((button) => {
 
     switch (subject) {
       case "matematika":
-        currentAsosacionText = "matematika";
+        currentAsosacionText = '"Matematika"';
         addCellEventListeners(matematika);
         currentAsosacion = matematika;
 
         break;
       case "fizika":
-        currentAsosacionText = "fizika";
+        currentAsosacionText = '"Fizika"';
         addCellEventListeners(fizika);
         currentAsosacion = fizika;
         break;
       case "pergjithshem":
-        currentAsosacionText = "pergjithshem";
+        currentAsosacionText = '"Përgjithshëm"';
         addCellEventListeners(pergjithshem);
         currentAsosacion = pergjithshem;
         break;
       case "web":
-        currentAsosacionText = "web";
+        currentAsosacionText = '"Web"';
         addCellEventListeners(web);
         currentAsosacion = web;
         break;

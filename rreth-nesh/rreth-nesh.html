@@ -18,14 +18,123 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
     />
     <!-- BOOTSTRAP-->
+
+    <style>
+      .permbajtja-formes {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 350px;
+        font-size: 14px;
+        border-radius: 10px;
+        margin-top: 10%;
+        margin-left: 41%;
+        margin-right: auto;
+        color: white;
+        box-shadow: 2px 2px 15px;
+      }
+
+      .kolona-1 {
+        float: left;
+        width: 38%;
+        margin-top: 5px;
+      }
+
+      .kolona-2 {
+        float: left;
+        width: 57%;
+        margin-top: 5px;
+      }
+
+      .rreshti:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      label {
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 18px;
+        font-style: italic;
+        margin: 10px;
+      }
+
+      input[type="text"] {
+        width: 180px;
+        height: 29px;
+        border-radius: 20px;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      #mesazhi {
+        width: 180px;
+        height: 80px;
+        border-radius: 20px;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      input,
+      textarea {
+        margin-top: 7px;
+        resize: none;
+      }
+
+input[type=button] {
+    background-color: forestgreen;
+    width: 100px;
+    height: 25px;
+    margin-left: 125px;
+    margin-bottom: 10px;
+    border-radius: 9px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: orangered;
+    transition: .9s ease;
+}
+
+      input[type="text"]:focus,
+      textarea:focus {
+        background-color: #0d0c4e;
+        color: white;
+        outline: none;
+        border: 1px solid black;
+        transition: 0.5s ease;
+      }
+
+input[type=button]:active {
+    background-color: #039dfc;
+    color: white;
+    transition: .1s ease;
+}
+    </style>
   </head>
   <body>
     <div id="header">
-      <img class="logo" src="../images/logo1.png" />
+      <div style="display: flex">
+        <img class="logo" src="../images/logo1.png" />
+        <h3
+          style="
+            margin: 12px 0px 0px 30px;
+            color: whitesmoke;
+            /* text-shadow: 1px 1px 30px; */
+            font-size: 23px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+              serif;
+          "
+        >
+          UP Student Toolkit
+        </h3>
+      </div>
       <nav class="nav-bar">
         <a href="../index.html">Ballina</a>
         <a href="../kalkulatore/kalkulatore.html">Kalkulatorë</a>
-        <a href="../argetim/argetim.html">Argetim</a>
+        <a href="../argetim/argetim.html">Argëtim</a>
         <a href="../literatura/literatura.html">Literatura</a>
         <a href="../info/info.html">Info</a>
         <a href="?">Rreth nesh</a>
@@ -66,40 +175,44 @@
         </div>
         <div class="inner-section">
           <h3>ÇFARË OFROJMË</h3>
-            <div id="nested-list">
-              <p class="text">
-                Up-Student-Toolkit ofron:
-           <ol>
-            <li><b>Kalkulatorët</b></li>
-            <ul>
-              <li>Kalkulatori</li>
-              <li>Konvertori</li>
-              <li>Tabelën e vizatimit</li>
-            </ul>
-            <li><b>Argëtimin</b></li>
-            <ul>
+          <div id="nested-list" class="text">
+            <p>Up-Student-Toolkit ofron:</p>
+            <ol>
               <li>
-                Asosacionet:
+                <b>Kalkulatorët</b>
                 <ul>
-                  <li>Përgjithshëm</li>
-                  <li>Web</li>
-                  <li>Fizikë</li>
-                  <li>Matematikë</li>
+                  <li>Kalkulatori</li>
+                  <li>Konvertori</li>
+                  <li>Tabelën e vizatimit</li>
                 </ul>
               </li>
-              <li>Kuizin</li>
-              <li>Lojëra të ndryshme</li>
-            </ul>
-            <li><b>Info</b></li>
-            <ul>
-             <li> Objekti i fakultetit</li>
-             <li>Personeli i fakultetit</li>
-             <li>Orari akademik</li>
-            </ul>
-            <li><b>Literaturën</b></li>
-           </ol> 
+              <li>
+                <b>Argëtimin</b>
+                <ul>
+                  <li>
+                    Asosacionet:
+                    <ul>
+                      <li>Përgjithshëm</li>
+                      <li>Web</li>
+                      <li>Fizikë</li>
+                      <li>Matematikë</li>
+                    </ul>
+                  </li>
+                  <li>Kuizin</li>
+                  <li>Lojëra të ndryshme</li>
+                </ul>
+              </li>
+              <li>
+                <b>Info</b>
+                <ul>
+                  <li>Objekti i fakultetit</li>
+                  <li>Personeli i fakultetit</li>
+                  <li>Orari akademik</li>
+                </ul>
+              </li>
+              <li><b>Literaturën</b></li>
+            </ol>
           </div>
-          </p>
           <h3>MISIONI</h3>
           <p class="text">
             Misioni ynë është që të shërbejmë si partner i besueshëm në rrugën
@@ -167,12 +280,75 @@
       </div>
       <div>
         <div class="photo5">
-          <img src="../images/photo5.jpg" url="" class="img-thumbnail"  style="background-position: center;"/>
+          <img
+            src="../images/photo5.jpg"
+            url=""
+            class="img-thumbnail"
+            style="background-position: center"
+          />
         </div>
       </div>
 
-      <p id="demoo2"></p>
 
+<div class="permbajtja-formes" style="padding-top: 10px; margin-bottom: 80px;">
+  <p style="text-align: center; font-size: 20px; text-decoration: underline;">Ndihuni të lirë të na shkruani !</p>
+      <form action="" name="formaMesazhi">
+        <div class="rreshti">
+            <div class="kolona-1">
+              <label for="emri">Emri:</label>
+            </div>
+            <div class="kolona-2">
+              <input
+                type="text"
+                id="emri"
+                placeholder="Emri i juaj..."
+                name="emri"
+              />
+            </div>
+          </div>
+          <div class="rreshti">
+            <div class="kolona-1">
+              <label for="emri">Mbiemri:</label>
+            </div>
+            <div class="kolona-2">
+              <input
+                type="text"
+                id="mbiemri"
+                name="mbiemri"
+                placeholder="Mbiemri i juaj..."
+              />
+            </div>
+          </div>
+          <div class="rreshti">
+            <div class="kolona-1">
+              <label for="email">Email:</label>
+            </div>
+            <div class="kolona-2">
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Emaili i juaj..."
+              />
+            </div>
+          </div>
+          <div class="rreshti">
+            <div class="kolona-1">
+              <label for="mesazhi">Mesazhi:</label>
+            </div>
+            <div class="kolona-2">
+              <textarea
+                id="mesazhi"
+                name="mesazhi"
+                placeholder="Vërejtje, këshillë apo informata..."
+              ></textarea>
+            </div>
+        </div>
+        <div class="rreshti">
+            <input type="button" onclick="Valido()" value="Dergo">
+        </div>
+    </form>
+  </div>
     </main>
 
     <footer>
@@ -190,12 +366,37 @@
         <a href="https://github.com/EdonFGashi" target="_blank">
           <img src="../images/github-icon.png" alt="GitHub" />
         </a>
+        <a href="https://github.com/ArtinDulahi" target="_blank">
+          <img src="../images/github-icon.png" alt="GitHub" />
+        </a>
         <p style="font-family: 'Courier New', Courier, monospace">
           &copy; 2023 UP Student Toolkit. All Rights Reserved.
         </p>
       </div>
     </footer>
-
+    <script>
+        function Valido() {
+          if (document.formaMesazhi.emri.value == "") {
+            alert("Sheno emrin: ");
+            document.formaMesazhi.emri.focus();
+            return false;
+          } else if (document.formaMesazhi.mbiemri.value == "") {
+            alert("Sheno mbiemrin: ");
+            document.formaMesazhi.mbiemri.focus();
+            return false;
+          }else if (document.formaMesazhi.email.value == "") {
+            alert("Sheno email-in: ");
+            document.formaMesazhi.email.focus();
+            return false;
+          } else if (document.formaMesazhi.mesazhi.value == "") {
+            alert("Sheno mesazhin: ");
+            document.formaMesazhi.mesazhi.focus();
+            return false;
+          } else {
+            alert('Ju keni dërguar mesazhin me sukses. Ju faleminderit që na kontaktuat !');
+          }
+        }
+    </script>
     <script src="rreth-nesh.js"></script>
   </body>
 </html>

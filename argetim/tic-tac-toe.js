@@ -5,6 +5,8 @@ const winningMessageTextElement = document.querySelector(
 );
 const winningMessageElement = document.querySelector("#winningMessage");
 const restartButton = document.querySelector("#restartButton");
+const circleScore = document.querySelector(".circle-score");
+const xScore = document.querySelector(".x-score");
 
 const X_CLASS = "x";
 const CIRLCE_CLASS = "circle";
@@ -12,13 +14,15 @@ const WINNING_COMBINATIONS = [
   [0, 1, 2],
   [3, 4, 5],
   [6, 7, 8],
-  [1, 3, 6],
+  [0, 3, 6],
   [1, 4, 7],
   [2, 5, 8],
   [0, 4, 8],
   [2, 4, 6],
 ];
 let circleTurn;
+let circleWins = 0;
+let xWins = 0;
 
 startGame();
 
@@ -52,11 +56,12 @@ function handleClick(e) {
 
 function endGame(draw) {
   if (draw) {
-    winningMessageTextElement.textContent = `Its a draw`;
+    winningMessageTextElement.textContent = `Barazim!`;
   } else {
-    winningMessageTextElement.textContent = `${
-      circleTurn ? "O's" : "X's"
-    } Wins!`;
+    winningMessageTextElement.textContent = `${circleTurn ? "O" : "X"} Fiton!`;
+    circleTurn
+      ? (circleScore.textContent = ++circleWins)
+      : (xScore.textContent = ++xWins);
   }
   winningMessageElement.classList.add("show");
 }

@@ -22,11 +22,25 @@
   </head>
   <body>
     <div id="header">
-      <img class="logo" src="../images/logo1.png" />
+      <div style="display: flex">
+        <img class="logo" src="../images/logo1.png" />
+        <h3
+          style="
+            margin: 12px 0px 0px 30px;
+            color: whitesmoke;
+            /* text-shadow: 1px 1px 30px; */
+            font-size: 23px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+              serif;
+          "
+        >
+          UP Student Toolkit
+        </h3>
+      </div>
       <nav class="nav-bar">
         <a href="../index.html">Ballina</a>
         <a href="../kalkulatore/kalkulatore.html">Kalkulatorë</a>
-        <a href="#">Argetim</a>
+        <a href="#">Argëtim</a>
         <a href="../literatura/literatura.html">Literatura</a>
         <a href="../info/info.html">Info</a>
         <a href="../rreth-nesh/rreth-nesh.html">Rreth nesh</a>
@@ -38,23 +52,32 @@
         <!-- <header>Argetimi</header> -->
         <ul>
           <li>
-            <a href="#asosacioni">
+            <a
+              href="javascript:void(0);"
+              onclick="scrollToSection('asosacioni')"
+            >
               <span>Asosacioni</span>
             </a>
           </li>
           <li class="sidebar-active">
-            <a href="#kuizi">
+            <a href="javascript:void(0);" onclick="scrollToSection('kuizi')">
               <span>Kuizi</span>
             </a>
           </li>
           <li>
-            <a href="#tic-tac-toe">
-              <span>Loja 1</span>
+            <a
+              href="javascript:void(0);"
+              onclick="scrollToSection('tic-tac-toe')"
+            >
+              <span>Tic Tac Toe</span>
             </a>
           </li>
           <li>
-            <a href="#loja2">
-              <span>Loja 2</span>
+            <a
+              href="javascript:void(0);"
+              onclick="scrollToSection('memory-game')"
+            >
+              <span>Memory Game</span>
             </a>
           </li>
         </ul>
@@ -63,7 +86,7 @@
       <div class="main-content">
         <!-- Asosacioni -->
         <div id="asosacioni">
-          <div class="asosacioni-text">
+          <div class="heading-text">
             <h3></h3>
           </div>
           <div class="asosacioni-content">
@@ -89,16 +112,20 @@
 
         <!-- Kuizi -->
         <div id="kuizi">
-          <div class="kuizi-text">
-            <h3>KUIZI TEXT</h3>
+          <div class="heading-text">
+            <h2>KUIZI TEXT</h2>
           </div>
           <div class="start-screen">
-            <button id="start-button" onclick="playAudio1()">Fillo !</button>
+            <div id="button-container">
+              <button id="start-button" onclick="playAudio1()">Fillo !</button>
+            </div>
           </div>
           <div id="display-container">
             <div class="header">
               <div class="number-of-count">
-                <span class="number-of-question">1 nga 3 pyetje</span>
+                <span class="number-of-question" style="color: white"
+                  >1 nga 3 pyetje</span
+                >
               </div>
               <div class="timer-div">
                 <img src="../images/timer-icon.svg" />
@@ -124,18 +151,34 @@
           </audio>
         </div>
 
-        <!-- Loja 1 -->
+        <!-- Tic Tac Toe -->
         <div id="tic-tac-toe">
-          <div id="board" class="board">
-            <div class="cells" data-cell></div>
-            <div class="cells" data-cell></div>
-            <div class="cells" data-cell></div>
-            <div class="cells" data-cell></div>
-            <div class="cells" data-cell></div>
-            <div class="cells" data-cell></div>
-            <div class="cells" data-cell></div>
-            <div class="cells" data-cell></div>
-            <div class="cells" data-cell></div>
+          <div class="x-score-container">
+            <div class="x-logo"></div>
+            <h3>Fitore:</h3>
+            <h3 class="x-score">0</h3>
+          </div>
+          <div class="main-container">
+            <div class="heading-text">
+              <h2>Tic Tac Toe</h2>
+            </div>
+            <div id="board" class="board">
+              <div class="cells" data-cell></div>
+              <div class="cells" data-cell></div>
+              <div class="cells" data-cell></div>
+              <div class="cells" data-cell></div>
+              <div class="cells" data-cell></div>
+              <div class="cells" data-cell></div>
+              <div class="cells" data-cell></div>
+              <div class="cells" data-cell></div>
+              <div class="cells" data-cell></div>
+            </div>
+          </div>
+
+          <div class="circle-score-container">
+            <div class="circle-logo"></div>
+            <h3>Fitore:</h3>
+            <h3 class="circle-score">0</h3>
           </div>
           <div class="winning-message" id="winningMessage">
             <div class="winning-message-text">X WINS</div>
@@ -144,10 +187,16 @@
         </div>
 
         <!-- Loja 2 -->
-        <div id="loja2">
-          <h3>Pikët: <span id="result"></span></h3>
-          <button id="memory-game-button">Luaj Përsëri</button>
+        <div id="memory-game">
+          <div class="heading-text">
+            <h2>Memory Game</h2>
+          </div>
           <div id="grid"></div>
+          <div class="memory-score-container">
+            <h3>Pikët: <span id="result"></span></h3>
+            <button id="memory-game-button">Luaj Përsëri</button>
+          </div>
+
           <div id="notification" class="notification"></div>
         </div>
       </div>
@@ -167,11 +216,15 @@
       <a href="https://github.com/EdonFGashi" target="_blank">
         <img src="../images/github-icon.png" alt="GitHub" />
       </a>
+      <a href="https://github.com/ArtinDulahi" target="_blank">
+        <img src="../images/github-icon.png" alt="GitHub" />
+      </a>
       <p>&copy; 2023 UP Student Toolkit. All Rights Reserved.</p>
     </footer>
 
     <script src="asosacioni.js"></script>
     <script src="kuizi.js"></script>
     <script src="memory-game.js"></script>
+    <script src="../app.js"></script>
   </body>
 </html>
