@@ -18,6 +18,10 @@
   /* font-family: "Playfair Display", sans-serif; */
 }
 
+#main {
+  background-color: var(--second-bg);
+}
+
 /*   
   body {
     max-width: 1280px;

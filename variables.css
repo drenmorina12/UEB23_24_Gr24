@@ -7,3 +7,25 @@
   --light-text: #c0bfd2;
   --white-text: #fff;
 }
+
+/* TESTING 1 */
+/* :root {
+  --main-color: #88ab8e;
+  --second-bg: #eee7da;
+  --third-bg: #afc8ad;
+  --white-bg: #afc8ad;
+  --dark-text: #88ab8e;
+  --light-text: #eee7da;
+  --white-text: #fff;
+} */
+
+/* Testing 2 */
+/* :root {
+  --main-color: #4F6F52;
+  --second-bg: #D2E3C8;
+  --third-bg: #739072;
+  --white-bg: #afc8ad;
+  --dark-text: #4F6F52;
+  --light-text: #D2E3C8;
+  --white-text: #fff;
+} */

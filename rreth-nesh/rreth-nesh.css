@@ -15,6 +15,12 @@
   font-family: "Playfair Display", sans-serif;
   /* background-image: url(); */
 }
+
+#main {
+  background-color: var(--second-bg);
+  
+}
+
 .s1,
 .s2,
 .s3,
@@ -134,8 +140,8 @@
 }
 
 h3 {
-  color: #002244;
-  border: 2px double #002244;
+  color: var(--dark-text);
+  border: 2px double var(--dark-text);
   border-radius: 10px;
   margin: 6px;
 }
@@ -148,14 +154,14 @@ h3 {
 
 #nested-list {
   text-align: left;
-  background-color: #002244;
-  color: white;
+  background-color: var(--main-color);
+  color: var(--white-text);
   border-radius: 10px;
 }
 
 .text {
-  background-color: #002244;
-  color: white;
+  background-color: var(--main-color);
+  color: var(--white-text);
   text-align: left;
 }
 .s2 .s3 .text {
@@ -163,5 +169,5 @@ h3 {
 }
 #datetime {
   height: 24px;
-  color: #002244;
+  color: var(--dark-text);
 }
