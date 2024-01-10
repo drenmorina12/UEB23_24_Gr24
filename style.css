@@ -1,3 +1,13 @@
+@import "variables.css";
+/* 
+  --main-color: #002244;
+  --second-bg: #c0bfd2;
+  --third-bg: #132c50;
+  --white-bg: #fff;
+  --dark-text: #002244;
+  --light-text: #c0bfd2;
+   --white-text: white;
+*/
 html {
   scroll-behavior: smooth;
 }
@@ -20,8 +30,8 @@ body {
 
 #header {
   display: flex;
-  /*background-color: #002244;*/
-  background-color: #0b2447;
+  /* background-color: var(--main-color)); */
+  background-color: var(--main-color);
   padding: 30px;
   justify-content: space-between;
   text-align: center;
@@ -48,16 +58,16 @@ body {
 
 #header nav a {
   text-decoration: none;
-  color: #fff;
+  color: var(--white-text);
   white-space: nowrap;
   padding: 10px 20px;
   width: auto;
 }
 
 #header nav select {
-  background-color: #0b2447;
+  background-color: var(--main-color);
   border: none;
-  color: #fff;
+  color: var(--white-text);
   white-space: nowrap;
   padding: 10px 20px;
 }
@@ -67,15 +77,15 @@ select {
 
 #header nav a:hover {
   /* color: #49796B; */
-  color: #002244;
-  background-color: #fff;
+  color: var(--dark-text);
+  background-color: var(--white-bg);
   border-radius: 8%;
 }
 
 #header nav select:hover {
   /* color: #49796B; */
-  color: #002244;
-  background-color: #fff;
+  color: var(--dark-text);
+  background-color: var(--white-bg);
   border-radius: 8%;
 }
 
@@ -94,10 +104,10 @@ select {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #fff;
+  color: var(--white-text);
 }
 
-#fiek-photo {
+/* #fiek-photo {
   width: 100%;
   height: 870px;
   background: url("images/FIEK-FOTO.JPG") center/cover no-repeat;
@@ -105,17 +115,16 @@ select {
   align-items: center;
   justify-content: center;
   opacity: 0.8;
-  /* filter: brightness(0.7) contrast(0.8); */
   filter: grayscale(60%);
   background-origin: none;
-}
+} */
 
-#text-inside-fiek-photo {
+/* #text-inside-fiek-photo {
   position: absolute;
   top: 45%;
   left: 70%;
   transform: translate(-50%, -50%);
-  color: white !important;
+  color: var(--white-text) !important;
   padding: 10px 20px;
   text-align: center;
   width: 650px;
@@ -123,11 +132,11 @@ select {
   font-weight: 900;
   font-family: "Playfair Display", sans-serif;
   text-shadow: 2px 2px black;
-}
+} */
 
 .about {
   margin: 0px;
-  background-color: #002244;
+  background-color: var(--main-color);
   position: relative;
   bottom: 100px;
   width: 100%;
@@ -135,7 +144,7 @@ select {
 }
 .why {
   font-family: "Playfair Display", sans-serif;
-  color: #fff;
+  color: var(--white-text);
   font-size: 51px;
   text-align: center;
   position: relative;
@@ -143,7 +152,7 @@ select {
   text-shadow: 3px 3px black;
 }
 .about-text {
-  color: #fff;
+  color: var(--white-text);
   font-family: "Playfair Display", sans-serif;
   font-size: 21px;
   width: 25%;
@@ -169,7 +178,7 @@ select {
 }
 
 .three-icons {
-  background-color: #fff;
+  background-color: var(--white-bg);
   width: 100%;
   margin: 0px;
   height: 370px;
@@ -215,9 +224,9 @@ select {
   left: 0;
   min-width: 200px;
   height: 100vh;
-  background-color: #132c50;
+  background-color: var(--third-bg);
 
-  color: white;
+  color: var(--white-text);
   text-decoration: none;
   /* flex: 1; */
 }
@@ -234,10 +243,10 @@ select {
 
 .sidebar header {
   font-size: 22px;
-  color: white;
+  color: var(--white-text);
   text-align: center;
   line-height: 70px;
-  background-color: #0b2447fd;
+  background-color: var(--main-color);
   opacity: 0.9;
   user-select: none;
 }
@@ -249,7 +258,7 @@ select {
   width: 100%;
   line-height: 65px;
   font-size: 17px;
-  color: white;
+  color: var(--white-text);
   padding-left: 40px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid black;
@@ -295,18 +304,18 @@ div.content {
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
   .sidebar a {
     text-align: center;
     float: none;
   }
-}
+} */
 
 /* Footer Section */
 
 #footer {
-  background-color: #002244;
-  color: #fff;
+  background-color: var(--main-color);
+  color: var(--white-text);
   text-align: center;
   padding: 20px;
   bottom: 0;
@@ -340,7 +349,7 @@ footer a img:hover {
   top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #002244;
+  color: var(--dark-text);
   font-size: 40px;
   font-weight: 800;
   text-align: center;

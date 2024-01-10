@@ -1,3 +1,13 @@
+@import "variables.css";
+/* 
+  --main-color: #002244;
+  --second-bg: #c0bfd2;
+  --third-bg: #132c50;
+  --white-bg: #fff;
+  --dark-text: #002244;
+  --light-text: #c0bfd2;
+   --white-text: white;
+*/
 * {
   margin: 0;
   padding: 0;
@@ -109,7 +119,7 @@
   box-shadow: 0px 0px 8px black;
 }
 .text {
-  border-width: 2px solid #0b2447;
+  border-width: 2px solid #002244;
   padding: 18px;
   border-radius: 10px;
 }
@@ -124,8 +134,8 @@
 }
 
 h3 {
-  color: #0b2447;
-  border: 2px double #0b2447;
+  color: #002244;
+  border: 2px double #002244;
   border-radius: 10px;
   margin: 6px;
 }
@@ -138,20 +148,20 @@ h3 {
 
 #nested-list {
   text-align: left;
-  background-color: #0b2447;
+  background-color: #002244;
   color: white;
   border-radius: 10px;
 }
 
 .text {
-  background-color: #0b2447;
+  background-color: #002244;
   color: white;
   text-align: left;
 }
 .s2 .s3 .text {
   height: 170px;
 }
-#datetime{
+#datetime {
   height: 24px;
-  color: #0b2447;
+  color: #002244;
 }

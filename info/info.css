@@ -1,13 +1,22 @@
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: none;
-    text-decoration: none;
-    /* color: #424551;  */
-    /* font-family: "Playfair Display", sans-serif; */
-  }
+@import "variables.css";
+/* 
+  --main-color: #002244;
+  --second-bg: #c0bfd2;
+  --third-bg: #132c50;
+  --white-bg: #fff;
+  --dark-text: #002244;
+  --light-text: #c0bfd2;
+   --white-text: white;
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: none;
+  text-decoration: none;
+  /* color: #424551;  */
+  /* font-family: "Playfair Display", sans-serif; */
+}
 
 /*   
   body {
@@ -15,198 +24,194 @@
     margin: 0 auto;
     padding: 0 30px;
   } */
-  
 
-  header {
-    margin-bottom: 20px;
-  }
-  
-  .main-container {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    gap: 40px;
-    padding-top: 30px;
-    padding-left: 30px;
-  }
-  .img-card img {
-    width: 100%;
-    flex-shrink: 0;
-    border-radius: 4px;
-    height: 520px;
-    object-fit: cover;
-  }
-  
-  .small-Card {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin-top: 15px;
-    gap: 12px;
-  }
-  
-  .small-Card img {
-    width: 204px;
-    height: 104px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .small-Card img:active {
-    border: 1px solid #17696a;
-  }
-  
-  .sm-card {
-    border: 2px solid #002244;
-  }
-  
-  .fiek-info{
-    width: 40%;
-  }
-  .fiek-info h3 {
-    font-size: 32px;
-    font-family: Lato;
-    font-weight: 600;
-    line-height: 130%;
-  }
-  
-  .fiek-info h5 {
-    font-size: 24px;
-    font-family: Lato;
-    font-weight: 500;
-    line-height: 130%;
-    color: #ff4242;
-    margin: 6px 0;
-  }
-  
-  .fiek-info p {
-    color: #424551;
-    margin: 15px 0;
-    /* width: 70%; */
-  }
-  
-  .fiek-capacity p {
-    text-decoration: underline;
-    font-size: 22px;
-    color: black;
-  }
-  
-  .fiek-capacity-option {
-    width: 200px;
-    height: 30px;
-    margin-bottom: 15px;
-    padding: 5px;
-  }
-  
-  .infoFIEK {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70%;
-    color: #787a80;
-    font-size: 18px;
-    font-family: Lato;
-    line-height: 150%;
-    letter-spacing: 1px;
-  }
+header {
+  margin-bottom: 20px;
+}
 
-  #objekt-personel-orar :hover{
-    text-decoration: none;
-    opacity: 0.4;
-    text-decoration: none;
-    color: #424551;
-  }
+.main-container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 40px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.img-card img {
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 4px;
+  height: 520px;
+  object-fit: cover;
+}
 
-  .OBJEKTI-MENU,
-  .PERSONELI-MENU,
-  .ORARI-MENU {
-    display: inline-block;
-    margin: 15px 0;
-    cursor: pointer;
-    font-size: 22px;
-  }
+.small-Card {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 15px;
+  gap: 12px;
+}
 
-  .vija-horizontale{
-    border: none;
-    height: 3px;
-    background-color: #424551; 
-    width: 100%;
-  }
-  
-  .adresaFIEK{
-    color: #787a80;
-  }
+.small-Card img {
+  width: 204px;
+  height: 104px;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-  /* PERSONELI AKADEMIK CSS : */
+.small-Card img:active {
+  border: 1px solid #17696a;
+}
+
+.sm-card {
+  border: 2px solid #002244;
+}
+
+.fiek-info {
+  width: 40%;
+}
+.fiek-info h3 {
+  font-size: 32px;
+  font-family: Lato;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+.fiek-info h5 {
+  font-size: 24px;
+  font-family: Lato;
+  font-weight: 500;
+  line-height: 130%;
+  color: #ff4242;
+  margin: 6px 0;
+}
+
+.fiek-info p {
+  color: #424551;
+  margin: 15px 0;
+  /* width: 70%; */
+}
+
+.fiek-capacity p {
+  text-decoration: underline;
+  font-size: 22px;
+  color: black;
+}
+
+.fiek-capacity-option {
+  width: 200px;
+  height: 30px;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.infoFIEK {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  color: #787a80;
+  font-size: 18px;
+  font-family: Lato;
+  line-height: 150%;
+  letter-spacing: 1px;
+}
+
+#objekt-personel-orar :hover {
+  text-decoration: none;
+  opacity: 0.4;
+  text-decoration: none;
+  color: #424551;
+}
+
+.OBJEKTI-MENU,
+.PERSONELI-MENU,
+.ORARI-MENU {
+  display: inline-block;
+  margin: 15px 0;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.vija-horizontale {
+  border: none;
+  height: 3px;
+  background-color: #424551;
+  width: 100%;
+}
+
+.adresaFIEK {
+  color: #787a80;
+}
+
+/* PERSONELI AKADEMIK CSS : */
 
 .main-personeli-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    width: 1440px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  width: 1440px;
 }
 
 .headeri {
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  text-align: center;
 }
 .personel-headeri {
-    width: 40%;
-    align-items: center;
+  width: 40%;
+  align-items: center;
 }
 
 .personeli-photos {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .img {
-    width: 300px;
+  width: 300px;
 }
 
 .imgdown {
-    margin-top: 10rem;
-    width: 300px;
-
+  margin-top: 10rem;
+  width: 300px;
 }
-.personeli-photos img{
-    border-radius: 5px;
-    box-shadow: 0px 0px 9px #002244;
+.personeli-photos img {
+  border-radius: 5px;
+  box-shadow: 0px 0px 9px #002244;
 }
 
-
-.stafi{
-    width: 100%; 
-    position: relative;
+.stafi {
+  width: 100%;
+  position: relative;
 }
-#start-orari{
+#start-orari {
   padding-left: 50px;
 }
 
 .orari-headeri {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    width: 40%;
-    align-items: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 40%;
+  align-items: center;
 }
 
-#orarii{
+#orarii {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 
 /* .color-of-table1,
 .color-of-table2,
@@ -216,41 +221,41 @@
   text-decoration-color: red;
 
 } */
-.vitet-akademike{
+.vitet-akademike {
   color: #212529;
   font-weight: 800;
 }
 
-.hene{
+.hene {
   text-decoration: underline 2px;
-  text-decoration-color: red ;
+  text-decoration-color: red;
 }
-.marte{
+.marte {
   text-decoration: underline 2px;
-  text-decoration-color: yellow ;
+  text-decoration-color: yellow;
 }
-.merkure{
+.merkure {
   text-decoration: underline 2px;
   text-decoration-color: green;
 }
-.enjte{
+.enjte {
   text-decoration: underline 2px;
   text-decoration-color: blue;
 }
-.premte{
+.premte {
   text-decoration: underline 2px;
-  text-decoration-color: purple ;
+  text-decoration-color: purple;
 }
 
-.search-bar{
+.search-bar {
   margin-right: 45px;
   height: 42px;
 }
-#selectColumn{
+#selectColumn {
   margin-bottom: 5px;
   height: 100%;
 }
 
 table tbody tr td.celula {
   background-color: red;
-  }
+}

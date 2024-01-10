@@ -1,9 +1,19 @@
+@import "variables.css";
+/* 
+  --main-color: #002244;
+  --second-bg: #c0bfd2;
+  --third-bg: #132c50;
+  --white-bg: #fff;
+  --dark-text: #002244;
+  --light-text: #c0bfd2;
+   --white-text: white;
+*/
 body {
   background-image: url(../images/foto3.jpg), url(../images/fotomultiple.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  background-color: white;
+  background-color: var;
 }
 
 #permbajtjaKalkulatori h2,
@@ -54,7 +64,7 @@ p {
 
 .pershkrimi2 {
   background-color: #19376d;
-  color: white;
+  color: var(--white-text);
   box-shadow: 2px 2px 15px;
   border-radius: 10px;
   width: 1050px;
@@ -105,7 +115,7 @@ p {
   border-radius: 10px;
   /* margin-top: 6%;
   margin-left: 16%; */
-  color: white;
+  color: var(--white-text);
   box-shadow: 2px 2px 15px;
   height: 260px;
   padding-top: 2px;
@@ -198,7 +208,7 @@ select {
   border-radius: 20px;
   padding: 10px;
   cursor: pointer;
-  background-color: white;
+  background-color: var(--white-bg);
   font-size: 18px;
   font-weight: bold;
 }
@@ -251,7 +261,7 @@ select {
   /* margin-top: 8%;
   margin-left: 30.5%;
   margin-right: auto; */
-  color: white;
+  color: var(--white-text);
   box-shadow: 2px 2px 15px;
   padding-top: 2px;
   display: flex;
@@ -335,7 +345,7 @@ select {
   border-radius: 20px;
   padding: 10px;
   cursor: pointer;
-  background-color: white;
+  background-color: var(--white-bg);
   font-size: 18px;
   font-weight: bold;
   color: blue;
@@ -362,14 +372,14 @@ select {
 }
 
 input[type="button"]:hover {
-  background-color: white;
+  background-color: var(--white-bg);
   transition: 0.9s ease;
   color: blue;
 }
 
 input[type="text"]:focus {
   background-color: #6f8bd6;
-  color: white;
+  color: var(--white-text);
   outline: none;
   border: 1px solid black;
   transition: 0.5s ease;
@@ -377,7 +387,7 @@ input[type="text"]:focus {
 
 input[type="button"]:active {
   background-color: #039dfc;
-  color: white;
+  color: var(--white-text);
   transition: 0.1s ease;
 }
 
@@ -461,7 +471,7 @@ input[type="button"]:active {
   position: relative;
 }
 .colors .option:nth-child(1) {
-  background-color: #fff;
+  background-color: var(--white-bg);
   border: 1px solid #bfbfbf;
 }
 .colors .option:nth-child(2) {
@@ -497,7 +507,7 @@ input[type="button"]:active {
 }
 .buttons button {
   width: 100%;
-  color: #fff;
+  color: var(--white-text);
   border: none;
   outline: none;
   padding: 11px 0;
@@ -513,7 +523,7 @@ input[type="button"]:active {
   transition: all 0.3s ease;
 }
 .clear-canvas:hover {
-  color: #fff;
+  color: var(--white-text);
   background: #6c757d;
 }
 .buttons .save-img {
@@ -551,7 +561,7 @@ input[type="button"]:active {
   padding: 30px;
   text-align: center;
   background-color: #19376d;
-  color: white;
+  color: var(--white-text);
 }
 
 .wrapping-div {
@@ -565,7 +575,7 @@ input[type="button"]:active {
 
 .restrictions {
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: var(--white-text);
   box-shadow: 2px 2px 15px;
   border: 1px double black;
   height: 400px;
@@ -575,7 +585,7 @@ input[type="button"]:active {
 
 .restrictions h2 {
   margin: 10px;
-  color: white;
+  color: var(--white-text);
 }
 
 .restrictions ul li,
@@ -583,7 +593,7 @@ input[type="button"]:active {
   margin-left: 50px;
   margin-top: 10px;
   font-size: 20px;
-  color: white;
+  color: var(--white-text);
 }
 
 #calculator {
@@ -661,7 +671,7 @@ input[type="button"]:active {
   width: 450px;
   height: 70px;
   border-radius: 10%;
-  background-color: #0b2447;
+  background-color: #002244;
   color: white;
   text-align: center;
 }

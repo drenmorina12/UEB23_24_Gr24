@@ -1,12 +1,17 @@
-:root {
-  --main-color: #0b2447;
-  --argetimi-bg: #c0bfd2;
-}
-
+@import "variables.css";
+/* 
+  --main-color: #002244;
+  --second-bg: #c0bfd2;
+  --third-bg: #132c50;
+  --white-bg: #fff;
+  --dark-text: #002244;
+  --light-text: #c0bfd2;
+   --white-text: white;
+*/
 #main {
   display: flex;
   justify-content: center;
-  background-color: #c0bfd2;
+  background-color: var(--light-text);
 }
 
 .main-content {
