@@ -29,8 +29,8 @@ const cardArray = [
   new Card("React", "../images/reactt.jpg"),
   new Card("PHP", "../images/phpp.jpg"),
   new Card("PHP", "../images/phpp.jpg"),
-  new Card("Rubi", "../images/rubii.jpg"),
-  new Card("Rubi", "../images/rubii.jpg"),
+  new Card("Ruby", "../images/rubii.jpg"),
+  new Card("Ruby", "../images/rubii.jpg"),
   new Card("C#", "../images/csh.jpg"),
   new Card("C#", "../images/csh.jpg"),
 ];
