@@ -350,6 +350,7 @@ input[type=button]:active {
     </form>
   </div>
     </main>
+    <div id="datetime"></div>
 
     <footer>
       <div id="footer">
@@ -396,6 +397,28 @@ input[type=button]:active {
             alert('Ju keni dërguar mesazhin me sukses. Ju faleminderit që na kontaktuat !');
           }
         }
+
+        function updateDateTime() {
+        var datetimeElement = document.getElementById('datetime');
+        var now = new Date();
+
+        var options = {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+          hour: 'numeric',
+          minute: 'numeric',
+          second: 'numeric',
+        };
+
+        var formattedDateTime = now.toLocaleDateString('en-US', options);
+
+        datetimeElement.textContent = formattedDateTime;
+      }
+
+      //Update kohen qdo 1second
+      setInterval(updateDateTime, 1000);
+      updateDateTime();
     </script>
     <script src="rreth-nesh.js"></script>
   </body>

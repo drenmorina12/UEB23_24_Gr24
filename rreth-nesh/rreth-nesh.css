@@ -151,3 +151,7 @@ h3 {
 .s2 .s3 .text {
   height: 170px;
 }
+#datetime{
+  height: 24px;
+  color: #0b2447;
+}

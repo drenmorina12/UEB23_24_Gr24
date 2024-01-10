@@ -19,4 +19,3 @@ let text = "UP Student Toolkit";
 let result = text.match("z"); 
 document.getElementById("demoo2").innerHTML = result;     
 // letra z nuk gjindet ne text=UP Student Toolkit prandaj nuk shfaqet asgje ne ekran.
- 
