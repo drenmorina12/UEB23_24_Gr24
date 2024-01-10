@@ -14,34 +14,79 @@ let scoreCount = 0;
 let count = 11;
 let countdown;
 
+function QuizItem(id, question, options, correct) {
+  this.id = id;
+  this.question = question;
+  this.options = options;
+  this.correct = correct;
+}
+
+// Create quizArray with function constructor
+const quizArray = [
+  new QuizItem(
+    "0",
+    "Qfare kuptimi ka HTML?",
+    [
+      "HyperText Markup Language",
+      "HighText Marketing Language",
+      "Hover Textual Medium Language",
+      "Hacker Tool Language",
+    ],
+    "HyperText Markup Language"
+  ),
+  new QuizItem(
+    "1",
+    "Qfare sherben tag-u strong ne front developing?",
+    [
+      "Mundson siguri me te madhe ne web-faqe",
+      "Tregon numrin e karaktereve",
+      "Rrit weight-in e nje pjese te deshiruar",
+      "Tag-u nuk egziston",
+    ],
+    "Rrit weight-in e nje pjese te deshiruar"
+  ),
+  new QuizItem(
+    "2",
+    "Cfare shkurtese/prapashtese vendoset pas . kur ruajme file te gjuhes javascript?",
+    [".javasc", ".js", ".script", ".JavaScript"],
+    ".js"
+  ),
+  new QuizItem(
+    "3",
+    "Si formohet një hyperlink në html &lt &gt?",
+    ["link", "web", "linkto", "a"],
+    "a"
+  ),
+];
+
 //Questions and Options array
 
-const quizArray = [
-  {
-    id: "0",
-    question: "Qfare kuptimi ka HTML?",
-    options: ["HyperText Markup Language", "HighText Marketing Language", "Hover Textual Medium Language", "Hacker Tool Language"],
-    correct: "HyperText Markup Language",
-  },
-  {
-    id: "1",
-    question: "Qfare sherben tag-u strong ne front developing?",
-    options: ["Mundson siguri me te madhe ne web-faqe", "Tregon numrin e karaktereve", "Rrit weight-in e nje pjese te deshiruar", "Tag-u nuk egziston"],
-    correct: "Rrit weight-in e nje pjese te deshiruar",
-  },
-  {
-    id: "2",
-    question: "Cfare shkurtese/prapashtese vendoset pas . kur ruajme file te gjuhes javascript?",
-    options: [".javasc", ".js", ".script", ".JavaScript"],
-    correct: ".js",
-  },
-  {
-    id: "3",
-    question: "Si formohet një hyperlink në html &lt &gt?",
-    options: ["link", "web", "linkto", "a"],
-    correct: "a",
-  }
-];
+// const quizArray = [
+//   {
+//     id: "0",
+//     question: "Qfare kuptimi ka HTML?",
+//     options: ["HyperText Markup Language", "HighText Marketing Language", "Hover Textual Medium Language", "Hacker Tool Language"],
+//     correct: "HyperText Markup Language",
+//   },
+//   {
+//     id: "1",
+//     question: "Qfare sherben tag-u strong ne front developing?",
+//     options: ["Mundson siguri me te madhe ne web-faqe", "Tregon numrin e karaktereve", "Rrit weight-in e nje pjese te deshiruar", "Tag-u nuk egziston"],
+//     correct: "Rrit weight-in e nje pjese te deshiruar",
+//   },
+//   {
+//     id: "2",
+//     question: "Cfare shkurtese/prapashtese vendoset pas . kur ruajme file te gjuhes javascript?",
+//     options: [".javasc", ".js", ".script", ".JavaScript"],
+//     correct: ".js",
+//   },
+//   {
+//     id: "3",
+//     question: "Si formohet një hyperlink në html &lt &gt?",
+//     options: ["link", "web", "linkto", "a"],
+//     correct: "a",
+//   }
+// ];
 
 //Restart Quiz
 restart.addEventListener("click", () => {
@@ -54,11 +99,9 @@ restart.addEventListener("click", () => {
 nextBtn.addEventListener(
   "click",
   (displayNext = () => {
-    
     questionCount += 1;
-    
-    if (questionCount == quizArray.length) {
 
+    if (questionCount == quizArray.length) {
       displayContainer.classList.add("hide");
       scoreContainer.classList.remove("hide");
       userScore.innerHTML =
@@ -94,7 +137,7 @@ const quizDisplay = (questionCount) => {
   quizCards[questionCount].classList.remove("hide");
 };
 
-//Quiz 
+//Quiz
 function quizCreator() {
   //randomly sort questions
   quizArray.sort(() => Math.random() - 0.5);
@@ -166,10 +209,10 @@ window.onload = () => {
 
 //audio at start and restart button
 function playAudio2() {
-  var audio = document.getElementById('startAudio');
+  var audio = document.getElementById("startAudio");
   audio.play();
 }
 function playAudio1() {
-  var audio = document.getElementById('restartAudio');
+  var audio = document.getElementById("restartAudio");
   audio.play();
 }
