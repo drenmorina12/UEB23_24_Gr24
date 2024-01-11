@@ -115,7 +115,7 @@ nextBtn.addEventListener(
       timerDisplay();
     }
   })
-);
+);  
 
 //Timer
 const timerDisplay = () => {

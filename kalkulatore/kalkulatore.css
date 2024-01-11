@@ -422,7 +422,7 @@ input[type="button"]:active {
 #drawing-table section {
   background: #fff;
   border-radius: 7px;
-  border: 1px solid #4a98f7;
+  border: 1px solid var(--main-color);
 }
 .tools-board {
   width: 210px;
@@ -677,13 +677,13 @@ input[type="button"]:active {
   display: none;
   position: absolute;
   padding: 25px;
-  top: 650px;
-  right: 510px;
+  top: 630px;
+  right: 436px;
   width: 450px;
   height: 70px;
   border-radius: 10%;
-  background-color: #002244;
-  color: white;
+  background-color: var(--third-bg);
+  color: var(--white-text);
   text-align: center;
 }
 /* Calculator end */

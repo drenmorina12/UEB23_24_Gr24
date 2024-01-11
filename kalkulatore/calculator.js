@@ -84,7 +84,7 @@ function calculate() {
     // Perdorime te Parse Float
     n1 = parseFloat(number1);
     if (number2 === "") {
-      throw new Error("Second number hasn't been selected.");
+      throw new Error("Numri i dytë nuk është selektuar.");
     }
     n2 = parseFloat(number2);
     let result = operate(n1, n2, operator);
