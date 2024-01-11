@@ -83,8 +83,10 @@ p {
 }
 
 .butoniKonverto {
-  background-color: gray;
-  color: antiquewhite;
+  /* background-color: gray; */
+  background-color: var(--second-bg);
+  color: var(--main-color);
+  /* color: antiquewhite; */
   width: 150px;
   height: 35px;
   margin-left: 35%;
@@ -318,12 +320,14 @@ select {
   background-color: var(--white-bg);
   font-size: 18px;
   font-weight: bold;
-  color: blue;
+  color: var(--dark-text);
 }
 
 .butoniZgjidh {
-  background-color: gray;
-  color: antiquewhite;
+  /* background-color: gray; */
+  background-color: var(--second-bg);
+  /* color: antiquewhite; */
+  color: var(--dark-text);
   width: 150px;
   height: 35px;
   margin-left: 40%;
@@ -343,11 +347,13 @@ select {
 input[type="button"]:hover {
   background-color: var(--white-bg);
   transition: 0.9s ease;
-  color: blue;
+  /* color: blue; */
+  color: var(--dark-text);
 }
 
 input[type="text"]:focus {
-  background-color: #6f8bd6;
+  /* background-color: #6f8bd6; */
+  background-color: var(--second-bg);
   color: var(--white-text);
   outline: none;
   border: 1px solid black;
@@ -355,7 +361,8 @@ input[type="text"]:focus {
 }
 
 input[type="button"]:active {
-  background-color: #039dfc;
+  /* background-color: #039dfc; */
+  background-color: var(--main-color);
   color: var(--white-text);
   transition: 0.1s ease;
 }
@@ -569,7 +576,6 @@ input[type="button"]:active {
   display: flex;
   flex-direction: column;
   gap: 2px;
-
 }
 
 #calculator .display {
