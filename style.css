@@ -318,7 +318,7 @@ div.content {
 }
 @font-face {
   font-family: footerFont;
-  src: url("../../../Downloads/Salsa/Salsa-Regular.ttf");
+  src: url("fonts");
 }
 footer p {
   font-family: footerFont;
