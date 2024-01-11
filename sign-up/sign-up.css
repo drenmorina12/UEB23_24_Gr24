@@ -8,133 +8,141 @@
   --body-font: "Poppins", sans-serif;
 }
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    -ms-overflow-style: none; 
-    box-sizing: border-box;
-    font-family: var(--body-font);
-    overflow: hidden;
-    min-height: 100vh;
-    background: rgb(0,0,0);
-    background: linear-gradient(24deg, rgba(0,0,0,1) 0%, rgba(93,6,11,1) 24%, rgba(4,6,68,1) 47%, rgba(3,11,170,1) 84%, rgba(255,255,255,1) 100%);
-  }
-  body::-webkit-scrollbar {
-    display: none; 
-  }
-  
-  .main-container {
-    margin: 0 auto;
-    max-width: 1105px;
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 6.9rem;
-    grid-gap: 1.4rem;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
 
-  /* Info Section - TEKSTI NE ANE TE MAJTE*/
+body {
+  -ms-overflow-style: none;
+  box-sizing: border-box;
+  /* font-family: var(--body-font); */
+  overflow: hidden;
+  min-height: 100vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    24deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(93, 6, 11, 1) 24%,
+    rgba(4, 6, 68, 1) 47%,
+    rgba(3, 11, 170, 1) 84%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.main-container {
+  margin: 0 auto;
+  max-width: 1105px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 6.9rem;
+  grid-gap: 1.4rem;
+}
+
+/* Info Section - TEKSTI NE ANE TE MAJTE*/
 .info-section {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    color: var(--white);
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .info-section h1 {
-    font-size: 3rem;
-    line-height: 3rem;
-  }
-  
-  .info-section p {
-    font-weight: 500;
-    text-align: center;
-  }
-  /* Form */
-  .main-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
-    background-color: var(--white);
-    border-radius: 10px;
-    padding: 2.5rem 2.7rem;
-    box-shadow: 0px 9px 5px -1px rgba(0, 0, 0, 0.27);
-    -webkit-box-shadow: 0px 9px 5px -1px rgba(0, 0, 0, 0.27);
-    -moz-box-shadow: 0px 9px 5px -1px rgba(0, 0, 0, 0.27);
-  }
-  
-  .main-form .input-field {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  
-  /* VIJAT E EMRI,MBIEMRI ETJ... */
-  input {
-    padding: 1.2rem;
-    border-radius: 5px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgba(4,6,68,1);
-    opacity: 0.8;
-    font-family: var(--body-font);
-    padding-left: 1rem;
-  }
-  
-  input::placeholder {
-    font-weight: 700;
-    font-size: 0.9rem;
-    font-family: var(--body-font);
-  }
-  input:focus-visible {
-    outline-width: 1px;
-    outline-style: solid;
-    outline-color: var(--blue);
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--white);
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 
-  /* BUTTONI KYQU */
-  .submit-info {
-    border-radius: 5px;
-    border-width: 1px;
-    border-color: transparent;
-    border-style: solid;
-    cursor: pointer;
-    background-color: rgba(4,6,68,1);
-    color: var(--white); 
-    text-transform: uppercase;
-    padding: 1.2rem;
-    font-size: 0.9rem;
-    font-weight: 600;
-    transition: all ease-in-out 0.3s;
-  }
-  #submit-info{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .submit-info:hover {
-    opacity: 0.7;
-    transition: all ease-in-out 1s;
-  }
-  .tnc {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: var(--gray-blue);
-    text-align: center;
-  }
-  .tnc a {
-    text-decoration: none;
-    color: rgba(4,6,68,1);
-    font-weight: 600;
-  }
+.info-section h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
 
-  .sign-up-logo{
-    width: 120px;
-    height: 120px;
-  }
+.info-section p {
+  font-weight: 500;
+  text-align: center;
+}
+/* Form */
+.main-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 2.5rem 2.7rem;
+  box-shadow: 0px 9px 5px -1px rgba(0, 0, 0, 0.27);
+  -webkit-box-shadow: 0px 9px 5px -1px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: 0px 9px 5px -1px rgba(0, 0, 0, 0.27);
+}
+
+.main-form .input-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* VIJAT E EMRI,MBIEMRI ETJ... */
+input {
+  padding: 1.2rem;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(4, 6, 68, 1);
+  opacity: 0.8;
+  /* font-family: var(--body-font); */
+  padding-left: 1rem;
+}
+
+input::placeholder {
+  font-weight: 700;
+  font-size: 0.9rem;
+  /* font-family: var(--body-font); */
+}
+input:focus-visible {
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: var(--blue);
+}
+
+/* BUTTONI KYQU */
+.submit-info {
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: transparent;
+  border-style: solid;
+  cursor: pointer;
+  background-color: rgba(4, 6, 68, 1);
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all ease-in-out 0.3s;
+}
+#submit-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.submit-info:hover {
+  opacity: 0.7;
+  transition: all ease-in-out 1s;
+}
+.tnc {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--gray-blue);
+  text-align: center;
+}
+.tnc a {
+  text-decoration: none;
+  color: rgba(4, 6, 68, 1);
+  font-weight: 600;
+}
+
+.sign-up-logo {
+  width: 120px;
+  height: 120px;
+}

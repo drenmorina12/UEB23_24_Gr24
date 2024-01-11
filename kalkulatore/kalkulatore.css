@@ -8,6 +8,11 @@
   --light-text: #c0bfd2;
    --white-text: white;
 */
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
 body {
   background-image: url(../images/foto3.jpg), url(../images/fotomultiple.jpg);
   background-repeat: no-repeat;
@@ -19,7 +24,7 @@ body {
 #permbajtjaKalkulatori h2,
 #permbajtjaKonvertori h2 {
   text-align: center;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   font-size: 35px;
   text-shadow: 1px 1px 30px;
   font-style: italic;
@@ -37,7 +42,7 @@ p {
   display: flex;
   justify-content: center;
   margin: 0px 0px 0px 0px;
-  font-family: "Playfair Display", sans-serif;
+  /* font-family: "Playfair Display", sans-serif; */
 }
 
 #permbajtjaKalkulatori {
@@ -101,7 +106,7 @@ p {
   margin-bottom: 15px;
   border-radius: 18px;
   font-size: 15px;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   font-weight: bold;
   cursor: pointer;
   float: left;
@@ -239,7 +244,7 @@ select {
 #permbajtjaKalkulatori h2,
 #permbajtjaKonvertori h2 {
   text-align: center;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   font-size: 30px;
   text-shadow: 1px 1px 30px;
   font-style: italic;
@@ -361,7 +366,7 @@ select {
   margin-bottom: 15px;
   border-radius: 18px;
   font-size: 15px;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   font-weight: bold;
   cursor: pointer;
   float: right;
@@ -544,7 +549,7 @@ input[type="button"]:active {
 #calculator * {
   margin: 0px;
   padding: 0px;
-  font-family: "Times New Roman", Times, serif;
+  /* font-family: "Times New Roman", Times, serif; */
 }
 
 #calculator-container {

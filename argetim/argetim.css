@@ -14,6 +14,10 @@
   background-color: var(--second-bg);
 }
 
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
 .main-content {
   min-height: auto;
   width: 400px;
