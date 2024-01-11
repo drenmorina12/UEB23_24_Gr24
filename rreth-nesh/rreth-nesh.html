@@ -24,7 +24,7 @@
 
     <style>
       .permbajtja-formes {
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: var(--main-color);
         width: 350px;
         font-size: 14px;
         border-radius: 10px;
@@ -84,7 +84,7 @@
       }
 
       input[type="button"] {
-        background-color: forestgreen;
+        background-color: var(--second-bg);
         width: 100px;
         height: 25px;
         margin-left: 125px;
@@ -97,13 +97,14 @@
       }
 
       input[type="button"]:hover {
-        background-color: orangered;
+        background-color: #242425;
+        color: var(--second-bg);
         transition: 0.9s ease;
       }
 
       input[type="text"]:focus,
       textarea:focus {
-        background-color: #0d0c4e;
+        background-color: #242425;
         color: white;
         outline: none;
         border: 1px solid black;
@@ -111,8 +112,8 @@
       }
 
       input[type="button"]:active {
-        background-color: #039dfc;
-        color: white;
+        background-color: var(--second-bg);
+        color: var(--main-color);
         transition: 0.1s ease;
       }
     </style>
@@ -359,7 +360,7 @@
             </div>
           </div>
           <div class="rreshti">
-            <input type="button" onclick="Valido()" value="Dergo" />
+            <input type="button" onclick="Valido()" value="Dërgo" />
           </div>
         </form>
       </div>
