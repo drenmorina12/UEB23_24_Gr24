@@ -8,18 +8,24 @@
   --light-text: #c0bfd2;
    --white-text: white;
 */
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
 body {
-  background-image: url(../images/foto3.jpg), url(../images/fotomultiple.jpg);
+  /* background-image: url(../images/pexels-nothing-ahead-3729557.jpg),
+    url(../images/fotomultiple.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
-  background-color: var;
+  background-size: 100% 100%; */
+  /* background-color: var; */
 }
 
 #permbajtjaKalkulatori h2,
 #permbajtjaKonvertori h2 {
   text-align: center;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   font-size: 35px;
   text-shadow: 1px 1px 30px;
   font-style: italic;
@@ -37,7 +43,7 @@ p {
   display: flex;
   justify-content: center;
   margin: 0px 0px 0px 0px;
-  font-family: "Playfair Display", sans-serif;
+  /* font-family: "Playfair Display", sans-serif; */
 }
 
 #permbajtjaKalkulatori {
@@ -63,7 +69,8 @@ p {
 }
 
 .pershkrimi2 {
-  background-color: #19376d;
+  /* background-color: #19376d; */
+  background-color: var(--third-bg);
   color: var(--white-text);
   box-shadow: 2px 2px 15px;
   border-radius: 10px;
@@ -101,7 +108,7 @@ p {
   margin-bottom: 15px;
   border-radius: 18px;
   font-size: 15px;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   font-weight: bold;
   cursor: pointer;
   float: left;
@@ -239,7 +246,7 @@ select {
 #permbajtjaKalkulatori h2,
 #permbajtjaKonvertori h2 {
   text-align: center;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   font-size: 30px;
   text-shadow: 1px 1px 30px;
   font-style: italic;
@@ -361,7 +368,7 @@ select {
   margin-bottom: 15px;
   border-radius: 18px;
   font-size: 15px;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   font-weight: bold;
   cursor: pointer;
   float: right;
@@ -544,7 +551,7 @@ input[type="button"]:active {
 #calculator * {
   margin: 0px;
   padding: 0px;
-  font-family: "Times New Roman", Times, serif;
+  /* font-family: "Times New Roman", Times, serif; */
 }
 
 #calculator-container {
@@ -644,22 +651,26 @@ input[type="button"]:active {
 
 #calculator .number,
 #calculator .decimal {
-  background-color: #217c7e;
+  /* background-color: #217c7e; */
+  background-color: var(--second-bg);
 }
 
 #calculator .operator,
 #calculator .equals {
-  background-color: #ff8f1f;
+  /* background-color: #ff8f1f; */
+  background-color: var(--second-bg);
 }
 
 #calculator .percent,
 #calculator .sign,
 #calculator .clear {
-  background-color: dodgerblue;
+  /* background-color: dodgerblue; */
+  background-color: var(--second-bg);
 }
 
 #calculator .delete {
-  background-color: red;
+  /* background-color: red; */
+  background-color: var(--second-bg);
 }
 
 .error-message {

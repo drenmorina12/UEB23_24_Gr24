@@ -1,10 +1,10 @@
 :root {
   --main-color: #002244;
-  --second-bg: #c0bfd2;
+  --second-bg: #e0f4ff;
   --third-bg: #132c50;
   --white-bg: #fff;
   --dark-text: #002244;
-  --light-text: #c0bfd2;
+  --light-text: #e0f4ff;
   --white-text: #fff;
 }
 /* ------------------------------------------------------------------------------------------ */
@@ -190,15 +190,16 @@
 } */
 /* ------------------------------------------------------------------------------------------ */
 /*  Black/Light Testing */
-/* :root {
+:root {
   --main-color: #000000;
   --second-bg: #f4eae0;
-  --third-bg: #f4dfc8;
+  /* --third-bg: rgba(0, 0, 0, 0.8); */
+  --third-bg: rgb(35, 34, 34);
   --white-bg: #fff;
   --dark-text: #000000;
   --light-text: #f4eae0;
   --white-text: #fff;
-} */
+}
 /* Version 2 */
 /* :root {
   --main-color: #000000;

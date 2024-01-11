@@ -12,13 +12,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Playfair Display", sans-serif;
+  /* font-family: "Playfair Display", sans-serif; */
+  font-family: "Open Sans", sans-serif;
   /* background-image: url(); */
 }
 
 #main {
   background-color: var(--second-bg);
-  
 }
 
 .s1,
