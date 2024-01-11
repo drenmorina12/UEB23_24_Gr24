@@ -334,3 +334,18 @@ footer a img {
 footer a img:hover {
   opacity: 0.6;
 }
+
+#selfAddingText {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #002244;
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  text-shadow: 1.5px 1.5px black;
+}
+.row {
+  position: relative;
+}

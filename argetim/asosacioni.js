@@ -11,12 +11,21 @@ let currentAsosacionText = '"Përgjithshëm"';
 // Templates -----------------------------
 const columns = ["A", "B", "C", "D"];
 
-const template = {
-  A: ["A1", "A2", "A3", "A4", "Zgjidhja A", "ZGJIDHJA PËRFUNDIMTARE"],
-  B: ["B1", "B2", "B3", "B4", "Zgjidhja B"],
-  C: ["C1", "C2", "C3", "C4", "Zgjidhja C"],
-  D: ["D1", "D2", "D3", "D4", "Zgjidhja D"],
-};
+// Create template with object constructor0
+function TopicTemplate(A, B, C, D) {
+  this.A = [A[0], A[1], A[2], A[3], A[4], A[5]];
+  this.B = [B[0], B[1], B[2], B[3], B[4]];
+  this.C = [C[0], C[1], C[2], C[3], C[4]];
+  this.D = [D[0], D[1], D[2], D[3], D[4]];
+}
+
+// Usage
+const template = new TopicTemplate(
+  ["A1", "A2", "A3", "A4", "Zgjidhja A", "ZGJIDHJA PËRFUNDIMTARE"],
+  ["B1", "B2", "B3", "B4", "Zgjidhja B"],
+  ["C1", "C2", "C3", "C4", "Zgjidhja C"],
+  ["D1", "D2", "D3", "D4", "Zgjidhja D"]
+);
 
 const finalResulTemplate = "Zgjidhja Perfundimtare";
 // ---------------------------------------
@@ -140,7 +149,7 @@ function createTable() {
   asosacioni.appendChild(row);
 }
 
-function upadteCellContent(e, wordList) {
+function updateCellContent(e, wordList) {
   const column = e.currentTarget.getAttribute("data-column");
 
   const row = Array.from(
@@ -156,7 +165,7 @@ function addCellEventListeners(subject) {
   const cells = document.querySelectorAll(".cell");
   cells.forEach((cell) => {
     cell.addEventListener("click", (e) => {
-      upadteCellContent(e, subject);
+      updateCellContent(e, subject);
       // if (cell.classList.contains("final-column-cell")) {
       //   cell.style = "font-weight: bold";
       // }
