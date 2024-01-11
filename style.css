@@ -82,7 +82,7 @@ body {
 #header nav select {
   background-color: var(--main-color);
   border: none;
-  color: var(--white-text);
+  color: var(--second-bg);
   white-space: nowrap;
   padding: 10px 20px;
 }
@@ -93,7 +93,7 @@ select {
 #header nav a:hover {
   /* color: #49796B; */
   color: var(--dark-text);
-  background-color: var(--white-bg);
+  background-color: var(--second-bg);
   border-radius: 8%;
 }
 
