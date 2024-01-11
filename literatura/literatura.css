@@ -1,5 +1,19 @@
+@import "variables.css";
+/* 
+  --main-color: #002244;
+  --second-bg: #c0bfd2;
+  --third-bg: #132c50;
+  --white-bg: #fff;
+  --dark-text: #002244;
+  --light-text: #c0bfd2;
+   --white-text: white;
+*/
 * {
   font-family: "Playfair Display", sans-serif;
+}
+
+.row {
+  background-color: var(--second-bg);
 }
 
 .container-literatura {
@@ -21,7 +35,7 @@
   height: 50px;
   width: 50px;
   z-index: 5;
-  color: #fff;
+  color: var(--white-text);
   display: flex;
   cursor: pointer;
   font-size: 2.2rem;
@@ -145,7 +159,7 @@
 
 #pershkrimi-literatura {
   background-color: #19376d;
-  color: white;
+  color: var(--white-text);
   box-shadow: 2px 2px 15px;
   border-radius: 10px;
   width: 1050px;

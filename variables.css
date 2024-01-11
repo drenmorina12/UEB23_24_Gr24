@@ -1,0 +1,275 @@
+:root {
+  --main-color: #002244;
+  --second-bg: #c0bfd2;
+  --third-bg: #132c50;
+  --white-bg: #fff;
+  --dark-text: #002244;
+  --light-text: #c0bfd2;
+  --white-text: #fff;
+}
+/* ------------------------------------------------------------------------------------------ */
+
+/* TESTING 1 */
+/* :root {
+  --main-color: #88ab8e;
+  --second-bg: #eee7da;
+  --third-bg: #afc8ad;
+  --white-bg: #afc8ad;
+  --dark-text: #88ab8e;
+  --light-text: #eee7da;
+  --white-text: #fff;
+} */
+/* ------------------------------------------------------------------------------------------ */
+
+/* Testing 2 */
+/* :root {
+  --main-color: #4F6F52;
+  --second-bg: #D2E3C8;
+  --third-bg: #739072;
+  --white-bg: #afc8ad;
+  --dark-text: #4F6F52;
+  --light-text: #D2E3C8;
+  --white-text: #fff;
+} */
+/* ------------------------------------------------------------------------------------------ */
+
+/* Testing 3 ********/
+/* :root {
+  --main-color: #164863;
+  --second-bg: #9bbec8;
+  --third-bg: #427d9d;
+  --white-bg: #fff;
+  --dark-text: #164863;
+  --light-text: #9bbec8;
+  --white-text: #fff;
+} */
+
+/* Second version */
+/* :root {
+  --main-color: #164863;
+  --second-bg: #ddf2fd;
+  --third-bg: #427d9d;
+  --white-bg: #fff;
+  --dark-text: #164863;
+  --light-text: #ddf2fd;
+  --white-text: #fff;
+} */
+/* ------------------------------------------------------------------------------------------ */
+
+/* Green Testing */
+/* :root {
+  --main-color: #163020;
+  --second-bg: #b6c4b6;
+  --third-bg: #304d30;
+  --white-bg: #fff;
+  --dark-text: #163020;
+  --light-text: #b6c4b6;
+  --white-text: #fff;
+} */
+/* Version 2 *************/
+/* :root {
+  --main-color: #163020;
+  --second-bg: #eef0e5;
+  --third-bg: #304d30;
+  --white-bg: #fff;
+  --dark-text: #163020;
+  --light-text: #eef0e5;
+  --white-text: #fff;
+} */
+/* ------------------------------------------------------------------------------------------ */
+
+/* Orange Testing */
+/* :root {
+  --main-color: #6b240c;
+  --second-bg: #f5cca0;
+  --third-bg: #994d1c;
+  --white-bg: #fff;
+  --dark-text: #6b240c;
+  --light-text: #f5cca0;
+  --white-text: #fff;
+} */
+/* MMMMMMIIIIIIIIIIIIIIIIIIIIIIDDDDDDDDDDDDDD */
+/* Version 2 */
+/* :root {
+  --main-color: #6b240c;
+  --second-bg: #e48f45;
+  --third-bg: #994d1c;
+  --white-bg: #fff;
+  --dark-text: #6b240c;
+  --light-text: #e48f45;
+  --white-text: #fff;
+} */
+/* ------------------------------------------------------------------------------------------ */
+
+/*  Blue Testing */
+/* :root {
+  --main-color: #092635;
+  --second-bg: #9ec8b9;
+  --third-bg: #1b4242;
+  --white-bg: #fff;
+  --dark-text: #092635;
+  --light-text: #9ec8b9;
+  --white-text: #fff;
+} */
+
+/* ------------------------------------------------------------------------------------------ */
+/*  Purple Testing */
+/* :root {
+  --main-color: #392467;
+  --second-bg: #ffd1e3;
+  --third-bg: #5d3587;
+  --white-bg: #fff;
+  --dark-text: #392467;
+  --light-text: #ffd1e3;
+  --white-text: #fff;
+} */
+/* Version 2 */
+
+/* ------------------------------------------------------------------------------------------ */
+/*  Dark Blue Testing */
+/* :root {
+  --main-color: #0f044c;
+  --second-bg: #eeeeee;
+  --third-bg: #141e61;
+  --white-bg: #fff;
+  --dark-text: #0f044c;
+  --light-text: #eeeeee;
+  --white-text: #fff;
+} */
+/* Version 2 */
+/* :root {
+  --main-color: #0f044c;
+  --second-bg: #787a91;
+  --third-bg: #141e61;
+  --white-bg: #fff;
+  --dark-text: #0f044c;
+  --light-text: #787a91;
+  --white-text: #fff;
+} */
+/* ------------------------------------------------------------------------------------------ */
+/*  Black/Purple Testing CHECK BLACK VERSION*/
+/* :root {
+  --main-color: #000000;
+  --second-bg: #892cdc;
+  --third-bg: #52057b;
+  --white-bg: #fff;
+  --dark-text: #000000;
+  --light-text: #892cdc;
+  --white-text: #fff;
+} */
+/* Version 2 */
+/* :root {
+  --main-color: #000000;
+  --second-bg: #bc6ff1;
+  --third-bg: #52057b;
+  --white-bg: #fff;
+  --dark-text: #000000;
+  --light-text: #bc6ff1;
+  --white-text: #fff;
+} */
+/* ------------------------------------------------------------------------------------------ */
+/*  Dark/Blue Testing */
+/* :root {
+  --main-color: #1b262c;
+  --second-bg: #3282b8;
+  --third-bg: #0f4c75;
+  --white-bg: #fff;
+  --dark-text: #1b262c;
+  --light-text: #3282b8;
+  --white-text: #fff;
+} */
+/* Version 2 */
+/* :root {
+  --main-color: #1b262c;
+  --second-bg: #bbe1fa;
+  --third-bg: #0f4c75;
+  --white-bg: #fff;
+  --dark-text: #1b262c;
+  --light-text: #bbe1fa;
+  --white-text: #fff;
+} */
+/* ------------------------------------------------------------------------------------------ */
+/*  Black/Light Testing */
+/* :root {
+  --main-color: #000000;
+  --second-bg: #f4eae0;
+  --third-bg: #f4dfc8;
+  --white-bg: #fff;
+  --dark-text: #000000;
+  --light-text: #f4eae0;
+  --white-text: #fff;
+} */
+/* Version 2 */
+/* :root {
+  --main-color: #000000;
+  --second-bg: #faf6f0;
+  --third-bg: #f4dfc8;
+  --white-bg: #fff;
+  --dark-text: #000000;
+  --light-text: #faf6f0;
+  --white-text: #fff;
+} */
+/* ------------------------------------------------------------------------------------------ */
+/*  Dark Green Testing */
+/* :root {
+  --main-color: #040d12;
+  --second-bg: #5c8374;
+  --third-bg: #183d3d;
+  --white-bg: #fff;
+  --dark-text: #040d12;
+  --light-text: #5c8374;
+  --white-text: #fff;
+} */
+/* Version 2 */
+/* :root {
+  --main-color: #040d12;
+  --second-bg: #93b1a6;
+  --third-bg: #183d3d;
+  --white-bg: #fff;
+  --dark-text: #040d12;
+  --light-text: #93b1a6;
+  --white-text: #fff;
+} */
+/* ------------------------------------------------------------------------------------------ */
+/*  Light Blue Testing */
+/* :root { 
+  --main-color: #C4DFDF;
+  --second-bg: #E3F4F4;
+  --third-bg: #D2E9E9;
+  --white-bg: #fff;
+  --dark-text: #C4DFDF;
+  --light-text: #E3F4F4;
+  --white-text: #fff;
+}  */
+/* Version 2 */
+/* :root { 
+  --main-color: #C4DFDF;
+  --second-bg: #F8F6F4;
+  --third-bg: #D2E9E9;
+  --white-bg: #fff;
+  --dark-text: #C4DFDF;
+  --light-text: #F8F6F4;
+  --white-text: #fff;
+}  */
+/* ------------------------------------------------------------------------------------------ */
+/*  Light Purple Testing */
+/* :root {
+  --main-color: #7286d3;
+  --second-bg: #e5e0ff;
+  --third-bg: #8ea7e9;
+  --white-bg: #fff;
+  --dark-text: #7286d3;
+  --light-text: #e5e0ff;
+  --white-text: #fff;
+} */
+/* Version 2 */
+/* :root {
+  --main-color: #7286d3;
+  --second-bg: #fff2f2;
+  --third-bg: #8ea7e9;
+  --white-bg: #fff;
+  --dark-text: #7286d3;
+  --light-text: #fff2f2;
+  --white-text: #fff;
+} */
+/* ------------------------------------------------------------------------------------------ */
