@@ -201,6 +201,7 @@ select {
   width: 33%;
   display: inline-block;
   text-align: center;
+  background-color: black;
 }
 .icon {
   width: 85px;
