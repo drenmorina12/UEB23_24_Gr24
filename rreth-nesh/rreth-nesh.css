@@ -164,8 +164,14 @@ h3 {
   color: var(--white-text);
   text-align: left;
 }
-.s2 .s3 .text {
+.s2 {
+  gap: 10%;
+}
+.s3 .text {
   height: 170px;
+}
+#nested-list {
+  margin-bottom: 20px;
 }
 #datetime {
   height: 24px;
