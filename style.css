@@ -8,6 +8,12 @@
   --light-text: #c0bfd2;
    --white-text: white;
 */
+
+@font-face {
+  font-family: title-font;
+  src: url("fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -196,12 +202,13 @@ select {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  /* background-color: black; */
 }
 .small-box {
   width: 33%;
   display: inline-block;
   text-align: center;
-  background-color: black;
+  /* background-color: black; */
 }
 .icon {
   width: 85px;
@@ -335,9 +342,10 @@ div.content {
   position: relative;
   top: 70px;
 }
+
 @font-face {
   font-family: footerFont;
-  src: url("fonts");
+  src: url("fonts/");
 }
 footer p {
   font-family: footerFont;
