@@ -337,7 +337,7 @@ div.content {
   padding: 20px;
   bottom: 0;
   width: 100%;
-  height: 130px;
+  height: 160px;
   /* Make up for position fixed */
   position: relative;
   top: 70px;
