@@ -159,7 +159,8 @@
 ////////////////////////////////////////////////////////////////////// */
 
 #pershkrimi-literatura {
-  background-color: #19376d;
+  /* background-color: #19376d; */
+  background-color: var(--main-color);
   color: var(--white-text);
   box-shadow: 2px 2px 15px;
   border-radius: 10px;
@@ -196,9 +197,9 @@ p {
 } */
 
 #video {
-  width: 700px;
-  height: 393.75px;
-  margin: auto;
+  width: 900px;
+  height: 506.25px;
+  margin: 100px auto;
 }
 
 #footer {

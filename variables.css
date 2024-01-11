@@ -193,7 +193,8 @@
 :root {
   --main-color: #000000;
   --second-bg: #f4eae0;
-  --third-bg: rgba(0, 0, 0, 0.8);
+  /* --third-bg: rgba(0, 0, 0, 0.8); */
+  --third-bg: rgb(35, 34, 34);
   --white-bg: #fff;
   --dark-text: #000000;
   --light-text: #f4eae0;
