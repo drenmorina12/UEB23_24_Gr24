@@ -136,7 +136,6 @@
     </script>
 
     <script>
-      // Get the HTML element by its ID
       var selfAddingTextElement = document.getElementById("selfAddingText");
 
       // Initial text content
@@ -144,14 +143,11 @@
       // var originalText = "MIRËSEVINI NË FAQEN E UP STUDENT TOOLKIT";
       // Function to add a letter to the text
       function addLetter() {
-        // Get the current text content
         var currentText = selfAddingTextElement.textContent;
 
-        // Add the next letter
         var nextLetter = originalText[currentText.length];
         currentText += nextLetter;
 
-        // Update the text content
         selfAddingTextElement.textContent = currentText;
 
         // Stop the animation when all letters are added
@@ -160,7 +156,6 @@
         }
       }
 
-      // Set an interval to add a letter every 300 milliseconds
       var intervalId = setInterval(addLetter, 300);
     </script>
 
