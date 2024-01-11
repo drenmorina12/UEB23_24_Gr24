@@ -1,9 +1,6 @@
 const $gridDisplay = $("#grid");
 const $resultDisplay = $("#result");
 const $notification = $("#notification");
-// const $gridDisplay = document.querySelector("#grid");
-// const $resultDisplay = document.querySelector("#result");
-// const $notification = document.querySelector("#notification");
 
 // Define a constructor function for a Card
 function Card(name, img) {

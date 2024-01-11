@@ -8,6 +8,12 @@
   --light-text: #c0bfd2;
    --white-text: white;
 */
+
+@font-face {
+  font-family: title-font;
+  src: url("fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -76,7 +82,7 @@ body {
 #header nav select {
   background-color: var(--main-color);
   border: none;
-  color: var(--white-text);
+  color: var(--second-bg);
   white-space: nowrap;
   padding: 10px 20px;
 }
@@ -87,7 +93,7 @@ select {
 #header nav a:hover {
   /* color: #49796B; */
   color: var(--dark-text);
-  background-color: var(--white-bg);
+  background-color: var(--second-bg);
   border-radius: 8%;
 }
 
@@ -105,6 +111,9 @@ select {
   /* Make up for position fixed */
   position: relative;
   top: 70px;
+  height: 100%;
+  margin-bottom: -110px;
+  /* border: 5px double red; */
 }
 
 .text-overlay {
@@ -196,11 +205,13 @@ select {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  /* background-color: black; */
 }
 .small-box {
   width: 33%;
   display: inline-block;
   text-align: center;
+  /* background-color: black; */
 }
 .icon {
   width: 85px;
@@ -329,14 +340,15 @@ div.content {
   padding: 20px;
   bottom: 0;
   width: 100%;
-  height: 130px;
+  height: 160px;
   /* Make up for position fixed */
   position: relative;
   top: 70px;
 }
+
 @font-face {
   font-family: footerFont;
-  src: url("fonts");
+  src: url("fonts/");
 }
 footer p {
   font-family: footerFont;

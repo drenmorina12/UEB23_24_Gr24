@@ -15,20 +15,11 @@
   background-color: none;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
-  /* color: #424551;  */
-  /* font-family: "Playfair Display", sans-serif; */
 }
 
 #main {
   background-color: var(--second-bg);
 }
-
-/*   
-  body {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 30px;
-  } */
 
 header {
   margin-bottom: 20px;
@@ -78,14 +69,12 @@ header {
 }
 .fiek-info h3 {
   font-size: 32px;
-  /* font-family: Lato; */
   font-weight: 600;
   line-height: 130%;
 }
 
 .fiek-info h5 {
   font-size: 24px;
-  /* font-family: Lato; */
   font-weight: 500;
   line-height: 130%;
   color: #ff4242;
@@ -95,7 +84,6 @@ header {
 .fiek-info p {
   color: #424551;
   margin: 15px 0;
-  /* width: 70%; */
 }
 
 .fiek-capacity p {
@@ -118,7 +106,6 @@ header {
   width: 70%;
   color: #787a80;
   font-size: 18px;
-  /* font-family: Lato; */
   line-height: 150%;
   letter-spacing: 1px;
 }
@@ -159,7 +146,6 @@ header {
   justify-content: center;
   align-content: center;
   width: 100%;
-  /* width: 1440px; */
 }
 
 .headeri {
@@ -218,14 +204,6 @@ header {
   justify-content: center;
 }
 
-/* .color-of-table1,
-.color-of-table2,
-.color-of-table3 {
-  background-color: ;
-  text-decoration: underline;
-  text-decoration-color: red;
-
-} */
 .vitet-akademike {
   color: #212529;
   font-weight: 800;
