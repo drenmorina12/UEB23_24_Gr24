@@ -171,7 +171,8 @@ function addCellEventListeners(subject) {
       // }
     });
 
-    asosacioniHeaderText.textContent = `Jeni duke lujatur asoacionin me temen ${currentAsosacionText} !!`;
+    asosacioniHeaderText.textContent = `Jeni duke lujatur asoacionin me temë
+    n ${currentAsosacionText} !!`;
   });
 }
 
