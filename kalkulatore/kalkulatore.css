@@ -13,15 +13,6 @@
   font-family: "Open Sans", sans-serif;
 }
 
-body {
-  /* background-image: url(../images/pexels-nothing-ahead-3729557.jpg),
-    url(../images/fotomultiple.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%; */
-  /* background-color: var; */
-}
-
 #permbajtjaKalkulatori h2,
 #permbajtjaKonvertori h2 {
   text-align: center;
@@ -551,7 +542,7 @@ input[type="button"]:active {
 #calculator * {
   margin: 0px;
   padding: 0px;
-  /* font-family: "Times New Roman", Times, serif; */
+  font-family: "Times New Roman", Times, serif;
 }
 
 #calculator-container {
