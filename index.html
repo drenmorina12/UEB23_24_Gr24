@@ -76,7 +76,7 @@
           përshtatshëm dhe efikas për studentët. Kjo faqe synon të sjellë
           informacion të rëndësishëm në një mënyrë të qartë dhe të lehtë për tu
           naviguar. Përveçse këtyre, faqja do të përfshijë edhe një platformë
-          interaktive ku perdoruesit mund ta kalojnë edhe kohën e lirë.
+          interaktive ku përdoruesit mund ta kalojnë edhe kohën e lirë.
           <br /><br />
           Qëllimi kryesor është të krijohet një platformë e përshtatshme dhe
           inovative që ndihmon në përmirësimin e përvojës së studentëve në
@@ -101,7 +101,7 @@
           />
           <p class="big-text">Argëtim dhe<br />mësim</p>
           <p class="small-text">
-            Për veq pjesës së mësimit mundësohet edhe argëtimi me lojëra dhe
+            Përveç pjesës së mësimit mundësohet edhe argëtimi me lojëra dhe
             teste të ndryshme.
           </p>
         </div>
@@ -109,8 +109,8 @@
           <img class="icon" src="images/pen-icon.png" alt="Pen Icon" />
           <p class="big-text">Ndihmë<br />Akademike</p>
           <p class="small-text">
-            Si ma me rëndesi faqja dukëshëm do përmisojë dhe ndihmoj ne aspektin
-            akademik të gjith studentët.
+            Si më me rëndësi faqja dukëshëm do përmisojë dhe ndihmojë në
+            aspektin akademik të gjithë studentët.
           </p>
         </div>
       </div>
@@ -142,22 +142,18 @@
     </script>
 
     <script>
-      // Get the HTML element by its ID
       var selfAddingTextElement = document.getElementById("selfAddingText");
 
       // Initial text content
 
-      // var originalText = "MMIRËSEVINI NË FAQEN E UP STUDENT TOOLKIT";
+      // var originalText = "MIRËSEVINI NË FAQEN E UP STUDENT TOOLKIT";
       // Function to add a letter to the text
       function addLetter() {
-        // Get the current text content
         var currentText = selfAddingTextElement.textContent;
 
-        // Add the next letter
         var nextLetter = originalText[currentText.length];
         currentText += nextLetter;
 
-        // Update the text content
         selfAddingTextElement.textContent = currentText;
 
         // Stop the animation when all letters are added
@@ -166,7 +162,6 @@
         }
       }
 
-      // Set an interval to add a letter every 300 milliseconds
       var intervalId = setInterval(addLetter, 300);
     </script>
 

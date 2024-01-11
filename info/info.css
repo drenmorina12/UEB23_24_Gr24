@@ -264,3 +264,13 @@ header {
 table tbody tr td.celula {
   background-color: red;
 }
+
+#drag1:hover,
+#drag2:hover,
+#drag3:hover,
+#drag4:hover,
+#drag5:hover,
+#drag6:hover{
+  /* width: 320px; */
+  height: 370px;
+}
