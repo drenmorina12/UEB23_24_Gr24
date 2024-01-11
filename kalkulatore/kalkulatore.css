@@ -14,7 +14,8 @@
 }
 
 body {
-  background-image: url(../images/foto3.jpg), url(../images/fotomultiple.jpg);
+  background-image: url(../images/pexels-nothing-ahead-3729557.jpg),
+    url(../images/fotomultiple.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -68,7 +69,8 @@ p {
 }
 
 .pershkrimi2 {
-  background-color: #19376d;
+  /* background-color: #19376d; */
+  background-color: var(--third-bg);
   color: var(--white-text);
   box-shadow: 2px 2px 15px;
   border-radius: 10px;
@@ -649,22 +651,26 @@ input[type="button"]:active {
 
 #calculator .number,
 #calculator .decimal {
-  background-color: #217c7e;
+  /* background-color: #217c7e; */
+  background-color: var(--second-bg);
 }
 
 #calculator .operator,
 #calculator .equals {
-  background-color: #ff8f1f;
+  /* background-color: #ff8f1f; */
+  background-color: var(--second-bg);
 }
 
 #calculator .percent,
 #calculator .sign,
 #calculator .clear {
-  background-color: dodgerblue;
+  /* background-color: dodgerblue; */
+  background-color: var(--second-bg);
 }
 
 #calculator .delete {
-  background-color: red;
+  /* background-color: red; */
+  background-color: var(--second-bg);
 }
 
 .error-message {
