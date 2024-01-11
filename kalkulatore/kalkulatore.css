@@ -16,7 +16,6 @@
 #permbajtjaKalkulatori h2,
 #permbajtjaKonvertori h2 {
   text-align: center;
-  /* font-family: sans-serif; */
   font-size: 35px;
   text-shadow: 1px 1px 30px;
   font-style: italic;
@@ -34,7 +33,6 @@ p {
   display: flex;
   justify-content: center;
   margin: 0px 0px 0px 0px;
-  /* font-family: "Playfair Display", sans-serif; */
 }
 
 #permbajtjaKalkulatori {
@@ -60,7 +58,6 @@ p {
 }
 
 .pershkrimi2 {
-  /* background-color: #19376d; */
   background-color: var(--third-bg);
   color: var(--white-text);
   box-shadow: 2px 2px 15px;
@@ -68,10 +65,6 @@ p {
   width: 1050px;
   padding-top: 20px;
   padding-bottom: 20px;
-  /* margin-top: 20px;
-  margin-left: 25%;
-  margin-right: 7%;
-  padding: 15px; */
 }
 
 #pershkrimi2-kalkulatorithjesht {
@@ -79,8 +72,7 @@ p {
   text-align: center;
 }
 
-/*==-=-=-=-=-=-=-=-=-=-Konvertori=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-
-///////////////////////////////////////////////////////*/
+/*==-=-=-=-=-=-=-=-=-=-Konvertori=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 .vlera2t {
   box-shadow: 2px 2px 15px;
   width: 50%;
@@ -99,7 +91,6 @@ p {
   margin-bottom: 15px;
   border-radius: 18px;
   font-size: 15px;
-  /* font-family: sans-serif; */
   font-weight: bold;
   cursor: pointer;
   float: left;
@@ -111,14 +102,11 @@ p {
   width: 1105px;
   font-size: 18px;
   border-radius: 10px;
-  /* margin-top: 6%;
-  margin-left: 16%; */
   color: var(--white-text);
   box-shadow: 2px 2px 15px;
   height: 260px;
   padding-top: 2px;
   display: flex;
-  /* justify-content: center; */
   gap: 10px;
 }
 
@@ -153,14 +141,6 @@ thead {
 #njesiaeKonvertorit {
   margin: 10px;
 }
-
-/* #barabart {
-  display: inline-block;
-  margin-top: 0px;
-  margin-left: 12px;
-  font-size: 30px;
-  font-weight: bold;
-} */
 
 select {
   width: 180px;
@@ -231,13 +211,11 @@ select {
   font-size: 13px;
   height: 40px;
 }
-/*==-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-
-///////////////////////////////////////////////////////*/
+/*==-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 
 #permbajtjaKalkulatori h2,
 #permbajtjaKonvertori h2 {
   text-align: center;
-  /* font-family: sans-serif; */
   font-size: 30px;
   text-shadow: 1px 1px 30px;
   font-style: italic;
@@ -250,20 +228,15 @@ select {
 }
 
 .permbajtja3 {
-  /* background-color: rgba(1, 20, 71, 0.93); */
   background-color: rgba(0, 0, 0, 0.5);
   width: 750px;
   height: 280px;
   font-size: 18px;
   border-radius: 10px;
-  /* margin-top: 8%;
-  margin-left: 30.5%;
-  margin-right: auto; */
   color: var(--white-text);
   box-shadow: 2px 2px 15px;
   padding-top: 2px;
   display: flex;
-  /* justify-content: center ; */
   gap: 30px;
 }
 
@@ -324,7 +297,6 @@ select {
 
 .zgjidhjet {
   width: 30%;
-  /* margin-left: 20px; */
 }
 
 .zgjidhjet,
@@ -359,7 +331,6 @@ select {
   margin-bottom: 15px;
   border-radius: 18px;
   font-size: 15px;
-  /* font-family: sans-serif; */
   font-weight: bold;
   cursor: pointer;
   float: right;
@@ -401,7 +372,6 @@ input[type="button"]:active {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  /* background: #4a98f7; */
 }
 .container {
   display: flex;
@@ -547,8 +517,6 @@ input[type="button"]:active {
 
 #calculator-container {
   min-height: 110vh;
-  /* background-color: white; */
-  /* border: 10px solid orange; */
   display: flex;
   flex-direction: column;
   position: relative;
@@ -564,7 +532,6 @@ input[type="button"]:active {
 
 .wrapping-div {
   flex: 1;
-  /* background-color: white; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -599,11 +566,10 @@ input[type="button"]:active {
   border: 10px solid rgba(47, 47, 47, 1);
   align-self: center;
   background-color: black;
-  /* background-color: white; */
   display: flex;
   flex-direction: column;
   gap: 2px;
-  /* margin: auto; */
+
 }
 
 #calculator .display {

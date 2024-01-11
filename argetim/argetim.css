@@ -21,11 +21,9 @@
 .main-content {
   min-height: auto;
   width: 400px;
-  /* border: 3px solid red; */
   flex: 5.5;
   display: flex;
   flex-direction: column;
-  /* margin-left: 250px; */
 }
 
 #asosacioni,
@@ -37,6 +35,7 @@
   padding: 20px;
   flex-basis: 100vh;
 }
+
 /* Asosacioni start */
 #asosacioni {
   display: flex;
@@ -46,9 +45,7 @@
 }
 
 .asosacioni-text {
-  /* border: 1px dotted black; */
   width: 100%;
-  /* flex: 1; */
   padding: 15px 50px;
 }
 
@@ -57,17 +54,14 @@
 }
 
 .asosacioni-buttons {
-  /* border: 1px dotted black; */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-top: 0px; */
   margin-top: -20px;
 }
 
 .asosacioni-button,
 #memory-game-button {
-  /* background-color: var(--main-color); */
   background-color: var(--main-color);
   color: var(--white-text);
   padding: 10px 30px;
@@ -87,7 +81,6 @@
 
 #asosacioni .active {
   background-color: var(--main-color);
-  /* opacity: 0.5; */
   color: var(--white-text);
   padding: 10px 30px;
   margin: 30px;
@@ -101,7 +94,6 @@
 }
 
 .asosacioni-content {
-  /* border: 1px dotted black; */
   flex: 1;
   width: 100%;
   display: flex;
@@ -110,7 +102,6 @@
 }
 
 .asosacioni-table-container {
-  /* border: 5px solid pink; */
   width: 900px;
   margin-bottom: 30px;
   margin-top: 20px;
@@ -150,7 +141,6 @@
 
 /* Kuizi start*/
 #kuizi {
-  /* border: 10px double black; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,9 +148,7 @@
 }
 
 .kuizi-text {
-  /* border: 2px dotted greenyellow; */
   width: 100%;
-  /* flex: 1; */
   padding: 15px 50px;
 }
 
@@ -168,15 +156,8 @@
   text-align: center;
 }
 
-/* .start-screen,
-#display-container,
-.score-container {
-  border: 2px dashed blue;
-} */
-
 .start-screen,
 .score-container {
-  /* border: 5px solid orange; */
 
   position: relative;
   top: 0;
@@ -197,7 +178,6 @@ button {
   font-size: 1.3em;
   padding: 0.5em 1.8em;
   border-radius: 0.2em;
-  /* background-color: #c0bfd2; */
   background-color: var(--second-bg);
 }
 #restart {
@@ -207,15 +187,11 @@ button {
 #button-container,
 .score-container {
   background-color: var(--main-color);
-  /* background-color: #ffffff; */
   padding: 3.1em 1.8em;
   width: 80%;
   width: 37.5em;
   margin: auto;
   position: relative;
-  /* transform: translate(-50%, -50%); */
-  /* top: 50%; */
-  /* left: 50%; */
   border-radius: 0.6em;
   height: 500px;
   margin-bottom: 30px;
@@ -350,8 +326,6 @@ button {
 
 .board {
   flex: 1;
-  /* width: 100%; */
-  /* height: 100%; */
   display: grid;
   justify-content: center;
   align-content: center;
@@ -473,7 +447,6 @@ button {
 .board.circle .cells:not(.x):not(.circle):hover::after {
   width: calc(var(--mark-size) * 0.7);
   height: calc(var(--mark-size) * 0.7);
-  /* background-color: #c0bfd2; */
   background-color: var(--second-bg);
 }
 
@@ -520,7 +493,6 @@ button {
 
 .heading-text {
   margin: 40px;
-  /* background-color: white; */
   background-color: var(--main-color);
   min-width: 500px;
   padding: 20px 30px;
@@ -538,7 +510,6 @@ button {
 }
 
 #grid {
-  /* border: 1px solid black; */
   height: 450px;
   width: 580px;
   margin: auto;
@@ -554,18 +525,14 @@ button {
 
 .notification {
   display: none;
-  /* border: 10px solid brown; */
   position: relative;
   min-width: 250px;
   height: 50px;
   left: 450px;
   bottom: 400px;
-  /* top: 300px; */
-  /* right: 10px; */
   padding: 15px;
   background-color: var(--main-color);
   border-radius: 5px;
-  /* z-index: 1000; */
   color: var(--white-text);
 }
 
@@ -573,13 +540,6 @@ button {
   background-color: var(--main-color);
 }
 
-/* #memory-game-button {
-  background-color: #19376d;
-  color: var(--white-text);
-  padding: 10px 30px;
-  margin: 30px;
-  min-width: 150px;
-} */
 #memory-game-button:hover {
   opacity: 0.7;
   cursor: pointer;

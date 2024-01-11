@@ -111,6 +111,7 @@ select {
   /* Make up for position fixed */
   position: relative;
   top: 70px;
+  height: 100%;
 }
 
 .text-overlay {
