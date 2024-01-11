@@ -12,9 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Playfair Display", sans-serif; */
   font-family: "Open Sans", sans-serif;
-  /* background-image: url(); */
 }
 
 #main {
@@ -97,8 +95,6 @@
 /* fotoja e katert */
 .photo4 {
   border: 0px solid black;
-  /* margin-left: auto;
-  margin-right: auto; */
   height: 350px;
   width: 400px;
 }

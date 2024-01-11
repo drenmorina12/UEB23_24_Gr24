@@ -65,7 +65,6 @@ body {
 }
 
 .nav-bar {
-  /* font-family: "Playfair Display", sans-serif; */
   display: flex;
   align-items: center;
   text-align: center;
@@ -91,14 +90,12 @@ select {
 }
 
 #header nav a:hover {
-  /* color: #49796B; */
   color: var(--dark-text);
   background-color: var(--second-bg);
   border-radius: 8%;
 }
 
 #header nav select:hover {
-  /* color: #49796B; */
   color: var(--dark-text);
   background-color: var(--white-bg);
   border-radius: 8%;
@@ -108,12 +105,10 @@ select {
 
 #main {
   flex: 1;
-  /* Make up for position fixed */
   position: relative;
   top: 70px;
   height: 100%;
   margin-bottom: -110px;
-  /* border: 5px double red; */
 }
 
 .text-overlay {
@@ -125,33 +120,6 @@ select {
   color: var(--white-text);
 }
 
-/* #fiek-photo {
-  width: 100%;
-  height: 870px;
-  background: url("images/FIEK-FOTO.JPG") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.8;
-  filter: grayscale(60%);
-  background-origin: none;
-} */
-
-/* #text-inside-fiek-photo {
-  position: absolute;
-  top: 45%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-  color: var(--white-text) !important;
-  padding: 10px 20px;
-  text-align: center;
-  width: 650px;
-  font-size: 30px;
-  font-weight: 900;
-  font-family: "Playfair Display", sans-serif;
-  text-shadow: 2px 2px black;
-} */
-
 .about {
   margin: 0px;
   background-color: var(--main-color);
@@ -161,7 +129,6 @@ select {
   height: 740px;
 }
 .why {
-  /* font-family: "Playfair Display", sans-serif; */
   color: var(--white-text);
   font-size: 51px;
   text-align: center;
@@ -171,7 +138,6 @@ select {
 }
 .about-text {
   color: var(--white-text);
-  /* font-family: "Playfair Display", sans-serif; */
   font-size: 21px;
   width: 25%;
   position: relative;
@@ -205,26 +171,22 @@ select {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* background-color: black; */
 }
 .small-box {
   width: 33%;
   display: inline-block;
   text-align: center;
-  /* background-color: black; */
 }
 .icon {
   width: 85px;
   height: 85px;
 }
 .big-text {
-  /* font-family: "Playfair Display", sans-serif; */
   color: black;
   font-weight: 600;
   font-size: 25px;
 }
 .small-text {
-  /* font-family: "Montserrat", sans-serif; */
   color: black;
   font-size: 18px;
   width: 350px;
@@ -248,7 +210,6 @@ select {
 
   color: var(--white-text);
   text-decoration: none;
-  /* flex: 1; */
 }
 
 .sidebard ul {
@@ -289,12 +250,6 @@ ul li:hover a {
   padding-left: 50px;
 }
 
-/* ul li:active a {
-  background-color: #039dfc;
-  color: white;
-  transition: 0.1s ease;
-} */
-
 ul li a {
   padding-left: 50px;
 }
@@ -309,7 +264,7 @@ div.content {
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
     height: auto;
@@ -320,14 +275,6 @@ div.content {
   }
   div.content {
     margin-left: 0;
-  }
-}
-
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-/* @media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
   }
 } */
 

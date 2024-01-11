@@ -3,7 +3,6 @@
 :root {
   --main-color: #000000;
   --second-bg: #f4eae0;
-  /* --third-bg: rgba(0, 0, 0, 0.8); */
   --third-bg: rgb(35, 34, 34);
   --white-bg: #fff;
   --dark-text: #000000;
@@ -20,7 +19,6 @@
 body {
   -ms-overflow-style: none;
   box-sizing: border-box;
-  /* font-family: var(--body-font); */
   overflow: hidden;
   min-height: 100vh;
   background-image: linear-gradient(to left bottom, #f4eae0, #cac0b9, #a19794, #787170, #524d4d, #3f3b3b, #2d2b2b, #1c1b1b, #171616, #111111, #090909, #000000);
@@ -87,14 +85,12 @@ input {
   border-style: solid;
   border-color: rgba(4, 6, 68, 1);
   opacity: 0.8;
-  /* font-family: var(--body-font); */
   padding-left: 1rem;
 }
 
 input::placeholder {
   font-weight: 700;
   font-size: 0.9rem;
-  /* font-family: var(--body-font); */
 }
 input:focus-visible {
   outline-width: 1px;
