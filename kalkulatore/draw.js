@@ -6,6 +6,7 @@ const colorBtns = document.querySelectorAll(".colors .option");
 const colorPicker = document.querySelector("#color-picker");
 const clearCanvas = document.querySelector(".clear-canvas");
 const saveImg = document.querySelector(".save-img");
+
 const ctx = canvas.getContext("2d");
 
 // global variables

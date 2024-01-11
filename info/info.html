@@ -36,7 +36,7 @@
       </div>
       <nav class="nav-bar">
         <a href="../index.html">Ballina</a>
-        <a href="../kalkulatore/kalkulatore.html">Kalkulatorë</a>
+        <a href="../kalkulatore/kalkulatore.html">Vegla</a>
         <a href="../argetim/argetim.html">Argëtim</a>
         <a href="../literatura/literatura.html">Literatura</a>
         <select onchange="navigate()" style="width: 145px;" id="selektimi">
@@ -573,9 +573,7 @@
         let draggedElement = document.getElementById(data);
         let targetElement = ev.target;
 
-        // Check if the target is an image
         if (targetElement.tagName.toLowerCase() === "img") {
-          // Swap the source URLs of the dragged and target images
           let tempSrc = draggedElement.src;
           draggedElement.src = targetElement.src;
           targetElement.src = tempSrc;
