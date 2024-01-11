@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
-  --blue: hsl(210, 100%, 13%);
-  --green: hsl(154, 59%, 51%);
-  --gray-blue: hsl(246, 25%, 77%);
-  --white: white;
-  --body-font: "Poppins", sans-serif;
+  --main-color: #000000;
+  --second-bg: #f4eae0;
+  /* --third-bg: rgba(0, 0, 0, 0.8); */
+  --third-bg: rgb(35, 34, 34);
+  --white-bg: #fff;
+  --dark-text: #000000;
+  --light-text: #f4eae0;
+  --white-text: #fff;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -19,15 +23,7 @@ body {
   /* font-family: var(--body-font); */
   overflow: hidden;
   min-height: 100vh;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    24deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(93, 6, 11, 1) 24%,
-    rgba(4, 6, 68, 1) 47%,
-    rgba(3, 11, 170, 1) 84%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background-image: linear-gradient(to left bottom, #f4eae0, #cac0b9, #a19794, #787170, #524d4d, #3f3b3b, #2d2b2b, #1c1b1b, #171616, #111111, #090909, #000000);
 }
 body::-webkit-scrollbar {
   display: none;
@@ -48,7 +44,7 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  color: var(--white);
+  color: var(--white-bg);
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -68,7 +64,7 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
-  background-color: var(--white);
+  background-color: var(--second-bg);
   border-radius: 10px;
   padding: 2.5rem 2.7rem;
   box-shadow: 0px 9px 5px -1px rgba(0, 0, 0, 0.27);
@@ -103,7 +99,7 @@ input::placeholder {
 input:focus-visible {
   outline-width: 1px;
   outline-style: solid;
-  outline-color: var(--blue);
+  outline-color: var(--main-color);
 }
 
 /* BUTTONI KYQU */
@@ -113,8 +109,8 @@ input:focus-visible {
   border-color: transparent;
   border-style: solid;
   cursor: pointer;
-  background-color: rgba(4, 6, 68, 1);
-  color: var(--white);
+  background-color: var(--main-color);
+  color: var(--white-bg);
   text-transform: uppercase;
   padding: 1.2rem;
   font-size: 0.9rem;
@@ -138,7 +134,7 @@ input:focus-visible {
 }
 .tnc a {
   text-decoration: none;
-  color: rgba(4, 6, 68, 1);
+  color : var(--dark-text);
   font-weight: 600;
 }
 
