@@ -54,26 +54,26 @@ const fizika = {
 };
 
 const matematikaSolution = {
-  A: "HEXADECIMAL",
-  B: "INT",
-  C: "VITI",
-  D: "IMAGJINARË",
+  A: "PLAN",
+  B: "BANKA",
+  C: "PARA",
+  D: "BUXHETI",
 };
 
-const finalResultMatematika = "Numrat";
+const finalResultMatematika = "FINANCA";
 
 const matematika = {
   A: [
-    "Sistem",
-    "16",
-    "Shkronja",
-    "0-F",
+    "Strategjik",
+    "Programi",
+    "Ushtarak",
+    "Aero",
     matematikaSolution.A,
     finalResultMatematika,
   ],
-  B: ["4-byte", "Shifra", "Programim", "Deklarim", matematikaSolution.B],
-  C: ["I brishtë", "Akademik", "Qytet", "I Ri", matematikaSolution.C],
-  D: ["Ëndërra", "Jo reale", "Dëshira", "Truri", matematikaSolution.D],
+  B: ["Karrika", "Kombëtare", "Kredi", "Turqia", matematikaSolution.B],
+  C: ["Letra", "Monopoly", "Pas", "Leku", matematikaSolution.C],
+  D: ["Shtetëror", "Pacolli", "Shpenzimet", "Fonde", matematikaSolution.D],
 };
 
 const pergjithshemSolution = {
@@ -199,7 +199,7 @@ asosacioniButtons.forEach((button) => {
 
     switch (subject) {
       case "matematika":
-        currentAsosacionText = '"Matematika"';
+        currentAsosacionText = '"Buxheti"';
         addCellEventListeners(matematika);
         currentAsosacion = matematika;
 
