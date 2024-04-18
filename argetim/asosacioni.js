@@ -31,26 +31,26 @@ const finalResulTemplate = "Zgjidhja Perfundimtare";
 // ---------------------------------------
 
 const fizikaSolutions = {
-  A: "BOMBA",
-  B: "BËRTHAM/ORE",
-  C: "GRIMCË",
-  D: "CHERNOBYL",
+  A: "MULTI",
+  B: "THREAD",
+  C: "BERTHAMA",
+  D: "SINGLE",
 };
 
-const finalResultFizika = "Atomi";
+const finalResultFizika = "PROCESORI";
 
 const fizika = {
   A: [
-    "Shpërthim",
-    "Hiroshima - 1945",
-    "Lufta",
-    "Montimi",
+    "Milioner",
+    "Vitamin",
+    "Sola",
+    "Media",
     fizikaSolutions.A,
     finalResultFizika,
   ],
-  B: ["Toka", "Avokado", "Armët", "Energji-", fizikaSolutions.B],
-  C: ["Orizi", "Molekula", "E imët", "bit", fizikaSolutions.C],
-  D: ["Ukraina", "Katastrofa", "Rrezatimi", "I Pa banuar", fizikaSolutions.D],
+  B: ["Twitter / X", "Program Counteri", "Mark Zuckerberg", "Nënprocesi", fizikaSolutions.B],
+  C: ["Avokado", "Toka", "Atomi", "Armet-", fizikaSolutions.C],
+  D: ["Vetmuar", "Pa-Martuar", "Blero", "dua.com", fizikaSolutions.D],
 };
 
 const matematikaSolution = {
@@ -205,7 +205,7 @@ asosacioniButtons.forEach((button) => {
 
         break;
       case "fizika":
-        currentAsosacionText = '"Fizika"';
+        currentAsosacionText = '"Sisteme Operative"';
         addCellEventListeners(fizika);
         currentAsosacion = fizika;
         break;
